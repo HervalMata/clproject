@@ -48,7 +48,7 @@
 
 - [x] 1.1.21 - create route for update seller user
 
-1.1.22 - create implementation repository UsersRepositoryInMemory for tests
+- [x] 1.1.22 - create implementation repository UsersRepositoryInMemory for tests
 
 1.1.23 - create service test CreateUserService spec
 
