@@ -16,9 +16,9 @@
 
 - [x] 1.1.5 - create implementation repository UsersRepository
 
-1.1.6 - register container typeorm
+- [x] 1.1.6 - register container typeorm
 
-1.1.7 - create service CreateUserService
+- [x] 1.1.7 - create service CreateUserService
 
 1.1.8 - create controller CreateUserController
 
