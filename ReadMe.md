@@ -26,7 +26,7 @@
 
 - [x] 1.1.10 - create service GetAllUsersService
 
-1.1.11 - create controller GetAllUsersController
+- [x] 1.1.11 - create controller GetAllUsersController
 
 1.1.12 - create route for get all users
 
