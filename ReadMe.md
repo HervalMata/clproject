@@ -6,9 +6,9 @@
 
 #### 1.1 - Users
 
-1.1.1 - Create migration CreateUsers
+- [x] 1.1.1 - Create migration CreateUsers 
 
-1.1.2 - Create entity users User
+- [x] 1.1.2 - Create entity users User
 
 1.1.3 - create dto ICreateUsersDTO
 
