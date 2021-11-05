@@ -44,7 +44,7 @@
 
 - [x] 1.1.19 - create service UpdateSellerUserService
 
-1.1.20 - create controller UpdateSellerUserController
+- [x] 1.1.20 - create controller UpdateSellerUserController
 
 1.1.21 - create route for update seller user
 
