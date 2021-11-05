@@ -14,7 +14,7 @@
 
 - [x] 1.1.4 - create interface repository IUsersRepository
 
-1.1.5 - create implementation repository UsersRepository
+- [x] 1.1.5 - create implementation repository UsersRepository
 
 1.1.6 - register container typeorm
 
