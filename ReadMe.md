@@ -10,9 +10,9 @@
 
 - [x] 1.1.2 - Create entity users User
 
-1.1.3 - create dto ICreateUsersDTO
+- [x] 1.1.3 - create dto ICreateUsersDTO
 
-1.1.4 - create interface repository IUsersRepository
+- [x] 1.1.4 - create interface repository IUsersRepository
 
 1.1.5 - create implementation repository UsersRepository
 
