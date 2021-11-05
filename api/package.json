@@ -2,11 +2,11 @@
   "name": "api",
   "version": "1.0.0",
   "description": "API For Cris Laços",
-  "main": "server.js",
+  "main": "index.js",
   "author": "Herval Mata do Amparo",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only  --ignore-watch node_modules --respaw src/shared/infra/http/app.ts",
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/shared/infra/http/app.ts",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
     "seed:admin": "ts-node-dev src/shared/infra/typeorm/seeds/admin.ts",
     "lint:fix": "eslint --fix . --ext ts,tsx",

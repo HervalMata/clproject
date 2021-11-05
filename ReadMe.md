@@ -20,11 +20,11 @@
 
 - [x] 1.1.7 - create service CreateUserService
 
-1.1.8 - create controller CreateUserController
+- [x] 1.1.8 - create controller CreateUserController
 
-1.1.9 - create routes users routes
+- [x] 1.1.9 - create routes users routes
 
-1.1.10 - create service GetAllUsersService
+- [x] 1.1.10 - create service GetAllUsersService
 
 1.1.11 - create controller GetAllUsersController
 

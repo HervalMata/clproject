@@ -3,7 +3,7 @@ import swaggerUi from "swagger-ui-express";
 import 'reflect-metadata';
 import "express-async-errors";
 //import {HandlingErrors} from "./middlewares/HandlingErrors";
-import {createConnection} from "typeorm/browser";
+import {createConnection} from "typeorm";
 import swaggerFile from "../../../swagger.json";
 import { router } from "./routes";
 
