@@ -30,9 +30,9 @@
 
 - [x] 1.1.12 - create route for get all users
 
-1.1.13 - create service GetUserService
+- [x] 1.1.13 - create service GetUserService
 
-1.1.14 - create controller GetUserController
+- [x] 1.1.14 - create controller GetUserController
 
 1.1.15 - create route for get user
 
