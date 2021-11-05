@@ -46,7 +46,7 @@
 
 - [x] 1.1.20 - create controller UpdateSellerUserController
 
-1.1.21 - create route for update seller user
+- [x] 1.1.21 - create route for update seller user
 
 1.1.22 - create implementation repository UsersRepositoryInMemory for tests
 
