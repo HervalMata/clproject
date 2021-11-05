@@ -38,7 +38,7 @@
 
 - [x] 1.1.16 - create service UpdateAdminUserService
 
-1.1.17 - create controller UpdateAdminUserController
+- [x] 1.1.17 - create controller UpdateAdminUserController
 
 1.1.18 - create route for update admin user
 
