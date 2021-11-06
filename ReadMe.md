@@ -74,7 +74,7 @@
 
 - [x] 1.2.5 - create implementation repository UsersTokensRepository
 
-1.2.6 - create middleware ensureAuthenticate
+- [x] 1.2.6 - create middleware ensureAuthenticate
 
 1.2.7 - create middleware ensureAdmin
 

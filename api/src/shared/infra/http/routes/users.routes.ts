@@ -4,6 +4,7 @@ import {GetAllUsersController} from "../../../../modules/users/controllers/GetAl
 import {GetUserController} from "../../../../modules/users/controllers/GetUserController";
 import {UpdateAdminUserController} from "../../../../modules/users/controllers/UpdateAdminUserController";
 import {UpdateSellerUserController} from "../../../../modules/users/controllers/UpdateSellerUserController";
+import {ensureAuthenticated} from "../middlewares/ensureAuthenticated";
 
 const usersRoutes = Router();
 
@@ -14,9 +15,9 @@ const updateAdminUserController = new UpdateAdminUserController();
 const updateSellerUserController = new UpdateSellerUserController();
 
 usersRoutes.post("/", createUserController.handle);
-usersRoutes.get("/", getAllUsersController.handle);
-usersRoutes.get("/:id", getUserController.handle);
-usersRoutes.patch("/:id", updateAdminUserController.handle);
-usersRoutes.patch("/:id", updateSellerUserController.handle);
+usersRoutes.get("/", ensureAuthenticated, getAllUsersController.handle);
+usersRoutes.get("/:id", ensureAuthenticated, getUserController.handle);
+usersRoutes.patch("/:id", ensureAuthenticated, updateAdminUserController.handle);
+usersRoutes.patch("/:id", ensureAuthenticated, updateSellerUserController.handle);
 
 export { usersRoutes };
