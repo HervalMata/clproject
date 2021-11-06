@@ -68,7 +68,7 @@
 
 - [x] 1.2.2 - Create entity users UserTokens
 
-1.2.3 - create dto ICreateUserTokenDTO
+- [x] 1.2.3 - create dto ICreateUserTokenDTO
 
 1.2.4 - create interface repository IUsersTokensRepository
 
