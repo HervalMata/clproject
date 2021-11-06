@@ -50,11 +50,11 @@
 
 - [x] 1.1.22 - create implementation repository UsersRepositoryInMemory for tests
 
-1.1.23 - create service test CreateUserService spec
+- [x] 1.1.23 - create service test CreateUserService spec
 
-1.1.24 - create service test GetUsersService spec
+- [x] 1.1.24 - create service test GetUsersService spec
 
-1.1.25 - create service test GetUserService spec
+- [x] 1.1.25 - create service test GetUserService spec
 
 1.1.26 - create service test UpdateAdminUserService spec
 
