@@ -66,7 +66,7 @@
 
 - [x] 1.2.1 - Create migration CreateUsersTokens
 
-1.2.2 - Create entity users UserTokens
+- [x] 1.2.2 - Create entity users UserTokens
 
 1.2.3 - create dto ICreateUserTokenDTO
 
