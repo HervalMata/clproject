@@ -30,12 +30,12 @@ class UsersRepository implements IUsersRepository{
             .execute();
     }
 
-    async create(data: ICreateUsersDTO): Promise<void> {
+    async create(data: ICreateUsersDTO): Promise<User> {
         const { id, name, email, password, } = data;
         const user = this.repository.create({
             id, name, email, password,
         });
-        await this.repository.save(user);
+        return await this.repository.save(user);
     }
 
     async findByEmail(email: string): Promise<User> {
