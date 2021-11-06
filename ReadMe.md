@@ -64,7 +64,7 @@
 
 ### 1.2 - Authenticate Structure
 
-1.2.1 - Create migration CreateUsersTokens
+- [x] 1.2.1 - Create migration CreateUsersTokens
 
 1.2.2 - Create entity users UserTokens
 
