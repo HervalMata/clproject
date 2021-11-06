@@ -1,34 +1,33 @@
 import {UsersRepositoryInMemory} from "../repositories/in-memory/UsersRepositoryInMemory";
 import {CreateUserService} from "./CreateUserService";
+import {UpdateAdminUserService} from "./UpdateAdminUserService";
 import {GetUserService} from "./GetUserService";
 
 let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserService: CreateUserService;
+let updateAdminUserService: UpdateAdminUserService;
 let getUserService: GetUserService;
 
-describe('Get A User', () => {
+describe('Active Admin User', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         createUserService = new CreateUserService(usersRepositoryInMemory);
+        updateAdminUserService = new UpdateAdminUserService(usersRepositoryInMemory);
         getUserService = new GetUserService(usersRepositoryInMemory);
     });
 
-    it('should be able to get a user', async () => {
+    it('should be able to update admin user', async () => {
         const user = await createUserService.execute({
             name: "User Test",
             email: "user@test.com",
             password: "1234"
         });
-        const id = user.id;
-        const user_created = await getUserService.execute({id});
-        const email = user_created.email;
-        expect(email).toEqual("user@test.com");
-    });
 
-    it('should not be able to get a user non existent', async () => {
-        const id = "";
-        await expect(
-            await getUserService.execute({id})
-        ).toBe(undefined);
+        const id = user.id;
+        const is_admin = true;
+        await updateAdminUserService.execute({id, is_admin});
+        const admin = await getUserService.execute({id});
+        const isAdmin = admin.is_admin;
+        expect(isAdmin).toEqual(true);
     });
 });

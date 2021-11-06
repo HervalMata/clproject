@@ -56,7 +56,7 @@
 
 - [x] 1.1.25 - create service test GetUserService spec
 
-1.1.26 - create service test UpdateAdminUserService spec
+- [x] 1.1.26 - create service test UpdateAdminUserService spec
 
 1.1.27 - create service test UpdateSellerUserService spec
 
