@@ -58,7 +58,7 @@
 
 - [x] 1.1.26 - create service test UpdateAdminUserService spec
 
-1.1.27 - create service test UpdateSellerUserService spec
+- [x] 1.1.27 - create service test UpdateSellerUserService spec
 
 1.1.28 - create seed Admin.ts
 
