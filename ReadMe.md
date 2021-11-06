@@ -60,7 +60,7 @@
 
 - [x] 1.1.27 - create service test UpdateSellerUserService spec
 
-1.1.28 - create seed Admin.ts
+- [x] 1.1.28 - create seed Admin.ts
 
 ### 1.2 - Authenticate Structure
 
