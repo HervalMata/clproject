@@ -78,7 +78,7 @@
 
 - [x] 1.2.7 - create middleware ensureAdmin
 
-1.2.8 - create middleware ensureAdminOrSeller
+- [x] 1.2.8 - create middleware ensureAdminOrSeller
 
 1.2.9 - create service AuthenticateUserService
 
