@@ -76,7 +76,7 @@
 
 - [x] 1.2.6 - create middleware ensureAuthenticate
 
-1.2.7 - create middleware ensureAdmin
+- [x] 1.2.7 - create middleware ensureAdmin
 
 1.2.8 - create middleware ensureAdminOrSeller
 
