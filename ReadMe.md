@@ -70,7 +70,7 @@
 
 - [x] 1.2.3 - create dto ICreateUserTokenDTO
 
-1.2.4 - create interface repository IUsersTokensRepository
+- [x] 1.2.4 - create interface repository IUsersTokensRepository
 
 1.2.5 - create implementation repository UsersTokensRepository
 
