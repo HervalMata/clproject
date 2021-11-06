@@ -72,7 +72,7 @@
 
 - [x] 1.2.4 - create interface repository IUsersTokensRepository
 
-1.2.5 - create implementation repository UsersTokensRepository
+- [x] 1.2.5 - create implementation repository UsersTokensRepository
 
 1.2.6 - create middleware ensureAuthenticate
 
