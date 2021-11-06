@@ -1,18 +1,14 @@
 import {UsersRepositoryInMemory} from "../repositories/in-memory/UsersRepositoryInMemory";
 import {CreateUserService} from "./CreateUserService";
-import {ICreateUsersDTO} from "../dtos/ICreateUsersDTO";
-import {GetUserService} from "./GetUserService";
 import {AppError} from "../../../shared/errors/AppError";
 
 let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserService: CreateUserService;
-//let getUserService: GetUserService;
 
 describe('Create User', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         createUserService = new CreateUserService(usersRepositoryInMemory);
-        //getUserService = new GetUserService(usersRepositoryInMemory);
     });
 
     it('should be able create un user', async () => {
