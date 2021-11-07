@@ -98,9 +98,9 @@
 
 - [x] 1.2.17 - create route for reset password in password routes
 
-1.2.18 - create service SendForgotPasswordUserService
+- [x] 1.2.18 - create service SendForgotPasswordUserService
 
-1.2.19 - create controller SendForgotPasswordController
+- [x] 1.2.19 - create controller SendForgotPasswordController
 
 1.2.20 - create route for send forgot password in password routes
 
