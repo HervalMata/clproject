@@ -80,7 +80,7 @@
 
 - [x] 1.2.8 - create middleware ensureAdminOrSeller
 
-1.2.9 - create service AuthenticateUserService
+- [x] 1.2.9 - create service AuthenticateUserService
 
 1.2.10 - create controller AuthenticateUserController
 
