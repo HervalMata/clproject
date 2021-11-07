@@ -82,7 +82,7 @@
 
 - [x] 1.2.9 - create service AuthenticateUserService
 
-1.2.10 - create controller AuthenticateUserController
+- [x] 1.2.10 - create controller AuthenticateUserController
 
 1.2.11 - create routes authenticate routes
 
