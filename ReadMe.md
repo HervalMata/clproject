@@ -104,7 +104,7 @@
 
 - [x] 1.2.20 - create route for send forgot password in password routes
 
-1.2.21 - create view ForgotPassword.hbs
+- [x] 1.2.21 - create view ForgotPassword.hbs
 
 1.2.22 - create implementation repository UsersTokensInMemory for tests
 
