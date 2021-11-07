@@ -84,7 +84,7 @@
 
 - [x] 1.2.10 - create controller AuthenticateUserController
 
-1.2.11 - create routes authenticate routes
+- [x] 1.2.11 - create routes authenticate routes
 
 1.2.12 - create service RefreshTokenUserService
 
