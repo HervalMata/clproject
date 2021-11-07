@@ -102,7 +102,7 @@
 
 - [x] 1.2.19 - create controller SendForgotPasswordController
 
-1.2.20 - create route for send forgot password in password routes
+- [x] 1.2.20 - create route for send forgot password in password routes
 
 1.2.21 - create view ForgotPassword.hbs
 
