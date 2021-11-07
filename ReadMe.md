@@ -106,7 +106,7 @@
 
 - [x] 1.2.21 - create view ForgotPassword.hbs
 
-1.2.22 - create implementation repository UsersTokensInMemory for tests
+- [x] 1.2.22 - create implementation repository UsersTokensInMemory for tests
 
 1.2.23 - create service test AuthenticateUserService spec
 
