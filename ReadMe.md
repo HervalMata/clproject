@@ -108,7 +108,7 @@
 
 - [x] 1.2.22 - create implementation repository UsersTokensInMemory for tests
 
-1.2.23 - create service test AuthenticateUserService spec
+- [x] 1.2.23 - create service test AuthenticateUserService spec
 
 1.2.24 - create service test RefreshTokenUserService spec
 
