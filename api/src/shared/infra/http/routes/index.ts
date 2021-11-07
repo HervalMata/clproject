@@ -5,6 +5,6 @@ import {authenticateRoutes} from "./autenticates.routes";
 const router = Router();
 
 router.use("/users", usersRoutes);
-router.use("/sessions", authenticateRoutes);
+router.use(authenticateRoutes);
 
 export { router };

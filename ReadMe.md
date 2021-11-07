@@ -88,9 +88,9 @@
 
 - [x] 1.2.12 - create service RefreshTokenUserService
 
-1.2.13 - create controller RefreshTokenUserController
+- [x] 1.2.13 - create controller RefreshTokenUserController
 
-1.2.14 - create route for refresh token
+- [x] 1.2.14 - create route for refresh token
 
 1.2.15 - create service ResetPasswordUserService
 
