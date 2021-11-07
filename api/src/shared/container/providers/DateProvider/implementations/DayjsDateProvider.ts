@@ -8,6 +8,14 @@ class DayjsDateProvider implements IDateProvider {
         return date.add(days, "day").toDate();
     }
 
+    checkIsBefore(start_date: Date, end_date: Date): Boolean {
+        return dayjs(start_date).isBefore(end_date);
+    }
+
+    dateNow() {
+        return dayjs().toDate();
+    }
+
 }
 
 export { DayjsDateProvider };

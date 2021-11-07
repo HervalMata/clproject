@@ -92,7 +92,7 @@
 
 - [x] 1.2.14 - create route for refresh token
 
-1.2.15 - create service ResetPasswordUserService
+- [x] 1.2.15 - create service ResetPasswordUserService
 
 1.2.16 - create controller ResetPasswordController
 
