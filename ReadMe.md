@@ -130,7 +130,7 @@
 
 - [x] 1.3.6 - register container typeorm for users profile
 
-1.3.7 - create service CreateUsersProfileService
+- [x] 1.3.7 - create service CreateUsersProfileService
 
 1.3.8 - create controller CreateUsersProfileController
 
