@@ -126,7 +126,7 @@
 
 - [x] 1.3.4 - create interface repository IUsersProfileRepository
 
-1.3.5 - create implementation repository UsersProfileRepository
+- [x] 1.3.5 - create implementation repository UsersProfileRepository
 
 1.3.6 - register container typeorm for users profile
 
