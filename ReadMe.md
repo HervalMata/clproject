@@ -144,7 +144,7 @@
 
 - [x] 1.3.13 - create service UpdateUsersProfileService
 
-1.3.14 - create controller UpdateUsersProfileController
+- [x] 1.3.14 - create controller UpdateUsersProfileController
 
 1.3.15 - create route for update users profile
 
