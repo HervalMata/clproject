@@ -10,6 +10,7 @@ import {CreateUsersProfileController} from "../../../../modules/users/controller
 import multer from "multer";
 import uploadConfig from '../../../../config/upload';
 import {GetUsersProfileController} from "../../../../modules/users/controllers/GetUsersProfileController";
+import {UpdateUsersProfileController} from "../../../../modules/users/controllers/UpdateUsersProfileController";
 
 const usersRoutes = Router();
 const uploadAvatar = multer(uploadConfig.upload("./tmp/avatar"));
@@ -21,6 +22,7 @@ const updateAdminUserController = new UpdateAdminUserController();
 const updateSellerUserController = new UpdateSellerUserController();
 const createUsersProfileController = new CreateUsersProfileController();
 const getUsersProfileController = new GetUsersProfileController();
+const updateUsersProfileController = new UpdateUsersProfileController();
 
 usersRoutes.post("/", createUserController.handle);
 usersRoutes.get("/", ensureAuthenticated, ensureAdmin, getAllUsersController.handle);
@@ -29,5 +31,6 @@ usersRoutes.patch("/:id", ensureAuthenticated, ensureAdmin, updateAdminUserContr
 usersRoutes.patch("/:id", ensureAuthenticated, ensureAdmin, updateSellerUserController.handle);
 usersRoutes.post("/profile", ensureAuthenticated, uploadAvatar.single("avatar"), createUsersProfileController.handle);
 usersRoutes.get("/profile/:user_id", ensureAuthenticated, getUsersProfileController.handle);
+usersRoutes.patch("/profile/:id", ensureAuthenticated, uploadAvatar.single("avatar"), updateUsersProfileController.handle);
 
 export { usersRoutes };

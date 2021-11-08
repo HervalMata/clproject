@@ -146,7 +146,7 @@
 
 - [x] 1.3.14 - create controller UpdateUsersProfileController
 
-1.3.15 - create route for update users profile
+- [x] 1.3.15 - create route for update users profile
 
 1.3.16 - create implementation repository UsersProfileRepositoryInMemory for tests
 
