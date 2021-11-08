@@ -154,7 +154,7 @@
 
 - [x] 1.1.18 - create service test GetUsersProfileService spec
 
-1.1.19 - create service test UpdateUsersProfileService spec
+- [x] 1.1.19 - create service test UpdateUsersProfileService spec
 
 ### 2 - Address
 

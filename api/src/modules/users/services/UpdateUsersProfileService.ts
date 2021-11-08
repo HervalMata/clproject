@@ -3,7 +3,7 @@ import { IUsersProfileRepository } from "../repositories/IUsersProfileRepository
 import {deleteFile} from "../../../utils/file";
 
 interface IRequest {
-    id: string;
+    user_id: string;
     phone_number?: string;
     avatar?: string;
 }
@@ -16,13 +16,13 @@ class UpdateUsersProfileService {
         private usersProfileRepository: IUsersProfileRepository
     ) {}
 
-    async execute({ id, phone_number, avatar }: IRequest): Promise<void> {
-        const usersProfile = await this.usersProfileRepository.findById(id);
+    async execute({ user_id, phone_number, avatar }: IRequest): Promise<void> {
+        const usersProfile = await this.usersProfileRepository.findByUserId(user_id);
         if (usersProfile.avatar) {
             await deleteFile(`./tmp/avatar/${usersProfile.avatar}`);
         }
         usersProfile.avatar = avatar;
-        return await this.usersProfileRepository.update(id, phone_number, usersProfile.avatar);
+        return await this.usersProfileRepository.update(user_id, phone_number, usersProfile.avatar);
     }
 }
 
