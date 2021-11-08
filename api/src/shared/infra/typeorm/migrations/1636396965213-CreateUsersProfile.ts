@@ -23,7 +23,7 @@ export class CreateUsersProfile1636396965213 implements MigrationInterface {
                     },
                     {
                         name: "birth_date",
-                        type: "varchar",
+                        type: "date",
                         isUnique: true,
                     },
                     {
@@ -37,6 +37,11 @@ export class CreateUsersProfile1636396965213 implements MigrationInterface {
                     },
                     {
                         name: "created_at",
+                        type: "timestamp",
+                        default: "now()",
+                    },
+                    {
+                        name: "updated_at",
                         type: "timestamp",
                         default: "now()",
                     },
