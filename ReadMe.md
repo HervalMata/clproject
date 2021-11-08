@@ -148,7 +148,7 @@
 
 - [x] 1.3.15 - create route for update users profile
 
-1.3.16 - create implementation repository UsersProfileRepositoryInMemory for tests
+- [x] 1.3.16 - create implementation repository UsersProfileRepositoryInMemory for tests
 
 1.1.17 - create service test CreateUsersProfileService spec
 
