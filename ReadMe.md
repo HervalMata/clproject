@@ -132,7 +132,7 @@
 
 - [x] 1.3.7 - create service CreateUsersProfileService
 
-1.3.8 - create controller CreateUsersProfileController
+- [x] 1.3.8 - create controller CreateUsersProfileController
 
 1.3.9 - create routes users profile routes
 
