@@ -28,7 +28,7 @@ describe("Authenticate User", () => {
             email: "user@test.com",
             password: "1234"
         });
-        console.log(user.email, user.password);
+
         const result = await authenticateUserService.execute({
             email: user.email, password: "1234"
         });

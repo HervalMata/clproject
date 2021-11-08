@@ -110,7 +110,7 @@
 
 - [x] 1.2.23 - create service test AuthenticateUserService spec
 
-1.2.24 - create service test RefreshTokenUserService spec
+- [x] 1.2.24 - create service test RefreshTokenUserService spec
 
 1.2.25 - create service test ResetPasswordService spec
 
