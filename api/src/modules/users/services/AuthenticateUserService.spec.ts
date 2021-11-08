@@ -37,7 +37,7 @@ describe("Authenticate User", () => {
     });
 
     it('should not be able to authenticate an non existent user', async () => {
-        await expect(authenticateUserService.execute({ email: "false@email.com", password: "1234" })).rejects.toEqual(new AppError("Email or password incorrect"));
+        await expect(authenticateUserService.execute({ email: "false@emails.com", password: "1234" })).rejects.toEqual(new AppError("Email or password incorrect"));
     });
 
     it('should not be able to authenticate an user with incorrect password', async () => {

@@ -19,6 +19,7 @@ describe('Reset Password User', () => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         userTokensRepositoryInMemory = new UsersTokensRepositoryInMemory();
         dateProvider = new DayjsDateProvider();
+        mailProvider = new EtherealMailProvider();
         authenticateUserService = new AuthenticateUserService(
             usersRepositoryInMemory, userTokensRepositoryInMemory, dateProvider
         );

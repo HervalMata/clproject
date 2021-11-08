@@ -114,7 +114,7 @@
 
 - [x] 1.2.25 - create service test ResetPasswordService spec
 
-1.2.26 - create service test SendForgotPasswordService spec
+- [x] 1.2.26 - create service test SendForgotPasswordService spec
 
 ### 1.3 - Users Profile
 

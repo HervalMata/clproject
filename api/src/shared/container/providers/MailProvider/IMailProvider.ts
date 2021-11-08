@@ -1,7 +1,8 @@
-import { IMailProviderSendMailDTO } from "./IMailProviderSendMailDTO";
-
 interface IMailProvider {
-    sendMail({ to, variables, subject, path }: IMailProviderSendMailDTO): Promise<void>;
+    sendMail(to: string,
+                 subject: string,
+                 variables: any,
+                 path: string): Promise<void>;
 }
 
 export { IMailProvider };
