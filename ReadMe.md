@@ -118,11 +118,11 @@
 
 ### 1.3 - Users Profile
 
-1.3.1 - Create migration CreateUsersProfile
+- [x] 1.3.1 - Create migration CreateUsersProfile
 
-1.3.2 - Create entity users UsersProfile
+- [x] 1.3.2 - Create entity users UsersProfile
 
-1.3.3 - create dto ICreateUsersProfileDTO
+- [x] 1.3.3 - create dto ICreateUsersProfileDTO
 
 1.3.4 - create interface repository IUsersProfileRepository
 
