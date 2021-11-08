@@ -138,7 +138,7 @@
 
 - [x] 1.3.10 - create service GetUsersProfileService
 
-1.3.11 - create controller GetUsersProfileController
+- [x] 1.3.11 - create controller GetUsersProfileController
 
 1.3.12 - create route for get users profile
 
