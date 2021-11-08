@@ -142,7 +142,7 @@
 
 - [x] 1.3.12 - create route for get users profile
 
-1.3.13 - create service UpdateUsersProfileService
+- [x] 1.3.13 - create service UpdateUsersProfileService
 
 1.3.14 - create controller UpdateUsersProfileController
 
