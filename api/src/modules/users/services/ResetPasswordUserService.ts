@@ -5,6 +5,7 @@ import {IUsersRepository} from "../repositories/IUsersRepository";
 import { IUsersTokensRepository } from "../repositories/IUsersTokensRepository";
 import {AppError} from "../../../shared/errors/AppError";
 import {hash} from "bcryptjs";
+import {ResetPasswordUserTokenInvalidError} from "../errors/ResetPasswordUserTokenInvalidError";
 
 interface IRequest {
     token: string;
@@ -30,7 +31,7 @@ class ResetPasswordUserService {
         const userToken = await this.usersTokensRepository.findByRefreshToken(token);
         console.log(userToken);
         if (!userToken) {
-            throw new AppError("Token Invalid");
+            throw new ResetPasswordUserTokenInvalidError();
         }
         if (this.dateProvider.checkIsBefore(
             userToken.expires_date, this.dateProvider.dateNow()

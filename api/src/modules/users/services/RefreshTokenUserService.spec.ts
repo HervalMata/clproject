@@ -4,6 +4,7 @@ import {UsersTokensRepositoryInMemory} from "../repositories/in-memory/UsersToke
 import {DayjsDateProvider} from "../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 import {CreateUserService} from "./CreateUserService";
 import {RefreshTokenUserService} from "./RefreshTokenUserService";
+import {decode, JsonWebTokenError} from "jsonwebtoken";
 
 let authenticateUserService: AuthenticateUserService;
 let usersRepositoryInMemory: UsersRepositoryInMemory;
@@ -43,5 +44,13 @@ describe('Refresh Token User',  () => {
         );
 
         expect(result).toHaveProperty("refresh_token");
+    });
+
+    it('should not be able to refresh token of token non existent of user', async () => {
+        const token_user = "token invalid"
+
+        await expect(refreshTokenUserService.execute(
+            token_user
+        )).rejects.toBeInstanceOf(JsonWebTokenError);
     });
 });

@@ -3,8 +3,8 @@ import {sign, verify } from "jsonwebtoken";
 import {inject, injectable} from "tsyringe";
 import auth from "../../../config/auth";
 import { IDateProvider } from "../../../shared/container/providers/DateProvider/IDateProvider";
-import { AppError } from "../../../shared/errors/AppError";
 import { IUsersTokensRepository } from "../repositories/IUsersTokensRepository";
+import {RefreshTokenUserError} from "../errors/RefreshTokenUserError";
 
 interface IPayload {
     sub:string;
@@ -30,7 +30,7 @@ class RefreshTokenUserService {
         const { email, sub: user_id } = verify(token, auth.secret_refresh_token) as IPayload;
         const userToken = await this.usersTokensRepository.findByUserIdAndRefreshToken(user_id, token);
         if (!userToken) {
-            throw new AppError("Refresh token does not exists!");
+            throw new RefreshTokenUserError();
         }
         await this.usersTokensRepository.deleteById(userToken.id);
         const refresh_token = sign({ email }, auth.secret_refresh_token, {
