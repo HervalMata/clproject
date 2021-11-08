@@ -124,7 +124,7 @@
 
 - [x] 1.3.3 - create dto ICreateUsersProfileDTO
 
-1.3.4 - create interface repository IUsersProfileRepository
+- [x] 1.3.4 - create interface repository IUsersProfileRepository
 
 1.3.5 - create implementation repository UsersProfileRepository
 
