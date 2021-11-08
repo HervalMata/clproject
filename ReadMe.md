@@ -152,7 +152,7 @@
 
 - [x] 1.1.17 - create service test CreateUsersProfileService spec
 
-1.1.18 - create service test GetUsersProfileService spec
+- [x] 1.1.18 - create service test GetUsersProfileService spec
 
 1.1.19 - create service test UpdateUsersProfileService spec
 
