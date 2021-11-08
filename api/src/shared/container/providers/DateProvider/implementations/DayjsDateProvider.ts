@@ -21,6 +21,11 @@ class DayjsDateProvider implements IDateProvider {
         return date.add(hours, "hour").toDate();
     }
 
+    minusYears(years: number, reference_date: Date): Date {
+        const date = reference_date ? dayjs(reference_date) : dayjs();
+        return date.subtract(years, "Year").toDate();
+    }
+
 }
 
 export { DayjsDateProvider };

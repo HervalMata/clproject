@@ -150,7 +150,7 @@
 
 - [x] 1.3.16 - create implementation repository UsersProfileRepositoryInMemory for tests
 
-1.1.17 - create service test CreateUsersProfileService spec
+- [x] 1.1.17 - create service test CreateUsersProfileService spec
 
 1.1.18 - create service test GetUsersProfileService spec
 
