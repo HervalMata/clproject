@@ -3,16 +3,18 @@ import {UsersRepositoryInMemory} from "../repositories/in-memory/UsersRepository
 import {UsersTokensRepositoryInMemory} from "../repositories/in-memory/UsersTokensRepositoryInMemory";
 import {DayjsDateProvider} from "../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 import {CreateUserService} from "./CreateUserService";
-import {RefreshTokenUserService} from "./RefreshTokenUserService";
+import {ResetPasswordUserService} from "./ResetPasswordUserService";
+import {EtherealMailProvider} from "../../../shared/container/providers/MailProvider/implementations/EtherealMailProvider";
 
 let authenticateUserService: AuthenticateUserService;
 let usersRepositoryInMemory: UsersRepositoryInMemory;
 let userTokensRepositoryInMemory: UsersTokensRepositoryInMemory;
 let dateProvider: DayjsDateProvider;
 let createUserService: CreateUserService;
-let refreshTokenUserService: RefreshTokenUserService;
+let mailProvider: EtherealMailProvider;
+let resetPasswordUserService: ResetPasswordUserService;
 
-describe('Refresh Token User',  () => {
+describe('Reset Password User', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         userTokensRepositoryInMemory = new UsersTokensRepositoryInMemory();
@@ -21,27 +23,25 @@ describe('Refresh Token User',  () => {
             usersRepositoryInMemory, userTokensRepositoryInMemory, dateProvider
         );
         createUserService = new CreateUserService(usersRepositoryInMemory);
-        refreshTokenUserService = new RefreshTokenUserService(
-            userTokensRepositoryInMemory, dateProvider
+        resetPasswordUserService = new ResetPasswordUserService(
+            usersRepositoryInMemory, userTokensRepositoryInMemory, dateProvider, mailProvider
         );
     });
 
-    it('should be able to refresh token of user', async () => {
+    it('should be able to reset password of user', async () => {
         const user = await createUserService.execute({
             name: "User Test",
             email: "user@test.com",
             password: "1234"
         });
 
-        const token = await authenticateUserService.execute({
+        const token_sub = await authenticateUserService.execute({
             email: user.email, password: "1234"
         });
 
-        const token_user = token.refresh_token
-        const result = await refreshTokenUserService.execute(
-            token_user
-        );
+        const token = token_sub.refresh_token;
+        const password = "123456";
 
-        expect(result).toHaveProperty("refresh_token");
+        await expect(resetPasswordUserService.execute({token, password})).resolves.not.toThrow();
     });
 });

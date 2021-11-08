@@ -28,6 +28,7 @@ class ResetPasswordUserService {
     async execute({ token, password }: IRequest): Promise<void> {
         console.log("receive token", token);
         const userToken = await this.usersTokensRepository.findByRefreshToken(token);
+        console.log(userToken);
         if (!userToken) {
             throw new AppError("Token Invalid");
         }
@@ -39,6 +40,7 @@ class ResetPasswordUserService {
 
         const user = await this.usersRepository.findById(userToken.user_id);
         user.password = await hash(password, Number(process.env.DEFAULT_HASH_SALT));
+        console.log(user.password);
         await this.usersRepository.create(user);
         await this.usersTokensRepository.deleteById(userToken.id);
     }
