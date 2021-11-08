@@ -128,7 +128,7 @@
 
 - [x] 1.3.5 - create implementation repository UsersProfileRepository
 
-1.3.6 - register container typeorm for users profile
+- [x] 1.3.6 - register container typeorm for users profile
 
 1.3.7 - create service CreateUsersProfileService
 
