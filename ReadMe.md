@@ -164,7 +164,7 @@
 
 - [x] 2.1.3 - create dto ICreateAddressDTO
 
-2.1.4 - create interface repository IAddressRepository
+- [x] 2.1.4 - create interface repository IAddressRepository
 
 2.1.5 - create implementation repository AddressRepository
 
