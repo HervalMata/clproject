@@ -178,7 +178,7 @@
 
 - [x] 2.1.10 - create service GetUsersAddressService
 
-2.1.11 - create controller GetUsersAddressController
+- [x] 2.1.11 - create controller GetUsersAddressController
 
 2.1.12 - create route for get users address
 
