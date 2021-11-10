@@ -162,7 +162,7 @@
 
 - [x] 2.1.2 - Create entity address
 
-2.1.3 - create dto ICreateAddressDTO
+- [x] 2.1.3 - create dto ICreateAddressDTO
 
 2.1.4 - create interface repository IAddressRepository
 
