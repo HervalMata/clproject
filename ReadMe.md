@@ -192,7 +192,7 @@
 
 - [x] 2.1.17 - create service test CreateAddressService spec
 
-2.1.18 - create service test GetUsersAddressService spec
+- [x] 2.1.18 - create service test GetUsersAddressService spec
 
 2.1.19 - create service test UpdateUsersAddressService spec
 

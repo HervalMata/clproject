@@ -14,7 +14,7 @@ class GetUsersAddressService {
         private addressRepository: IAddressRepository
     ) {}
 
-    async execute({ user_id }: IRequest): Promise<Address> {
+    async execute({ user_id }: IRequest): Promise<Address[]> {
         return await this.addressRepository.findByUserId(user_id);
     }
 }
