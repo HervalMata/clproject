@@ -1,13 +1,14 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
     "target": "es5",
-    "sourceMap": true,
+    "module": "commonjs",
     "outDir": "./dist",
+    "rootDir": "./",
+    "baseUrl": "./src/",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "lib": [

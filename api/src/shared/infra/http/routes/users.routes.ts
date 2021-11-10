@@ -27,10 +27,10 @@ const updateUsersProfileController = new UpdateUsersProfileController();
 usersRoutes.post("/", createUserController.handle);
 usersRoutes.get("/", ensureAuthenticated, ensureAdmin, getAllUsersController.handle);
 usersRoutes.get("/:id", ensureAuthenticated, getUserController.handle);
-usersRoutes.patch("/:id", ensureAuthenticated, ensureAdmin, updateAdminUserController.handle);
-usersRoutes.patch("/:id", ensureAuthenticated, ensureAdmin, updateSellerUserController.handle);
+usersRoutes.patch("/:id/admin", ensureAuthenticated, ensureAdmin, updateAdminUserController.handle);
+usersRoutes.patch("/:id/seller", ensureAuthenticated, ensureAdmin, updateSellerUserController.handle);
 usersRoutes.post("/profile", ensureAuthenticated, uploadAvatar.single("avatar"), createUsersProfileController.handle);
 usersRoutes.get("/profile/:user_id", ensureAuthenticated, getUsersProfileController.handle);
-usersRoutes.patch("/profile/:id", ensureAuthenticated, uploadAvatar.single("avatar"), updateUsersProfileController.handle);
+usersRoutes.patch("/profile/:user_id", ensureAuthenticated, uploadAvatar.single("avatar"), updateUsersProfileController.handle);
 
 export { usersRoutes };

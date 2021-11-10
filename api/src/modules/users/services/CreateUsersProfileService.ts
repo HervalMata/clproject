@@ -1,3 +1,4 @@
+import "reflect-metadata"
 import {inject, injectable} from "tsyringe";
 import { IUsersProfileRepository } from "../repositories/IUsersProfileRepository";
 import {UsersCpfProfileError} from "../errors/UsersCpfProfileError";
@@ -13,6 +14,7 @@ class CreateUsersProfileService {
     ) {}
 
     async execute({ user_id, cpf, birth_date, phone_number, avatar }: ICreateUsersProfileDTO): Promise<void> {
+
         const cpfAlreadyExists = await this.usersProfileRepository.findByCpf(cpf);
         if (cpfAlreadyExists) {
             throw new UsersCpfProfileError();

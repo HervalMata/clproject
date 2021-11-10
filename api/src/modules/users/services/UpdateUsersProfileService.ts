@@ -18,10 +18,14 @@ class UpdateUsersProfileService {
 
     async execute({ user_id, phone_number, avatar }: IRequest): Promise<void> {
         const usersProfile = await this.usersProfileRepository.findByUserId(user_id);
-        if (usersProfile.avatar) {
-            await deleteFile(`./tmp/avatar/${usersProfile.avatar}`);
+
+        if (avatar) {
+            if (usersProfile.avatar) {
+                await deleteFile(`./tmp/avatar/${usersProfile.avatar}`);
+            }
+            usersProfile.avatar = avatar;
         }
-        usersProfile.avatar = avatar;
+
         return await this.usersProfileRepository.update(user_id, phone_number, usersProfile.avatar);
     }
 }

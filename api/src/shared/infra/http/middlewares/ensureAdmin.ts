@@ -5,11 +5,13 @@ import {AppError} from "../../../errors/AppError";
 export async function ensureAdmin(
     req: Request, res: Response, next: NextFunction
 ): Promise<void> {
-    // @ts-ignore
+
     const { id } = req.user;
     const usersRepository = new UsersRepository();
     const user = await usersRepository.findById(id);
+    console.log(user)
     if (!user.is_admin) {
         throw new AppError("User does not have admin privileges");
     }
+    next();
 }

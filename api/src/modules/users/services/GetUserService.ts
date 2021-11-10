@@ -1,6 +1,7 @@
+import "reflect-metadata"
 import {inject, injectable} from "tsyringe";
-import { User } from "../entities/User";
-import { IUsersRepository } from "../repositories/IUsersRepository";
+import {User} from "../entities/User";
+import {IUsersRepository} from "../repositories/IUsersRepository";
 
 interface IRequest {
     id: string;
@@ -10,12 +11,12 @@ interface IRequest {
 class GetUserService {
 
     constructor(
-        @inject("UsersProfileRepository")
-        private usersProfileRepository: IUsersRepository
+        @inject("UsersRepository")
+        private usersRepository: IUsersRepository
     ) {}
 
     async execute({ id }: IRequest): Promise<User> {
-        return await this.usersProfileRepository.findById(id);
+        return await this.usersRepository.findById(id);
     }
 }
 

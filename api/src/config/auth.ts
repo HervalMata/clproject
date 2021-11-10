@@ -1,7 +1,7 @@
 export default {
-    secret_token: "7981bfd87d1b88bec0b2d8c2b8aca8bd",
+    secret_token: "6a819e31a2bcde2ca6d0e459971b6caf",
     expires_in: "30m",
-    secret_refresh_token: "c9cdc04d241d8db4d65e1c4673ea7eb8",
+    secret_refresh_token: "80af0eba4d6eab7eb82565f2a99aee5c",
     expires_in_refresh_token: "8h",
     expires_refresh_token_days: 30
 }

@@ -12,7 +12,10 @@ class GetAllUsersService {
     ) {}
 
     async execute(): Promise<User[]> {
-        return await this.usersRepository.list();
+        const users = await this.usersRepository.list();
+        console.log(JSON.stringify(users));
+        return users;
+
     }
 }
 

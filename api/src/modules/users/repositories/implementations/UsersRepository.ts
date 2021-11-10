@@ -1,6 +1,6 @@
-import {getRepository, Repository } from "typeorm";
-import { ICreateUsersDTO } from "../../dtos/ICreateUsersDTO";
-import { User } from "../../entities/User";
+import {getRepository, Repository} from "typeorm";
+import {ICreateUsersDTO} from "../../dtos/ICreateUsersDTO";
+import {User} from "../../entities/User";
 import {IUsersRepository} from "../IUsersRepository";
 
 class UsersRepository implements IUsersRepository{
