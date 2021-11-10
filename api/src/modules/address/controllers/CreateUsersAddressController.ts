@@ -5,7 +5,8 @@ import { CreateUsersAddressService } from "../services/CreateUsersAddressService
 class CreateUsersAddressController {
     async handle(req: Request, res: Response): Promise<Response> {
         const { id, user_id, type, street,
-            number, postal_code, district, city, state, complement, country } = req.body;
+            number, postal_code, district, city, state, complement } = req.body;
+        const country = "BRA";
         const createUsersAddressService = container.resolve(CreateUsersAddressService);
         await createUsersAddressService.execute({ id, user_id, type, street,
             number, postal_code, district, city, state, complement, country

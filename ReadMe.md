@@ -182,7 +182,7 @@
 
 - [x] 2.1.12 - create route for get users address
 
-2.1.13 - create service UpdateUsersAddressService
+- [x] 2.1.13 - create service UpdateUsersAddressService
 
 2.1.14 - create controller UpdateUsersAddressController
 
