@@ -158,7 +158,7 @@
 
 ### 2 - Address
 
-2.1.1 - Create migration CreateAddress
+- [x] 2.1.1 - Create migration CreateAddress
 
 2.1.2 - Create entity address
 
