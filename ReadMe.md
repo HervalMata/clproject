@@ -172,7 +172,7 @@
 
 - [x] 2.1.7 - create service CreateAddressService
 
-2.1.8 - create controller CreateAddressController
+- [x] 2.1.8 - create controller CreateAddressController
 
 2.1.9 - create routes address routes
 
