@@ -166,7 +166,7 @@
 
 - [x] 2.1.4 - create interface repository IAddressRepository
 
-2.1.5 - create implementation repository AddressRepository
+- [x] 2.1.5 - create implementation repository AddressRepository
 
 2.1.6 - register container typeorm
 
