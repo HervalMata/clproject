@@ -168,7 +168,7 @@
 
 - [x] 2.1.5 - create implementation repository AddressRepository
 
-2.1.6 - register container typeorm
+- [x] 2.1.6 - register container typeorm
 
 2.1.7 - create service CreateAddressService
 

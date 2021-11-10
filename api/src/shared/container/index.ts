@@ -10,6 +10,8 @@ import {IMailProvider} from "./providers/MailProvider/IMailProvider";
 import {EtherealMailProvider} from "./providers/MailProvider/implementations/EtherealMailProvider";
 import {IUsersProfileRepository} from "../../modules/users/repositories/IUsersProfileRepository";
 import {UsersProfileRepository} from "../../modules/users/repositories/implementations/UsersProfileRepository";
+import {IAddressRepository} from "../../modules/address/repositories/IAddressRepository";
+import {AddressRepository} from "../../modules/address/repositories/implementations/AddressRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -34,4 +36,9 @@ container.registerInstance<IMailProvider>(
 container.registerSingleton<IUsersProfileRepository>(
   "UsersProfileRepository",
   UsersProfileRepository
+);
+
+container.registerSingleton<IAddressRepository>(
+    "AddressRepository",
+    AddressRepository
 );
