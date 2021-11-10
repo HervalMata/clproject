@@ -1,17 +1,18 @@
-import { ICreateAddressDTO } from "modules/address/dtos/ICreateAddressDTO";
-import { Address } from "modules/address/entities/Address";
+import { ICreateAddressDTO } from "../../dtos/ICreateAddressDTO";
+import { Address } from "../../entities/Address";
 import {IAddressRepository} from "../IAddressRepository";
 
 class AddressRepositoryInMemory implements IAddressRepository {
-    private address: Address[] = [];
+    address: Address[] = [];
 
-    async create({ id, user_id, type, street,
+    async create({ user_id, type, street,
                      number, postal_code, district, city, state, complement, country}: ICreateAddressDTO): Promise<void> {
         const address = new Address();
         Object.assign(address, {
-            id, user_id, type, street,
+            user_id, type, street,
             number, postal_code, district, city, state, complement, country
         });
+
         this.address.push(address);
     }
 

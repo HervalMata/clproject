@@ -10,10 +10,10 @@ class CreateUsersAddressService {
         private addressRepository: IAddressRepository
     ) {}
 
-    async execute({ id, user_id, type, street,
+    async execute({ user_id, type, street,
                       number, postal_code, district, city, state, complement, country
                   }: ICreateAddressDTO): Promise<void> {
-        await this.addressRepository.create({ id, user_id, type, street,
+        await this.addressRepository.create({ user_id, type, street,
             number, postal_code, district, city, state, complement, country
         });
     }

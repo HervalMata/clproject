@@ -190,7 +190,7 @@
 
 - [x] 2.3.16 - create implementation repository AddressRepositoryInMemory for tests
 
-2.1.17 - create service test CreateAddressService spec
+- [x] 2.1.17 - create service test CreateAddressService spec
 
 2.1.18 - create service test GetUsersAddressService spec
 

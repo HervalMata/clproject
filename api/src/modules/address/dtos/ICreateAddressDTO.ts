@@ -11,7 +11,7 @@ interface ICreateAddressDTO {
     postal_code: string;
     city: string;
     state: string;
-    country: string;
+    country?: string;
 }
 
 export { ICreateAddressDTO };

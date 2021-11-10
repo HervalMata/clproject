@@ -1,7 +1,6 @@
 import { ICreateUsersDTO } from "../../dtos/ICreateUsersDTO";
 import { User } from "../../entities/User";
 import {IUsersRepository} from "../IUsersRepository";
-import { v4 as uuidV4 } from "uuid";
 
 class UsersRepositoryInMemory implements IUsersRepository {
 
