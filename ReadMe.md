@@ -186,7 +186,7 @@
 
 - [x] 2.1.14 - create controller UpdateUsersAddressController
 
-2.1.15 - create route for update users address
+- [x] 2.1.15 - create route for update users address
 
 2.3.16 - create implementation repository AddressRepositoryInMemory for tests
 
