@@ -170,7 +170,7 @@
 
 - [x] 2.1.6 - register container typeorm
 
-2.1.7 - create service CreateAddressService
+- [x] 2.1.7 - create service CreateAddressService
 
 2.1.8 - create controller CreateAddressController
 
