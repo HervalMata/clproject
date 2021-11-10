@@ -188,7 +188,7 @@
 
 - [x] 2.1.15 - create route for update users address
 
-2.3.16 - create implementation repository AddressRepositoryInMemory for tests
+- [x] 2.3.16 - create implementation repository AddressRepositoryInMemory for tests
 
 2.1.17 - create service test CreateAddressService spec
 

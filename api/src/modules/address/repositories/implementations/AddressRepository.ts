@@ -26,8 +26,8 @@ class AddressRepository implements IAddressRepository {
         return await this.repository.findOne({id});
     }
 
-    async findByUserId(user_id: string): Promise<Address> {
-        return await this.repository.findOne({user_id});
+    async findByUserId(user_id: string): Promise<Address[]> {
+        return await this.repository.find({user_id});
     }
 
     async update({id, user_id, type, street,
