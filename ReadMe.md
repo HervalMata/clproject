@@ -174,7 +174,7 @@
 
 - [x] 2.1.8 - create controller CreateAddressController
 
-2.1.9 - create routes address routes
+- [x] 2.1.9 - create routes address routes
 
 2.1.10 - create service GetUsersAddressService
 
