@@ -160,7 +160,7 @@
 
 - [x] 2.1.1 - Create migration CreateAddress
 
-2.1.2 - Create entity address
+- [x] 2.1.2 - Create entity address
 
 2.1.3 - create dto ICreateAddressDTO
 
