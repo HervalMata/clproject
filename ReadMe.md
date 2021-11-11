@@ -210,7 +210,7 @@
 
 - [x] 3.1.6 - register container typeorm
 
-3.1.7 - create service CreateCategoryService
+- [x] 3.1.7 - create service CreateCategoryService
 
 3.1.8 - create controller CreateCategoryController
 
