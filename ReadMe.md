@@ -206,7 +206,7 @@
 
 - [x] 3.1.4 - create interface repository ICategoryRepository
 
-3.1.5 - create implementation repository CategoryRepository
+- [x] 3.1.5 - create implementation repository CategoryRepository
 
 3.1.6 - register container typeorm
 
