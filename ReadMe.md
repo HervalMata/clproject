@@ -242,7 +242,7 @@
 
 - [x] 3.3.22 - create implementation repository CategoryRepositoryInMemory for tests
 
-3.1.23 - create service test CreateCategoryService spec
+- [x] 3.1.23 - create service test CreateCategoryService spec
 
 3.1.24 - create service test GetAllCategoriesService spec
 
