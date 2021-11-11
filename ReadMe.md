@@ -198,7 +198,7 @@
 
 ### 3 - Category
 
-3.1.1 - Create migration CreateCategory
+- [x] 3.1.1 - Create migration CreateCategory
 
 3.1.2 - Create entity category
 
