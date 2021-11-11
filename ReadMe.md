@@ -240,7 +240,7 @@
 
 - [x] 3.1.21 - create route for update active category
 
-3.3.22 - create implementation repository CategoryRepositoryInMemory for tests
+- [x] 3.3.22 - create implementation repository CategoryRepositoryInMemory for tests
 
 3.1.23 - create service test CreateCategoryService spec
 
