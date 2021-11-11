@@ -53,7 +53,6 @@ export class CreateAddress1636507579439 implements MigrationInterface {
                     {
                         name: "country",
                         type: "varchar",
-                        default: "BRA"
                     },
                     {
                         name: "created_at",

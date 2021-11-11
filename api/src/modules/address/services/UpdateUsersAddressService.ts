@@ -27,7 +27,6 @@ class UpdateUsersAddressService {
                       number, postal_code, district, city, state, complement, country
                   }: IRequest): Promise<void> {
         const usersAddress = await this.addressRepository.findById(id);
-        console.log(usersAddress)
         return await this.addressRepository.update({
             id, user_id: usersAddress.user_id, type, street,
             number, postal_code, district, city, state, complement, country
