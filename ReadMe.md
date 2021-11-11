@@ -200,7 +200,7 @@
 
 - [x] 3.1.1 - Create migration CreateCategory
 
-3.1.2 - Create entity category
+- [x] 3.1.2 - Create entity category
 
 3.1.3 - create dto ICreateCategoryDTO
 
