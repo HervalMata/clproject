@@ -194,7 +194,7 @@
 
 - [x] 2.1.18 - create service test GetUsersAddressService spec
 
-2.1.19 - create service test UpdateUsersAddressService spec
+- [x] 2.1.19 - create service test UpdateUsersAddressService spec
 
 ### 3 - Category
 
