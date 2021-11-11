@@ -226,7 +226,7 @@
 
 - [x] 3.1.14 - create controller GetAvailableCategoriesController
 
-3.1.15 - create route for get available categories
+- [x] 3.1.15 - create route for get available categories
 
 3.1.16 - create service GetCategoryService
 
