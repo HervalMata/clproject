@@ -208,7 +208,7 @@
 
 - [x] 3.1.5 - create implementation repository CategoryRepository
 
-3.1.6 - register container typeorm
+- [x] 3.1.6 - register container typeorm
 
 3.1.7 - create service CreateCategoryService
 
