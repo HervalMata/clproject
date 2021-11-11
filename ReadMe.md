@@ -234,7 +234,7 @@
 
 - [x] 3.1.18 - create route for get category
 
-3.1.19 - create service UpdateActiveCategoryService
+- [x] 3.1.19 - create service UpdateActiveCategoryService
 
 3.1.20 - create controller UpdateActiveCategoryController
 

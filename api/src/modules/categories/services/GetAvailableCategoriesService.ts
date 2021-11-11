@@ -6,7 +6,7 @@ import { ICategoryRepository } from "../repositories/ICategoryRepository";
 class GetAvailableCategoriesService {
 
     constructor(
-        @inject("CategoriesRepository")
+        @inject("CategoryRepository")
         private categoryRepository: ICategoryRepository
     ) {
     }
