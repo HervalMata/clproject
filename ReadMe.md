@@ -212,9 +212,9 @@
 
 - [x] 3.1.7 - create service CreateCategoryService
 
-3.1.8 - create controller CreateCategoryController
+- [x] 3.1.8 - create controller CreateCategoryController
 
-3.1.9 - create routes categories routes
+- [x] 3.1.9 - create routes categories routes
 
 3.1.10 - create service GetAllCategoriesService
 
