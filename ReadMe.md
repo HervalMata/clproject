@@ -204,7 +204,7 @@
 
 - [x] 3.1.3 - create dto ICreateCategoryDTO
 
-3.1.4 - create interface repository ICategoryRepository
+- [x] 3.1.4 - create interface repository ICategoryRepository
 
 3.1.5 - create implementation repository CategoryRepository
 
