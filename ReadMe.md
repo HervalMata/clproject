@@ -232,7 +232,7 @@
 
 - [x] 3.1.17 - create controller GetCategoryController
 
-3.1.18 - create route for get category
+- [x] 3.1.18 - create route for get category
 
 3.1.19 - create service UpdateActiveCategoryService
 
