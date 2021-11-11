@@ -238,7 +238,7 @@
 
 - [x] 3.1.20 - create controller UpdateActiveCategoryController
 
-3.1.21 - create route for update active category
+- [x] 3.1.21 - create route for update active category
 
 3.3.22 - create implementation repository CategoryRepositoryInMemory for tests
 
