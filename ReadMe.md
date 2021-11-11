@@ -202,7 +202,7 @@
 
 - [x] 3.1.2 - Create entity category
 
-3.1.3 - create dto ICreateCategoryDTO
+- [x] 3.1.3 - create dto ICreateCategoryDTO
 
 3.1.4 - create interface repository ICategoryRepository
 
