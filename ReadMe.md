@@ -216,33 +216,41 @@
 
 - [x] 3.1.9 - create routes categories routes
 
-3.1.10 - create service GetAllCategoriesService
+- [x] 3.1.10 - create service GetAllCategoriesService
 
 3.1.11 - create controller GetAllCategoriesController
 
 3.1.12 - create route for get categories
 
-3.1.13 - create service GetCategoryService
+3.1.13 - create service GetAvailableCategoriesService
 
-3.1.14 - create controller GetCategoryController
+3.1.14 - create controller GetAvailableCategoriesController
 
-3.1.15 - create route for get category
+3.1.15 - create route for get available categories
 
-3.1.16 - create service UpdateActiveCategoryService
+3.1.16 - create service GetCategoryService
 
-3.1.17 - create controller UpdateActiveCategoryController
+3.1.17 - create controller GetCategoryController
 
-3.1.18 - create route for update active category
+3.1.18 - create route for get category
 
-3.3.19 - create implementation repository CategoryRepositoryInMemory for tests
+3.1.19 - create service UpdateActiveCategoryService
 
-3.1.20 - create service test CreateCategoryService spec
+3.1.20 - create controller UpdateActiveCategoryController
 
-3.1.21 - create service test GetAllCategoriesService spec
+3.1.21 - create route for update active category
 
-3.1.22 - create service test GetCategoryService spec
+3.3.22 - create implementation repository CategoryRepositoryInMemory for tests
 
-3.1.23 - create service test UpdateActiveCategoryService spec
+3.1.23 - create service test CreateCategoryService spec
+
+3.1.24 - create service test GetAllCategoriesService spec
+
+3.1.25 - create service test GetAvailableCategoriesService spec
+
+3.1.26 - create service test GetCategoryService spec
+
+3.1.26 - create service test UpdateActiveCategoryService spec
 
 ### 4 - Colors
 
