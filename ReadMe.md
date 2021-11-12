@@ -272,7 +272,7 @@
 
 - [x] 4.1.9 - create routes colors routes
 
-4.1.10 - create service GetAllColorsService
+- [x] 4.1.10 - create service GetAllColorsService
 
 4.1.11 - create controller GetAllColorsController
 
