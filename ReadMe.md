@@ -284,7 +284,7 @@
 
 - [x] 4.1.15 - create route for get color
 
-4.3.16 - create implementation repository ColorRepositoryInMemory for tests
+- [x] 4.3.16 - create implementation repository ColorRepositoryInMemory for tests
 
 4.1.17 - create service test CreateColorService spec
 
