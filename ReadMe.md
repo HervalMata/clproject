@@ -288,7 +288,7 @@
 
 - [x] 4.1.17 - create service test CreateColorService spec
 
-4.1.18 - create service test GetAllColorsService spec
+- [x] 4.1.18 - create service test GetAllColorsService spec
 
 4.1.19 - create service test GetColorService spec
 
