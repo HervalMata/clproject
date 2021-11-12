@@ -262,7 +262,7 @@
 
 - [x] 4.1.4 - create interface repository IColorRepository
 
-4.1.5 - create implementation repository ColorRepository
+- [x] 4.1.5 - create implementation repository ColorRepository
 
 4.1.6 - register container typeorm
 
