@@ -5,6 +5,7 @@ interface IColorsRepository {
     create(data: ICreateColorDTO): Promise<void>;
     findByName(name: string): Promise<Color>;
     list(): Promise<Color[]>;
+    findByID(id: string): Promise<Color>;
 }
 
 export { IColorsRepository };
