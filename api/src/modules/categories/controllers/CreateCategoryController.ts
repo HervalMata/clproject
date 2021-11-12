@@ -5,6 +5,7 @@ import { CreateCategoryService } from "../services/CreateCategoryService";
 class CreateCategoryController {
     async handle(req: Request, res: Response): Promise<Response> {
         const { name, description } = req.body;
+        console.log("1", name, description)
         const createCategoryService = container.resolve(CreateCategoryService);
         await createCategoryService.execute({ name, description });
         return res.status(201).send();
