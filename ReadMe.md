@@ -308,7 +308,7 @@
 
 - [x] 5.1.7 - create service CreateMaterialService
 
-5.1.8 - create controller CreateMaterialController
+- [x] 5.1.8 - create controller CreateMaterialController
 
 5.1.9 - create routes materials routes
 
