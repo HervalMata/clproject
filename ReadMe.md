@@ -322,7 +322,7 @@
 
 - [x] 5.1.14 - create controller GetMaterialController
 
-5.1.15 - create route for get material
+- [x] 5.1.15 - create route for get material
 
 5.1.16 - create implementation repository MaterialRepositoryInMemory for tests
 
