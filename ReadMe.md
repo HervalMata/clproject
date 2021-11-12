@@ -290,7 +290,7 @@
 
 - [x] 4.1.18 - create service test GetAllColorsService spec
 
-4.1.19 - create service test GetColorService spec
+- [x] 4.1.19 - create service test GetColorService spec
 
 ### 5 - Materials
 
