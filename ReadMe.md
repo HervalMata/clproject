@@ -266,7 +266,7 @@
 
 - [x] 4.1.6 - register container typeorm
 
-4.1.7 - create service CreateColorService
+- [x] 4.1.7 - create service CreateColorService
 
 4.1.8 - create controller CreateColorController
 
