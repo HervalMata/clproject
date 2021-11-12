@@ -258,7 +258,7 @@
 
 - [x] 4.1.2 - Create entity color
 
-4.1.3 - create dto ICreateColorDTO
+- [x] 4.1.3 - create dto ICreateColorDTO
 
 4.1.4 - create interface repository IColorRepository
 
