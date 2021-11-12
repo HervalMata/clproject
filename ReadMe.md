@@ -298,7 +298,7 @@
 
 - [x] 5.1.2 - Create entity material
 
-5.1.3 - create dto ICreateMaterialDTO
+- [x] 5.1.3 - create dto ICreateMaterialDTO
 
 5.1.4 - create interface repository IMaterialRepository
 
