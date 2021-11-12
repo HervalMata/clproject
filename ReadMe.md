@@ -254,7 +254,7 @@
 
 ### 4 - Colors
 
-4.1.1 - Create migration CreateColor
+- [x] 4.1.1 - Create migration CreateColor
 
 4.1.2 - Create entity color
 
