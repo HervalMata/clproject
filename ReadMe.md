@@ -300,7 +300,7 @@
 
 - [x] 5.1.3 - create dto ICreateMaterialDTO
 
-5.1.4 - create interface repository IMaterialRepository
+- [x] 5.1.4 - create interface repository IMaterialRepository
 
 5.1.5 - create implementation repository MaterialRepository
 
