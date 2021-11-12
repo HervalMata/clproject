@@ -1,19 +1,20 @@
 import {CategoryRepositoryInMemory} from "../repositories/in-memory/CategoryRepositoryInMemory";
 import {CreateCategoryService} from "./CreateCategoryService";
-import {GetAvailableCategoriesService} from "./GetAvailableCategoriesService";
+import {GetCategoryService} from "./GetCategoryService";
+import {Category} from "../entities/Category";
 
 let categoryRepositoryInMemory: CategoryRepositoryInMemory;
 let createCategoryService: CreateCategoryService;
-let getAvailableCategoriesService: GetAvailableCategoriesService;
+let getCategoryService: GetCategoryService;
 
 describe('Get Category',  () => {
-    beforeEach( () => {
+    beforeEach(() =>{
         categoryRepositoryInMemory = new CategoryRepositoryInMemory();
         createCategoryService = new CreateCategoryService(categoryRepositoryInMemory);
-        getAvailableCategoriesService = new GetAvailableCategoriesService(categoryRepositoryInMemory);
+        getCategoryService = new GetCategoryService(categoryRepositoryInMemory);
     });
 
-    it('should be able to list available categories', async () => {
+    it('Should be able to get an category', async () => {
         await createCategoryService.execute({
             name: "Category Test",
             description: "Description of category test"
@@ -23,17 +24,17 @@ describe('Get Category',  () => {
 
         const id = category.id;
 
-        await categoryRepositoryInMemory.activate(id,  true);
+        const getCategory = await getCategoryService.execute({id});
 
-        const available = await getAvailableCategoriesService.execute();
-
-        expect(available).toHaveLength(1);
+        expect(getCategory).toBeInstanceOf(Category);
     });
 
-    it('should not be able to list available categories non existent', async () => {
+    it('Should not be able to get an category', async () => {
 
-        const available = await getAvailableCategoriesService.execute();
+        const id = null;
 
-        expect(available).toHaveLength(0);
+        const getCategory = await getCategoryService.execute({id});
+
+        expect(getCategory).not.toBeInstanceOf(Category);
     });
 });

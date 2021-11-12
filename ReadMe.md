@@ -248,7 +248,7 @@
 
 - [x] 3.1.25 - create service test GetAvailableCategoriesService spec
 
-3.1.26 - create service test GetCategoryService spec
+- [x] 3.1.26 - create service test GetCategoryService spec
 
 3.1.26 - create service test UpdateActiveCategoryService spec
 
