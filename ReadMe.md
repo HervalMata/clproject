@@ -256,7 +256,7 @@
 
 - [x] 4.1.1 - Create migration CreateColor
 
-4.1.2 - Create entity color
+- [x] 4.1.2 - Create entity color
 
 4.1.3 - create dto ICreateColorDTO
 
