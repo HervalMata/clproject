@@ -306,7 +306,7 @@
 
 - [x] 5.1.6 - register container typeorm
 
-5.1.7 - create service CreateMaterialService
+- [x] 5.1.7 - create service CreateMaterialService
 
 5.1.8 - create controller CreateMaterialController
 
