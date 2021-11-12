@@ -280,7 +280,7 @@
 
 - [x] 4.1.13 - create service GetColorService
 
-4.1.14 - create controller GetColorController
+- [x] 4.1.14 - create controller GetColorController
 
 4.1.15 - create route for get color
 
