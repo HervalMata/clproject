@@ -282,7 +282,7 @@
 
 - [x] 4.1.14 - create controller GetColorController
 
-4.1.15 - create route for get color
+- [x] 4.1.15 - create route for get color
 
 4.3.16 - create implementation repository ColorRepositoryInMemory for tests
 
