@@ -286,7 +286,7 @@
 
 - [x] 4.3.16 - create implementation repository ColorRepositoryInMemory for tests
 
-4.1.17 - create service test CreateColorService spec
+- [x] 4.1.17 - create service test CreateColorService spec
 
 4.1.18 - create service test GetAllColorsService spec
 
