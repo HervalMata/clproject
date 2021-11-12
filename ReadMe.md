@@ -296,7 +296,7 @@
 
 - [x] 5.1.1 - Create migration CreateMaterial
 
-5.1.2 - Create entity material
+- [x] 5.1.2 - Create entity material
 
 5.1.3 - create dto ICreateMaterialDTO
 
