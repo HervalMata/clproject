@@ -304,7 +304,7 @@
 
 - [x] 5.1.5 - create implementation repository MaterialRepository
 
-5.1.6 - register container typeorm
+- [x] 5.1.6 - register container typeorm
 
 5.1.7 - create service CreateMaterialService
 

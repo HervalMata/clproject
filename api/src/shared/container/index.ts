@@ -16,6 +16,8 @@ import {ICategoryRepository} from "../../modules/categories/repositories/ICatego
 import {CategoryRepository} from "../../modules/categories/repositories/implementations/CategoryRepository";
 import {IColorsRepository} from "../../modules/colors/repositories/IColorsRepository";
 import {ColorsRepository} from "../../modules/colors/repositories/implementations/ColorsRepository";
+import {IMaterialsRepository} from "../../modules/materials/repositories/IMaterialsRepository";
+import {MaterialsRepository} from "../../modules/materials/repositories/implemntations/MaterialsRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -55,4 +57,9 @@ container.registerSingleton<ICategoryRepository>(
 container.registerSingleton<IColorsRepository>(
     "ColorsRepository",
     ColorsRepository
+);
+
+container.registerSingleton<IMaterialsRepository>(
+    "MaterialsRepository",
+    MaterialsRepository
 );
