@@ -264,7 +264,7 @@
 
 - [x] 4.1.5 - create implementation repository ColorRepository
 
-4.1.6 - register container typeorm
+- [x] 4.1.6 - register container typeorm
 
 4.1.7 - create service CreateColorService
 

@@ -14,6 +14,8 @@ import {IAddressRepository} from "../../modules/address/repositories/IAddressRep
 import {AddressRepository} from "../../modules/address/repositories/implementations/AddressRepository";
 import {ICategoryRepository} from "../../modules/categories/repositories/ICategoryRepository";
 import {CategoryRepository} from "../../modules/categories/repositories/implementations/CategoryRepository";
+import {IColorsRepository} from "../../modules/colors/repositories/IColorsRepository";
+import {ColorsRepository} from "../../modules/colors/repositories/implementations/ColorsRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -48,4 +50,9 @@ container.registerSingleton<IAddressRepository>(
 container.registerSingleton<ICategoryRepository>(
     "CategoryRepository",
     CategoryRepository
+);
+
+container.registerSingleton<IColorsRepository>(
+    "ColorsRepository",
+    ColorsRepository
 );
