@@ -250,7 +250,7 @@
 
 - [x] 3.1.26 - create service test GetCategoryService spec
 
-3.1.26 - create service test UpdateActiveCategoryService spec
+- [x] 3.1.26 - create service test UpdateActiveCategoryService spec
 
 ### 4 - Colors
 
