@@ -314,7 +314,7 @@
 
 - [x] 5.1.10 - create service GetAllMaterialsService
 
-5.1.11 - create controller GetAllMaterialsController
+- [x] 5.1.11 - create controller GetAllMaterialsController
 
 5.1.12 - create route for get materials
 
