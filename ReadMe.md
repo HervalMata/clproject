@@ -294,7 +294,7 @@
 
 ### 5 - Materials
 
-5.1.1 - Create migration CreateMaterial
+- [x] 5.1.1 - Create migration CreateMaterial
 
 5.1.2 - Create entity material
 
