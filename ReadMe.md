@@ -260,7 +260,7 @@
 
 - [x] 4.1.3 - create dto ICreateColorDTO
 
-4.1.4 - create interface repository IColorRepository
+- [x] 4.1.4 - create interface repository IColorRepository
 
 4.1.5 - create implementation repository ColorRepository
 
