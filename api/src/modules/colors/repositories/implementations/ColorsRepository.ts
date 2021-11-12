@@ -1,5 +1,5 @@
-import { ICreateColorDTO } from "modules/colors/dtos/ICreateColorDTO";
-import { Color } from "modules/colors/entities/Color";
+import {ICreateColorDTO} from "../../dtos/ICreateColorDTO";
+import {Color} from "../../entities/Color";
 import {IColorsRepository} from "../IColorsRepository";
 import {getRepository, Repository} from "typeorm";
 
