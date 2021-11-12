@@ -312,7 +312,7 @@
 
 - [x] 5.1.9 - create routes materials routes
 
-5.1.10 - create service GetAllMaterialsService
+- [x] 5.1.10 - create service GetAllMaterialsService
 
 5.1.11 - create controller GetAllMaterialsController
 
