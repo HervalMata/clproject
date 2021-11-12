@@ -268,7 +268,7 @@
 
 - [x] 4.1.7 - create service CreateColorService
 
-4.1.8 - create controller CreateColorController
+- [x] 4.1.8 - create controller CreateColorController
 
 4.1.9 - create routes colors routes
 
