@@ -3,7 +3,7 @@ import { IColorsRepository } from "../repositories/IColorsRepository";
 import {Color} from "../entities/Color";
 
 @injectable()
-class GetAllCategoriesService {
+class GetAllColorsService {
 
     constructor(
         @inject("ColorsRepository")
@@ -15,4 +15,4 @@ class GetAllCategoriesService {
     }
 }
 
-export { GetAllCategoriesService };
+export { GetAllColorsService };

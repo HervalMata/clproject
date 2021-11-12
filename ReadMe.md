@@ -216,9 +216,9 @@
 
 - [x] 3.1.9 - create routes categories routes
 
-- [x] 3.1.10 - create service GetAllCategoriesService
+- [x] 3.1.10 - create service GetAllColorsService
 
-- [x] 3.1.11 - create controller GetAllCategoriesController
+- [x] 3.1.11 - create controller GetAllColorsController
 
 - [x] 3.1.12 - create route for get categories
 
@@ -244,7 +244,7 @@
 
 - [x] 3.1.23 - create service test CreateCategoryService spec
 
-- [x] 3.1.24 - create service test GetAllCategoriesService spec
+- [x] 3.1.24 - create service test GetAllColorsService spec
 
 - [x] 3.1.25 - create service test GetAvailableCategoriesService spec
 
@@ -274,7 +274,7 @@
 
 - [x] 4.1.10 - create service GetAllColorsService
 
-4.1.11 - create controller GetAllColorsController
+- [x] 4.1.11 - create controller GetAllColorsController
 
 4.1.12 - create route for get colors
 
