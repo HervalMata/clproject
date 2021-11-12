@@ -244,7 +244,7 @@
 
 - [x] 3.1.23 - create service test CreateCategoryService spec
 
-3.1.24 - create service test GetAllCategoriesService spec
+- [x] 3.1.24 - create service test GetAllCategoriesService spec
 
 3.1.25 - create service test GetAvailableCategoriesService spec
 
