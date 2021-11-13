@@ -360,7 +360,7 @@
 
 - [x] 6.1.13 - create service CreateProductService
 
-6.1.14 - create controller CreateProductController
+- [x] 6.1.14 - create controller CreateProductController
 
 6.1.15 - create routes products routes
 
