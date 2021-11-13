@@ -386,7 +386,7 @@
 
 - [x] 6.1.26 - create controller GetProductsByCategoryController
 
-6.1.27 - create route for get products by category
+- [x] 6.1.27 - create route for get products by category
 
 6.1.28 - create service CreateColorsProductService
 
