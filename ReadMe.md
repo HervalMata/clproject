@@ -374,7 +374,7 @@
 
 - [x] 6.1.20 - create controller GetProductController
 
-6.1.21 - create route for get product
+- [x] 6.1.21 - create route for get product
 
 6.1.22 - create service GetAvailableProductsService
 
