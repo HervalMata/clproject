@@ -330,7 +330,7 @@
 
 - [x] 5.1.18 - create service test GetAllMaterialsService spec
 
-5.1.19 - create service test GetMaterialService spec
+- [x] 5.1.19 - create service test GetMaterialService spec
 
 ### 6 - Products
 
