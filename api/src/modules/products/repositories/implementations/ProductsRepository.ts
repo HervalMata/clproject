@@ -107,6 +107,10 @@ class ProductsRepository implements IProductsRepository {
         return await this.repository.find({is_featured});
     }
 
+    async findOffer(is_offer: boolean): Promise<Product[]> {
+        return await this.repository.find({ is_offer });
+    }
+
 }
 
 export { ProductsRepository };
