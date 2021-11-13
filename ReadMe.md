@@ -336,7 +336,7 @@
 
 - [x] 6.1.1 - Create migration CreateProduct
 
-6.1.2 - Create migration CreateColorsProduct
+- [x] 6.1.2 - Create migration CreateColorsProduct
 
 6.1.3 - Create migration CreateMaterialsProduct
 
