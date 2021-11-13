@@ -6,18 +6,21 @@ import {GetAllProductsController} from "../../../../modules/products/controllers
 import {GetProductController} from "../../../../modules/products/controllers/GetProductController";
 import {GetAvailableProductsController} from "../../../../modules/products/controllers/GetAvailableProductsController";
 import {GetProductsByCategoryController} from "../../../../modules/products/controllers/GetProductsByCategoryController";
+import {GetFeaturedProductsController} from "../../../../modules/products/controllers/GetFeaturedProductsController";
 
 const productsRoutes = Router();
 const createProductController = new CreateProductController();
 const getAllProductsController = new GetAllProductsController();
 const getProductController = new GetProductController();
 const getAvailableProductsController = new GetAvailableProductsController();
-const getProductsByCategory = new GetProductsByCategoryController();
+const getProductsByCategoryController = new GetProductsByCategoryController();
+const getFeaturedProductsController = new GetFeaturedProductsController();
 
 productsRoutes.post("/", ensureAuthenticated, ensureAdminOrSeller, createProductController.handle);
 productsRoutes.get("/", ensureAuthenticated, ensureAdminOrSeller, getAllProductsController.handle);
 productsRoutes.get("/:id", getProductController.handle);
 productsRoutes.get("/available", getAvailableProductsController.handle);
-productsRoutes.get("/:category_id", getProductsByCategory.handle);
+productsRoutes.get("/:category_id", getProductsByCategoryController.handle);
+productsRoutes.get("/featured", getFeaturedProductsController.handle);
 
 export { productsRoutes };
