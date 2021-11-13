@@ -12,8 +12,8 @@ class MaterialsRepository implements IMaterialsRepository {
 
     async create(data: ICreateMaterialsDTO): Promise<void> {
         const { id, name } = data;
-        const color = this.repository.create({ id, name });
-        await this.repository.save(color);
+        const material = this.repository.create({ id, name });
+        await this.repository.save(material);
     }
 
     async findByID(id: string): Promise<Material> {
