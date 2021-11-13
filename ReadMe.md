@@ -334,107 +334,119 @@
 
 ### 6 - Products
 
-6.1.1 - Create migration CreateProduct
+- [x] 6.1.1 - Create migration CreateProduct
 
-6.1.2 - Create entity product
+6.1.2 - Create migration CreateColorsProduct
 
-6.1.3 - create dto ICreateProductDTO
+6.1.3 - Create migration CreateMaterialsProduct
 
-6.1.4 - create interface repository IProductRepository
+6.1.4 - Create migration CreateProductImages
 
-6.1.5 - create implementation repository ProductRepository
+6.1.5 - Create entity product
 
-6.1.6 - register container typeorm
+6.1.6 - Create entity product images
 
-6.1.7 - create service CreateProductService
+6.1.7 - create dto ICreateProductDTO
 
-6.1.8 - create controller CreateProductController
+6.1.8 - create interface repository IProductRepository
 
-6.1.9 - create routes products routes
+6.1.9 - create interface repository IProductImagesRepository
 
-6.1.10 - create service GetAllProductsService
+6.1.10 - create implementation repository ProductRepository
 
-6.1.11 - create controller GetAllProductsController
+6.1.11 - create implementation repository ProductImagesRepository
 
-6.1.12 - create route for get products
+6.1.12 - register container typeorm
 
-6.1.13 - create service GetProductService
+6.1.13 - create service CreateProductService
 
-6.1.14 - create controller GetProductController
+6.1.14 - create controller CreateProductController
 
-6.1.15 - create route for get product
+6.1.15 - create routes products routes
 
-6.1.16 - create service GetAvailableProductsService
+6.1.16 - create service GetAllProductsService
 
-6.1.17 - create controller GetAvailableProductsController
+6.1.17 - create controller GetAllProductsController
 
-6.1.18 - create route for get available products
+6.1.18 - create route for get products
 
-6.1.19 - create service GetProductsByCategoryService
+6.1.19 - create service GetProductService
 
-6.1.20 - create controller GetProductsByCategoryController
+6.1.20 - create controller GetProductController
 
-6.1.21 - create route for get products by category
+6.1.21 - create route for get product
 
-6.1.22 - create service CreateColorsProductService
+6.1.22 - create service GetAvailableProductsService
 
-6.1.23 - create controller CreateColorsProductController
+6.1.23 - create controller GetAvailableProductsController
 
-6.1.24 - create routes colors products
+6.1.24 - create route for get available products
 
-6.1.22 - create service CreateMaterialsProductService
+6.1.25 - create service GetProductsByCategoryService
 
-6.1.23 - create controller CreateMaterialsProductController
+6.1.26 - create controller GetProductsByCategoryController
 
-6.1.24 - create routes materials products
+6.1.27 - create route for get products by category
 
-6.1.25 - create service UpdateProductService
+6.1.28 - create service CreateColorsProductService
 
-6.1.26 - create controller UpdateProductController
+6.1.29 - create controller CreateColorsProductController
 
-6.1.27 - create route for update product
+6.1.30 - create routes colors products
 
-6.1.25 - create service UpdateAvailableProductService
+6.1.31 - create service CreateMaterialsProductService
 
-6.1.26 - create controller UpdateAvailableProductController
+6.1.32 - create controller CreateMaterialsProductController
 
-6.1.27 - create route for update available product
+6.1.33 - create routes materials products
 
-6.1.28 - create service UpdateOffersProductService
+6.1.34 - create service UpdateProductService
 
-6.1.29 - create controller UpdateOffersProductController
+6.1.35 - create controller UpdateProductController
 
-6.1.30 - create route for update offers product
+6.1.36 - create route for update product
 
-6.1.31 - create service UpdateFeaturedProductService
+6.1.37 - create service UpdateAvailableProductService
 
-6.1.32 - create controller UpdateFeaturedProductController
+6.1.38 - create controller UpdateAvailableProductController
 
-6.1.33 - create route for update featured product
+6.1.39 - create route for update available product
 
-6.1.34 - create implementation repository ProductRepositoryInMemory for tests
+6.1.40 - create service UpdateOffersProductService
 
-6.1.35 - create service test CreateProductService spec
+6.1.41 - create controller UpdateOffersProductController
 
-6.1.36 - create service test GetAllProductsService spec
+6.1.42 - create route for update offers product
 
-6.1.37 - create service test GetProductService spec
+6.1.43 - create service UpdateFeaturedProductService
 
-6.1.38 - create service test GetAvailableProductService spec
+6.1.44 - create controller UpdateFeaturedProductController
 
-6.1.39 - create service test GetProductsByCategoryService spec
+6.1.45 - create route for update featured product
 
-6.1.40 - create service test UpdateProductService spec
+6.1.46 - create implementation repository ProductRepositoryInMemory for tests
 
-6.1.41 - create service test UpdateAvailableProductService spec
+6.1.47 - create service test CreateProductService spec
 
-6.1.41 - create service test UpdateOffersProductService spec
+6.1.48 - create service test GetAllProductsService spec
 
-6.1.42 - create service test UpdateFeaturedProductService spec
+6.1.49 - create service test GetProductService spec
 
-6.1.43 - create service test CreateColorsProductService spec
+6.1.50 - create service test GetAvailableProductService spec
 
-6.1.44 - create service test CreateMaterialsProductService spec
+6.1.51 - create service test GetProductsByCategoryService spec
+
+6.1.52 - create service test UpdateProductService spec
+
+6.1.53 - create service test UpdateAvailableProductService spec
+
+6.1.54 - create service test UpdateOffersProductService spec
+
+6.1.55 - create service test UpdateFeaturedProductService spec
+
+6.1.56 - create service test CreateColorsProductService spec
+
+6.1.57 - create service test CreateMaterialsProductService spec
 
 ### 7 - Photo Products
 
