@@ -380,7 +380,7 @@
 
 - [x] 6.1.23 - create controller GetAvailableProductsController
 
-6.1.24 - create route for get available products
+- [x] 6.1.24 - create route for get available products
 
 6.1.25 - create service GetProductsByCategoryService
 
