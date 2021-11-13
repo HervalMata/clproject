@@ -18,6 +18,10 @@ import {IColorsRepository} from "../../modules/colors/repositories/IColorsReposi
 import {ColorsRepository} from "../../modules/colors/repositories/implementations/ColorsRepository";
 import {IMaterialsRepository} from "../../modules/materials/repositories/IMaterialsRepository";
 import {MaterialsRepository} from "../../modules/materials/repositories/implemntations/MaterialsRepository";
+import {IProductsRepository} from "../../modules/products/repositories/IProductsRepository";
+import {ProductsRepository} from "../../modules/products/repositories/implementations/ProductsRepository";
+import {IProductImagesRepository} from "../../modules/products/repositories/IProductImagesRepository";
+import {ProductImagesRepository} from "../../modules/products/repositories/implementations/ProductImagesRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -62,4 +66,14 @@ container.registerSingleton<IColorsRepository>(
 container.registerSingleton<IMaterialsRepository>(
     "MaterialsRepository",
     MaterialsRepository
+);
+
+container.registerSingleton<IProductsRepository>(
+    "ProductsRepository",
+    ProductsRepository
+);
+
+container.registerSingleton<IProductImagesRepository>(
+    "ProductImagesRepository",
+    ProductImagesRepository
 );
