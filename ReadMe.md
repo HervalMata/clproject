@@ -328,7 +328,7 @@
 
 - [x] 5.1.17 - create service test CreateMaterialService spec
 
-5.1.18 - create service test GetAllMaterialsService spec
+- [x] 5.1.18 - create service test GetAllMaterialsService spec
 
 5.1.19 - create service test GetMaterialService spec
 
