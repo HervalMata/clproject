@@ -358,7 +358,7 @@
 
 - [x] 6.1.12 - register container typeorm
 
-6.1.13 - create service CreateProductService
+- [x] 6.1.13 - create service CreateProductService
 
 6.1.14 - create controller CreateProductController
 
