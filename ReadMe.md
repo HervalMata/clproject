@@ -340,7 +340,7 @@
 
 - [x] 6.1.3 - Create migration CreateMaterialsProduct
 
-6.1.4 - Create migration CreateProductImages
+- [x] 6.1.4 - Create migration CreateProductImages
 
 6.1.5 - Create entity product
 
