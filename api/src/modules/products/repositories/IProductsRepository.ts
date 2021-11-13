@@ -10,6 +10,7 @@ interface IProductsRepository {
     updateAvailability(product_id: string, availability: boolean): Promise<void>;
     updateStock(product_id: string, stock: number): Promise<void>;
     updatePrice(product_id: string, price: number): Promise<void>;
+    updateFeatured(product_id: string, featured: boolean): Promise<void>;
     updateOffer(product_id: string, isOffer: boolean, discount: number): Promise<void>;
     update(data: ICreateProductDTO): Promise<void>;
     list(): Promise<Product[]>;
