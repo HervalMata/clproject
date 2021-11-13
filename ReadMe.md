@@ -324,7 +324,7 @@
 
 - [x] 5.1.15 - create route for get material
 
-5.1.16 - create implementation repository MaterialRepositoryInMemory for tests
+- [x] 5.1.16 - create implementation repository MaterialRepositoryInMemory for tests
 
 5.1.17 - create service test CreateMaterialService spec
 
