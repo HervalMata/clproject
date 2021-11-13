@@ -6,6 +6,7 @@ interface IColorsRepository {
     findByName(name: string): Promise<Color>;
     list(): Promise<Color[]>;
     findByID(id: string): Promise<Color>;
+    findByIds(ids: string[]): Promise<Color[]>;
 }
 
 export { IColorsRepository };

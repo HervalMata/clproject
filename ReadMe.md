@@ -400,7 +400,7 @@
 
 - [x] 6.1.33 - create route for get products offer
 
-6.1.34 - create service CreateColorsProductService
+- [x] 6.1.34 - create service CreateColorsProductService
 
 6.1.35 - create controller CreateColorsProductController
 

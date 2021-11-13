@@ -28,6 +28,10 @@ class ColorsRepository implements IColorsRepository {
         return await this.repository.findOne(id);
     }
 
+    async findByIds(ids: string[]) {
+        const colors = await this.repository.findByIds(ids);
+        return colors;
+    }
 }
 
 export { ColorsRepository };
