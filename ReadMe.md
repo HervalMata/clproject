@@ -390,7 +390,7 @@
 
 - [x] 6.1.28 - create service GetFeaturedProductsService
 
-6.1.29 - create controller GetFeaturedProductsController
+- [x] 6.1.29 - create controller GetFeaturedProductsController
 
 6.1.30 - create route for get products featured
 
