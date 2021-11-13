@@ -326,7 +326,7 @@
 
 - [x] 5.1.16 - create implementation repository MaterialRepositoryInMemory for tests
 
-5.1.17 - create service test CreateMaterialService spec
+- [x] 5.1.17 - create service test CreateMaterialService spec
 
 5.1.18 - create service test GetAllMaterialsService spec
 
