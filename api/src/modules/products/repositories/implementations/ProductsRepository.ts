@@ -35,9 +35,9 @@ class ProductsRepository implements IProductsRepository {
         return await this.repository.findOne(id);
     }
 
-    async findByIdAndAvailability(id: string, availability: boolean): Promise<Product> {
+    async findByIdAndAvailability(id: string, available: boolean): Promise<Product> {
         return await this.repository.findOne({
-            where: [{ id: id }, {availability: true}]
+            where: [{ id: id }, {available: true}]
         });
     }
 
@@ -63,10 +63,10 @@ class ProductsRepository implements IProductsRepository {
             .setParameters({ id }).execute();
     }
 
-    async updateAvailability(product_id: string, availability: boolean): Promise<void> {
+    async updateAvailability(product_id: string, available: boolean): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
-            .set({ available: availability, })
+            .set({ available: available, })
             .where("id = :product_id")
             .setParameters({ product_id }).execute();
     }
@@ -101,6 +101,10 @@ class ProductsRepository implements IProductsRepository {
             .set({ is_featured:featured, })
             .where("id = :product_id")
             .setParameters({ product_id }).execute();
+    }
+
+    async findFeatured(is_featured: boolean): Promise<Product[]> {
+        return await this.repository.find({is_featured});
     }
 
 }

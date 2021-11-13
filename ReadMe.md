@@ -388,89 +388,77 @@
 
 - [x] 6.1.27 - create route for get products by category
 
-6.1.28 - create service CreateColorsProductService
+- [x] 6.1.28 - create service GetFeaturedProductsService
 
-6.1.29 - create controller CreateColorsProductController
+6.1.29 - create controller GetFeaturedProductsController
 
-6.1.30 - create routes colors products
+6.1.30 - create route for get products featured
 
-6.1.31 - create service CreateMaterialsProductService
+6.1.31 - create service GetOfferProductsService
 
-6.1.32 - create controller CreateMaterialsProductController
+6.1.32 - create controller GetOfferProductsController
 
-6.1.33 - create routes materials products
+6.1.33 - create route for get products offer
 
-6.1.34 - create service UpdateProductService
+6.1.34 - create service CreateColorsProductService
 
-6.1.35 - create controller UpdateProductController
+6.1.35 - create controller CreateColorsProductController
 
-6.1.36 - create route for update product
+6.1.36 - create routes colors products
 
-6.1.37 - create service UpdateAvailableProductService
+6.1.37 - create service CreateMaterialsProductService
 
-6.1.38 - create controller UpdateAvailableProductController
+6.1.38 - create controller CreateMaterialsProductController
 
-6.1.39 - create route for update available product
+6.1.39 - create routes materials products
 
-6.1.40 - create service UpdateOffersProductService
+6.1.40 - create service UpdateProductService
 
-6.1.41 - create controller UpdateOffersProductController
+6.1.41 - create controller UpdateProductController
 
-6.1.42 - create route for update offers product
+6.1.42 - create route for update product
 
-6.1.43 - create service UpdateFeaturedProductService
+6.1.43 - create service UpdateAvailableProductService
 
-6.1.44 - create controller UpdateFeaturedProductController
+6.1.44 - create controller UpdateAvailableProductController
 
-6.1.45 - create route for update featured product
+6.1.45 - create route for update available product
 
-6.1.46 - create implementation repository ProductRepositoryInMemory for tests
+6.1.46 - create service UpdateOffersProductService
 
-6.1.47 - create service test CreateProductService spec
+6.1.47 - create controller UpdateOffersProductController
 
-6.1.48 - create service test GetAllProductsService spec
+6.1.48 - create route for update offers product
 
-6.1.49 - create service test GetProductService spec
+6.1.49 - create service UpdateFeaturedProductService
 
-6.1.50 - create service test GetAvailableProductsService spec
+6.1.50 - create controller UpdateFeaturedProductController
 
-6.1.51 - create service test GetProductsByCategoryService spec
+6.1.51 - create route for update featured product
 
-6.1.52 - create service test UpdateProductService spec
+6.1.52 - create implementation repository ProductRepositoryInMemory for tests
 
-6.1.53 - create service test UpdateAvailableProductService spec
+6.1.53 - create service test CreateProductService spec
 
-6.1.54 - create service test UpdateOffersProductService spec
+6.1.54 - create service test GetAllProductsService spec
 
-6.1.55 - create service test UpdateFeaturedProductService spec
+6.1.55 - create service test GetProductService spec
 
-6.1.56 - create service test CreateColorsProductService spec
+6.1.56 - create service test GetAvailableProductsService spec
 
-6.1.57 - create service test CreateMaterialsProductService spec
+6.1.57 - create service test GetProductsByCategoryService spec
 
-### 7 - Photo Products
+6.1.58 - create service test UpdateProductService spec
 
-7.1.1 - Create migration CreateProductImages
+6.1.59 - create service test UpdateAvailableProductService spec
 
-7.1.2 - Create entity product images
+6.1.60 - create service test UpdateOffersProductService spec
 
-7.1.3 - create interface repository IProductImagesRepository
+6.1.61 - create service test UpdateFeaturedProductService spec
 
-7.1.4 - create implementation repository ProductImagesRepository
+6.1.62 - create service test CreateColorsProductService spec
 
-7.1.5 - register container typeorm
-
-7.1.6 - create service UploadProductImagesService
-
-7.1.7 - create controller UploadProductImagesController
-
-7.1.8 - create route for upload product images
-
-7.1.9 - create utils image
-
-7.1.10 - create implementation repository ProductImagesRepositoryInMemory for tests
-
-7.1.11 - create service test UploadProductImagesService spec
+6.1.63 - create service test CreateMaterialsProductService spec
 
 ### 8 - Reviews
 
