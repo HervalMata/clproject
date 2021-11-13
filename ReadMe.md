@@ -362,7 +362,7 @@
 
 - [x] 6.1.14 - create controller CreateProductController
 
-6.1.15 - create routes products routes
+- [x] 6.1.15 - create routes products routes
 
 6.1.16 - create service GetAllProductsService
 
