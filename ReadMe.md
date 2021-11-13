@@ -346,7 +346,7 @@
 
 - [x] 6.1.6 - Create entity product images
 
-6.1.7 - create dto ICreateProductDTO
+- [x] 6.1.7 - create dto ICreateProductDTO
 
 6.1.8 - create interface repository IProductRepository
 
