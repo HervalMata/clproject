@@ -382,7 +382,7 @@
 
 - [x] 6.1.24 - create route for get available products
 
-6.1.25 - create service GetProductsByCategoryService
+- [x] 6.1.25 - create service GetProductsByCategoryService
 
 6.1.26 - create controller GetProductsByCategoryController
 
