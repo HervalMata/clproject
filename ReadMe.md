@@ -378,7 +378,7 @@
 
 - [x] 6.1.22 - create service GetAvailableProductsService
 
-6.1.23 - create controller GetAvailableProductsController
+- [x] 6.1.23 - create controller GetAvailableProductsController
 
 6.1.24 - create route for get available products
 
@@ -432,7 +432,7 @@
 
 6.1.49 - create service test GetProductService spec
 
-6.1.50 - create service test GetAvailableProductService spec
+6.1.50 - create service test GetAvailableProductsService spec
 
 6.1.51 - create service test GetProductsByCategoryService spec
 

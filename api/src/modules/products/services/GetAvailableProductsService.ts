@@ -8,7 +8,7 @@ interface IRequest {
 }
 
 @injectable()
-class GetAvailableProductService {
+class GetAvailableProductsService {
 
     constructor(
         @inject("ProductsRepository")
@@ -20,4 +20,4 @@ class GetAvailableProductService {
     }
 }
 
-export { GetAvailableProductService };
+export { GetAvailableProductsService };
