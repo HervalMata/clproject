@@ -354,7 +354,7 @@
 
 - [x] 6.1.10 - create implementation repository ProductRepository
 
-6.1.11 - create implementation repository ProductImagesRepository
+- [x] 6.1.11 - create implementation repository ProductImagesRepository
 
 6.1.12 - register container typeorm
 
