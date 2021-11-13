@@ -344,7 +344,7 @@
 
 - [x] 6.1.5 - Create entity product
 
-6.1.6 - Create entity product images
+- [x] 6.1.6 - Create entity product images
 
 6.1.7 - create dto ICreateProductDTO
 
