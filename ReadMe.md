@@ -350,7 +350,7 @@
 
 - [x] 6.1.8 - create interface repository IProductRepository
 
-6.1.9 - create interface repository IProductImagesRepository
+- [x] 6.1.9 - create interface repository IProductImagesRepository
 
 6.1.10 - create implementation repository ProductRepository
 
