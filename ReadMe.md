@@ -472,7 +472,7 @@
 
 - [x] 6.1.69 - create service test GetFeaturedProductsService spec
 
-6.1.70 - create service test UpdateProductService spec
+- [x] 6.1.70 - create service test UpdateProductService spec
 
 6.1.71 - create service test UpdateAvailableProductsService spec
 
