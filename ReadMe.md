@@ -450,7 +450,7 @@
 
 - [x] 6.1.58 - create service CreateImagesProductService
 
-6.1.59 - create controller CreateImagesProductController
+- [x] 6.1.59 - create controller CreateImagesProductController
 
 6.1.60 - create route for add product images
 
