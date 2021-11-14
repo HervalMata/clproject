@@ -432,7 +432,7 @@
 
 - [x] 6.1.49 - create service UpdateFeaturedProductService
 
-6.1.50 - create controller UpdateFeaturedProductController
+- [x] 6.1.50 - create controller UpdateFeaturedProductController
 
 6.1.51 - create route for update featured product
 
