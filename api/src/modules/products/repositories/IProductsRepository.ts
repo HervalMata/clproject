@@ -12,7 +12,7 @@ interface IProductsRepository {
     updatePrice(product_id: string, price: number): Promise<void>;
     updateFeatured(product_id: string, featured: boolean): Promise<void>;
     updateOffer(product_id: string, isOffer: boolean, offer_price: number): Promise<void>;
-    update(data: ICreateProductDTO): Promise<void>;
+    update(id: string, name: string, description: string): Promise<void>;
     list(): Promise<Product[]>;
     findByIdAndAvailability(id: string, available: boolean): Promise<Product>;
     findFeatured(is_featured: boolean): Promise<Product[]>;

@@ -412,7 +412,7 @@
 
 - [x] 6.1.39 - create routes materials products
 
-6.1.40 - create service UpdateProductService
+- [x] 6.1.40 - create service UpdateProductService
 
 6.1.41 - create controller UpdateProductController
 

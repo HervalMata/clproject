@@ -55,7 +55,7 @@ class ProductsRepository implements IProductsRepository {
         return await this.repository.find();
     }
 
-    async update({id, name, description}: ICreateProductDTO): Promise<void> {
+    async update(id, name, description): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
             .set({ name: name, description: description })
