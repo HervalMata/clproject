@@ -458,7 +458,7 @@
 
 - [x] 6.1.62 - create implementation repository ProductImagesRepositoryInMemory for tests
 
-6.1.63 - create service test CreateProductService spec
+- [x] 6.1.63 - create service test CreateProductService spec
 
 6.1.64 - create service test GetAllProductsService spec
 

@@ -24,6 +24,12 @@ class MaterialsRepositoryInMemory implements IMaterialsRepository {
         return this.materials;
     }
 
+    async findByIds(ids: string[]): Promise<Material[]> {
+        return this.materials.filter((material) =>
+            ids.includes(material.id)
+        );
+    }
+
 }
 
 export { MaterialsRepositoryInMemory };

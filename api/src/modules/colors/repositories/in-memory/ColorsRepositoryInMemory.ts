@@ -1,4 +1,4 @@
-import { ICreateColorDTO } from "../../dtos/ICreateColorDTO";
+import {ICreateColorDTO} from "../../dtos/ICreateColorDTO";
 import {IColorsRepository} from "../IColorsRepository";
 import {Color} from "../../entities/Color";
 
@@ -21,6 +21,12 @@ class ColorsRepositoryInMemory implements IColorsRepository {
 
     async list(): Promise<Color[]> {
         return this.colors;
+    }
+
+    async findByIds(ids: string[]): Promise<Color[]> {
+        return this.colors.filter((color) =>
+            ids.includes(color.id)
+        );
     }
 
 }
