@@ -454,7 +454,7 @@
 
 - [x] 6.1.60 - create route for add product images
 
-6.1.61 - create implementation repository ProductRepositoryInMemory for tests
+- [x] 6.1.61 - create implementation repository ProductRepositoryInMemory for tests
 
 6.1.62 - create implementation repository ProductImagesRepositoryInMemory for tests
 
@@ -490,298 +490,298 @@
 
 6.1.78 - create service test CreateImagesProductService spec
 
-### 8 - Reviews
+### 7 - Reviews
 
-8.1.1 - Create migration CreateReviews
+7.1.1 - Create migration CreateReviews
 
-8.1.2 - Create entity reviews
+7.1.2 - Create entity reviews
 
-8.1.3 - create dto ICreateReviewDTO
+7.1.3 - create dto ICreateReviewDTO
 
-8.1.4 - create interface repository IReviewRepository
+7.1.4 - create interface repository IReviewRepository
 
-8.1.5 - create implementation repository ReviewRepository
+7.1.5 - create implementation repository ReviewRepository
+
+7.1.6 - register container typeorm
+
+7.1.7 - create service CreateReviewService
+
+7.1.8 - create controller CreateReviewController
+
+7.1.9 - create routes reviews routes
+
+7.1.10 - create service GetReviewsByUserService
+
+7.1.11 - create controller GetReviewsByUserController
+
+7.1.12 - create route for get reviews by user
+
+7.1.13 - create service GetReviewsByProductService
+
+7.1.14 - create controller GetReviewsByProductController
+
+7.1.15 - create route for get reviews by product
+
+7.1.16 - create service UpdateReviewService
+
+7.1.17 - create controller UpdateReviewController
+
+7.1.18 - create route for update review
+
+7.1.19 - create implementation repository ReviewsRepositoryInMemory for tests
+
+7.1.20 - create service test CreateReviewService spec
+
+7.1.21 - create service test CreateReviewsByUserService spec
+
+7.1.22 - create service test CreateReviewsByProductService spec
+
+7.1.23 - create service test UpdateReviewService spec
+
+### 8 - Wishlists
+
+8.1.1 - Create migration CreateWishlists
+
+8.1.2 - Create entity wishlists
+
+8.1.3 - create dto ICreateWishlistDTO
+
+8.1.4 - create interface repository IWishlistRepository
+
+8.1.5 - create implementation repository WishlistRepository
 
 8.1.6 - register container typeorm
 
-8.1.7 - create service CreateReviewService
+8.1.7 - create service CreateWishlistService
 
-8.1.8 - create controller CreateReviewController
+8.1.8 - create controller CreateWishlistController
 
-8.1.9 - create routes reviews routes
+8.1.9 - create routes wishlists routes
 
-8.1.10 - create service GetReviewsByUserService
+8.1.10 - create service GetWishlistsByUserService
 
-8.1.11 - create controller GetReviewsByUserController
+8.1.11 - create controller GetWishlistsByUserController
 
-8.1.12 - create route for get reviews by user
+8.1.12 - create route for get wishlists by user
 
-8.1.13 - create service GetReviewsByProductService
+8.1.13 - create implementation repository WishlistsRepositoryInMemory for tests
 
-8.1.14 - create controller GetReviewsByProductController
+8.1.14 - create service test CreateWishlistService spec
 
-8.1.15 - create route for get reviews by product
+8.1.15 - create service test GetWishlistsByUserService spec
 
-8.1.16 - create service UpdateReviewService
+### 9 - Coupons
 
-8.1.17 - create controller UpdateReviewController
+9.1.1 - Create migration CreateCoupons
 
-8.1.18 - create route for update review
+9.1.2 - Create entity coupons
 
-8.1.19 - create implementation repository ReviewsRepositoryInMemory for tests
+9.1.3 - create dto ICreateCouponDTO
 
-8.1.20 - create service test CreateReviewService spec
+9.1.4 - create interface repository ICouponRepository
 
-8.1.21 - create service test CreateReviewsByUserService spec
-
-8.1.22 - create service test CreateReviewsByProductService spec
-
-8.1.23 - create service test UpdateReviewService spec
-
-### 9 - Wishlists
-
-9.1.1 - Create migration CreateWishlists
-
-9.1.2 - Create entity wishlists
-
-9.1.3 - create dto ICreateWishlistDTO
-
-9.1.4 - create interface repository IWishlistRepository
-
-9.1.5 - create implementation repository WishlistRepository
+9.1.5 - create implementation repository CouponRepository
 
 9.1.6 - register container typeorm
 
-9.1.7 - create service CreateWishlistService
+9.1.7 - create service CreateCouponService
 
-9.1.8 - create controller CreateWishlistController
+9.1.8 - create controller CreateCouponController
 
-9.1.9 - create routes wishlists routes
+9.1.9 - create routes coupons routes
 
-9.1.10 - create service GetWishlistsByUserService
+9.1.10 - create service GetAllCouponsService
 
-9.1.11 - create controller GetWishlistsByUserController
+9.1.11 - create controller GetAllCouponsController
 
-9.1.12 - create route for get wishlists by user
+9.1.12 - create route for get all coupons
 
-9.1.13 - create implementation repository WishlistsRepositoryInMemory for tests
+9.1.13 - create service GetCouponService
 
-9.1.14 - create service test CreateWishlistService spec
+9.1.14 - create controller GetCouponController
 
-9.1.15 - create service test GetWishlistsByUserService spec
+9.1.15 - create route for get a coupon
 
-### 10 - Coupons
+9.1.16 - create service UpdateCouponService
 
-10.1.1 - Create migration CreateCoupons
+9.1.17 - create controller UpdateCouponController
 
-10.1.2 - Create entity coupons
+9.1.18 - create route for update a coupon
 
-10.1.3 - create dto ICreateCouponDTO
+9.1.19 - create implementation repository CouponsRepositoryInMemory for tests
 
-10.1.4 - create interface repository ICouponRepository
+9.1.20 - create service test CreateCouponService spec
 
-10.1.5 - create implementation repository CouponRepository
+9.1.21 - create service test GetAllCouponsService spec
+
+9.1.22 - create service test GetCouponService spec
+
+9.1.23 - create service test UpdateCouponService spec
+
+### 10 - Orders
+
+10.1.1 - Create migration CreateOrders
+
+10.1.2 - Create entity orders
+
+10.1.3 - create dto ICreateOrderDTO
+
+10.1.4 - create interface repository IOrderRepository
+
+10.1.5 - create implementation repository OrderRepository
 
 10.1.6 - register container typeorm
 
-10.1.7 - create service CreateCouponService
+10.1.7 - create service CreateOrderService
 
-10.1.8 - create controller CreateCouponController
+10.1.8 - create controller CreateOrderController
 
-10.1.9 - create routes coupons routes
+10.1.9 - create routes orders routes
 
-10.1.10 - create service GetAllCouponsService
+10.1.10 - create service GetAllOrdersService
 
-10.1.11 - create controller GetAllCouponsController
+10.1.11 - create controller GetAllOrdersController
 
-10.1.12 - create route for get all coupons
+10.1.12 - create route for get all orders
 
-10.1.13 - create service GetCouponService
+10.1.13 - create service GetOrderService
 
-10.1.14 - create controller GetCouponController
+10.1.14 - create controller GetOrderController
 
-10.1.15 - create route for get a coupon
+10.1.15 - create route for get an order
 
-10.1.16 - create service UpdateCouponService
+10.1.16 - create service GetOrdersByUserService
 
-10.1.17 - create controller UpdateCouponController
+10.1.17 - create controller GetOrdersByUserController
 
-10.1.18 - create route for update a coupon
+10.1.18 - create route for get orders by user
 
-10.1.19 - create implementation repository CouponsRepositoryInMemory for tests
+10.1.19 - create service UpdateOrderService
 
-10.1.20 - create service test CreateCouponService spec
+10.1.20 - create controller UpdateOrderController
 
-10.1.21 - create service test GetAllCouponsService spec
+10.1.21 - create route for update a order
 
-10.1.22 - create service test GetCouponService spec
+10.1.22 - create implementation repository OrdersRepositoryInMemory for tests
 
-10.1.23 - create service test UpdateCouponService spec
+10.1.23 - create service test CreateOrderService spec
 
-### 11 - Orders
+10.1.24 - create service test GetAllOrdersService spec
 
-11.1.1 - Create migration CreateOrders
+10.1.25 - create service test GetOrderService spec
 
-11.1.2 - Create entity orders
+10.1.26 - create service test GetOrdersByUserService spec
 
-11.1.3 - create dto ICreateOrderDTO
+10.1.27 - create service test UpdateOrderService spec
 
-11.1.4 - create interface repository IOrderRepository
+### 11 - Payments
 
-11.1.5 - create implementation repository OrderRepository
+11.1.1 - Create migration CreatePayments
+
+11.1.2 - Create entity payments
+
+11.1.3 - create dto ICreatePaymentDTO
+
+11.1.4 - create interface repository IPaymentRepository
+
+11.1.5 - create implementation repository PaymentRepository
 
 11.1.6 - register container typeorm
 
-11.1.7 - create service CreateOrderService
+11.1.7 - create service CreatePaymentService
 
-11.1.8 - create controller CreateOrderController
+11.1.8 - create controller CreatePaymentController
 
-11.1.9 - create routes orders routes
+11.1.9 - create routes payments routes
 
-11.1.10 - create service GetAllOrdersService
+11.1.10 - create service GetAllPaymentsService
 
-11.1.11 - create controller GetAllOrdersController
+11.1.11 - create controller GetAllPaymentsController
 
-11.1.12 - create route for get all orders
+11.1.12 - create route for get all payments
 
-11.1.13 - create service GetOrderService
+11.1.13 - create service GetPaymentService
 
-11.1.14 - create controller GetOrderController
+11.1.14 - create controller GetPaymentController
 
-11.1.15 - create route for get an order
+11.1.15 - create route for get a payment
 
-11.1.16 - create service GetOrdersByUserService
+11.1.16 - create service GetPaymentsByUserService
 
-11.1.17 - create controller GetOrdersByUserController
+11.1.17 - create controller GetPaymentsByUserController
 
-11.1.18 - create route for get orders by user
+11.1.18 - create route for get payments by user
 
-11.1.19 - create service UpdateOrderService
+11.1.19 - create service UpdatePaymentStatusService
 
-11.1.20 - create controller UpdateOrderController
+11.1.20 - create controller UpdatePaymentStatusController
 
-11.1.21 - create route for update a order
+11.1.21 - create route for update a payment status
 
-11.1.22 - create implementation repository OrdersRepositoryInMemory for tests
+11.1.22 - create implementation repository PaymentsRepositoryInMemory for tests
 
-11.1.23 - create service test CreateOrderService spec
+11.1.23 - create service test CreatePaymentService spec
 
-11.1.24 - create service test GetAllOrdersService spec
+11.1.24 - create service test GetAllPaymentsService spec
 
-11.1.25 - create service test GetOrderService spec
+11.1.25 - create service test GetPaymentService spec
 
-11.1.26 - create service test GetOrdersByUserService spec
+11.1.26 - create service test GetPaymentsByUserService spec
 
-11.1.27 - create service test UpdateOrderService spec
+11.1.27 - create service test UpdatePaymentStatusService spec
 
-### 12 - Payments
+### 12 - Deliveries
 
-12.1.1 - Create migration CreatePayments
+12.1.1 - Create migration CreateDeliveries
 
-12.1.2 - Create entity payments
+12.1.2 - Create entity deliveries
 
-12.1.3 - create dto ICreatePaymentDTO
+12.1.3 - create dto ICreateDeliveryDTO
 
-12.1.4 - create interface repository IPaymentRepository
+12.1.4 - create interface repository IDeliveryRepository
 
-12.1.5 - create implementation repository PaymentRepository
+12.1.5 - create implementation repository DeliveryRepository
 
 12.1.6 - register container typeorm
 
-12.1.7 - create service CreatePaymentService
+12.1.7 - create service CreateDeliveryService
 
-12.1.8 - create controller CreatePaymentController
+12.1.8 - create controller CreateDeliveryController
 
-12.1.9 - create routes payments routes
+12.1.9 - create routes deliveries routes
 
-12.1.10 - create service GetAllPaymentsService
+12.1.10 - create service GetAllDeliveriesService
 
-12.1.11 - create controller GetAllPaymentsController
+12.1.11 - create controller GetAllDeliveriesController
 
-12.1.12 - create route for get all payments
+12.1.12 - create route for get all deliveries
 
-12.1.13 - create service GetPaymentService
+12.1.13 - create service GetDeliveryService
 
-12.1.14 - create controller GetPaymentController
+12.1.14 - create controller GetDeliveryController
 
-12.1.15 - create route for get a payment
+12.1.15 - create route for get a delivery
 
-12.1.16 - create service GetPaymentsByUserService
+12.1.16 - create service GetDeliveriesByUserService
 
-12.1.17 - create controller GetPaymentsByUserController
+12.1.17 - create controller GetDeliveriesByUserController
 
-12.1.18 - create route for get payments by user
+12.1.18 - create route for get deliveries by user
 
-12.1.19 - create service UpdatePaymentStatusService
+12.1.19 - create service UpdateDeliveryStatusService
 
-12.1.20 - create controller UpdatePaymentStatusController
+12.1.20 - create controller UpdateDeliveryStatusController
 
-12.1.21 - create route for update a payment status
+12.1.21 - create route for update a deliveries status
 
-12.1.22 - create implementation repository PaymentsRepositoryInMemory for tests
+12.1.22 - create implementation repository DeliveriesRepositoryInMemory for tests
 
-12.1.23 - create service test CreatePaymentService spec
+12.1.23 - create service test CreateDeliveryService spec
 
-12.1.24 - create service test GetAllPaymentsService spec
+12.1.24 - create service test GetAllDeliveriesService spec
 
-12.1.25 - create service test GetPaymentService spec
+12.1.25 - create service test GetDeliveryService spec
 
-12.1.26 - create service test GetPaymentsByUserService spec
+12.1.26 - create service test GetDeliveriesByUserService spec
 
-12.1.27 - create service test UpdatePaymentStatusService spec
-
-### 13 - Deliveries
-
-13.1.1 - Create migration CreateDeliveries
-
-13.1.2 - Create entity deliveries
-
-13.1.3 - create dto ICreateDeliveryDTO
-
-13.1.4 - create interface repository IDeliveryRepository
-
-13.1.5 - create implementation repository DeliveryRepository
-
-13.1.6 - register container typeorm
-
-13.1.7 - create service CreateDeliveryService
-
-13.1.8 - create controller CreateDeliveryController
-
-13.1.9 - create routes deliveries routes
-
-13.1.10 - create service GetAllDeliveriesService
-
-13.1.11 - create controller GetAllDeliveriesController
-
-13.1.12 - create route for get all deliveries
-
-13.1.13 - create service GetDeliveryService
-
-13.1.14 - create controller GetDeliveryController
-
-13.1.15 - create route for get a delivery
-
-13.1.16 - create service GetDeliveriesByUserService
-
-13.1.17 - create controller GetDeliveriesByUserController
-
-13.1.18 - create route for get deliveries by user
-
-13.1.19 - create service UpdateDeliveryStatusService
-
-13.1.20 - create controller UpdateDeliveryStatusController
-
-13.1.21 - create route for update a deliveries status
-
-13.1.22 - create implementation repository DeliveriesRepositoryInMemory for tests
-
-13.1.23 - create service test CreateDeliveryService spec
-
-13.1.24 - create service test GetAllDeliveriesService spec
-
-13.1.25 - create service test GetDeliveryService spec
-
-13.1.26 - create service test GetDeliveriesByUserService spec
-
-13.1.27 - create service test UpdateDeliveryStatusService spec
+12.1.27 - create service test UpdateDeliveryStatusService spec
