@@ -5,25 +5,26 @@ import {Product} from "../../entities/Product";
 class ProductsRepositoryInMemory implements IProductsRepository {
     products: Product[] = [];
 
-    async create({id, name, description, stock, price, category_id, colors, materials}: ICreateProductDTO): Promise<void> {
+    async create({name, description, stock, price, category_id, colors, materials}: ICreateProductDTO): Promise<void> {
         const product = new Product();
         Object.assign(product, {
-            id, name, description, stock, price, category_id, colors, materials
+            name, description, stock, price, category_id, colors, materials
         });
         this.products.push(product);
     }
 
     async findAvailable(name?: string, category_id?: string): Promise<Product[]> {
-        return this.products.filter((product) => {
-            if (
-                product.available === true &&
-                (name ? product.name === name : true) &&
-                (category_id ? product.category_id === category_id : true)
-            ) {
-                return product;
-            }
-            return null;
+        let availableProducts = this.products.filter((product) => product.available);
+
+        if (!name && !category_id) return availableProducts;
+
+        availableProducts = availableProducts.filter((product) => {
+            if (product.name === name) return true;
+            if (product.category_id === category_id) return true;
+            return false;
         });
+
+        return availableProducts;
     }
 
     async findById(id: string): Promise<Product> {
