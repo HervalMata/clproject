@@ -442,7 +442,7 @@
 
 - [x] 6.1.54 - create route for update price product
 
-6.1.55 - create service UpdateStockProductService
+- [x] 6.1.55 - create service UpdateStockProductService
 
 6.1.56 - create controller UpdateStockProductController
 
