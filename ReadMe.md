@@ -434,7 +434,7 @@
 
 - [x] 6.1.50 - create controller UpdateFeaturedProductController
 
-6.1.51 - create route for update featured product
+- [x] 6.1.51 - create route for update featured product
 
 6.1.52 - create implementation repository ProductRepositoryInMemory for tests
 
