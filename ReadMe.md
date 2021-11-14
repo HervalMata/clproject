@@ -452,7 +452,7 @@
 
 - [x] 6.1.59 - create controller CreateImagesProductController
 
-6.1.60 - create route for add product images
+- [x] 6.1.60 - create route for add product images
 
 6.1.61 - create implementation repository ProductRepositoryInMemory for tests
 

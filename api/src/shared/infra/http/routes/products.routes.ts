@@ -1,4 +1,6 @@
 import { Router } from "express";
+import multer from "multer";
+import uploadConfig from "../../../../config/upload";
 import {CreateProductController} from "../../../../modules/products/controllers/CreateProductController";
 import {ensureAuthenticated} from "../middlewares/ensureAuthenticated";
 import {ensureAdminOrSeller} from "../middlewares/ensureAdminOrSeller";
@@ -16,6 +18,7 @@ import {UpdateOfferProductController} from "../../../../modules/products/control
 import {UpdateFeaturedProductController} from "../../../../modules/products/controllers/UpdateFeaturedProductController";
 import {UpdatePriceProductController} from "../../../../modules/products/controllers/UpdatePriceProductController";
 import {UpdateStockProductController} from "../../../../modules/products/controllers/UpdateStockProductController";
+import {CreateImagesProductsController} from "../../../../modules/products/controllers/CreateImagesProductsController";
 
 const productsRoutes = Router();
 const createProductController = new CreateProductController();
@@ -33,6 +36,8 @@ const updateOfferProductController = new UpdateOfferProductController();
 const updateFeaturedProductController = new UpdateFeaturedProductController();
 const updatePriceProductController = new UpdatePriceProductController();
 const updateStockProductController = new UpdateStockProductController();
+const createImagesProductController = new CreateImagesProductsController();
+const upload = multer(uploadConfig.upload("./tmp/products/images"));
 
 productsRoutes.post("/", ensureAuthenticated, ensureAdminOrSeller, createProductController.handle);
 productsRoutes.get("/", ensureAuthenticated, ensureAdminOrSeller, getAllProductsController.handle);
@@ -49,5 +54,6 @@ productsRoutes.patch("/:id/offer", ensureAuthenticated, ensureAdminOrSeller, upd
 productsRoutes.patch("/:id/featured", ensureAuthenticated, ensureAdminOrSeller, updateFeaturedProductController.handle);
 productsRoutes.patch("/:id/price", ensureAuthenticated, ensureAdminOrSeller, updatePriceProductController.handle);
 productsRoutes.patch("/:id/stock", ensureAuthenticated, ensureAdminOrSeller, updateStockProductController.handle);
+productsRoutes.post("/images/:id", ensureAuthenticated, ensureAdminOrSeller, upload.array("images"), createImagesProductController.handle);
 
 export { productsRoutes };
