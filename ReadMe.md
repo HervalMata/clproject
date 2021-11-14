@@ -486,7 +486,7 @@
 
 - [x] 6.1.76 - create service test CreateColorsProductService spec
 
-6.1.77 - create service test CreateMaterialsProductService spec
+- [x] 6.1.77 - create service test CreateMaterialsProductService spec
 
 6.1.78 - create service test CreateImagesProductService spec
 

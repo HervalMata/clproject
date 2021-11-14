@@ -28,7 +28,7 @@ class MaterialsRepository implements IMaterialsRepository {
         return await this.repository.find();
     }
 
-    async findByIds(ids: string[]) {
+    async findByIds(ids: string[]): Promise<Material[]> {
         return await this.repository.findByIds(ids);
     }
 }
