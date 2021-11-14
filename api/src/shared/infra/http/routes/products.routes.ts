@@ -15,6 +15,7 @@ import {UpdateAvailableProductController} from "../../../../modules/products/con
 import {UpdateOfferProductController} from "../../../../modules/products/controllers/UpdateOfferProductController";
 import {UpdateFeaturedProductController} from "../../../../modules/products/controllers/UpdateFeaturedProductController";
 import {UpdatePriceProductController} from "../../../../modules/products/controllers/UpdatePriceProductController";
+import {UpdateStockProductController} from "../../../../modules/products/controllers/UpdateStockProductController";
 
 const productsRoutes = Router();
 const createProductController = new CreateProductController();
@@ -31,6 +32,7 @@ const updateAvailableProductController = new UpdateAvailableProductController();
 const updateOfferProductController = new UpdateOfferProductController();
 const updateFeaturedProductController = new UpdateFeaturedProductController();
 const updatePriceProductController = new UpdatePriceProductController();
+const updateStockProductController = new UpdateStockProductController();
 
 productsRoutes.post("/", ensureAuthenticated, ensureAdminOrSeller, createProductController.handle);
 productsRoutes.get("/", ensureAuthenticated, ensureAdminOrSeller, getAllProductsController.handle);
@@ -46,5 +48,6 @@ productsRoutes.patch("/:id/available", ensureAuthenticated, ensureAdminOrSeller,
 productsRoutes.patch("/:id/offer", ensureAuthenticated, ensureAdminOrSeller, updateOfferProductController.handle);
 productsRoutes.patch("/:id/featured", ensureAuthenticated, ensureAdminOrSeller, updateFeaturedProductController.handle);
 productsRoutes.patch("/:id/price", ensureAuthenticated, ensureAdminOrSeller, updatePriceProductController.handle);
+productsRoutes.patch("/:id/stock", ensureAuthenticated, ensureAdminOrSeller, updateStockProductController.handle);
 
 export { productsRoutes };

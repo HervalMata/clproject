@@ -446,7 +446,7 @@
 
 - [x] 6.1.56 - create controller UpdateStockProductController
 
-6.1.57 - create route for update stock product
+- [x] 6.1.57 - create route for update stock product
 
 6.1.59 - create implementation repository ProductRepositoryInMemory for tests
 
