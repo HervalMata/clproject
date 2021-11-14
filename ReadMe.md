@@ -460,7 +460,7 @@
 
 - [x] 6.1.63 - create service test CreateProductService spec
 
-6.1.64 - create service test GetAllProductsService spec
+- [x] 6.1.64 - create service test GetAllProductsService spec
 
 6.1.65 - create service test GetProductService spec
 
