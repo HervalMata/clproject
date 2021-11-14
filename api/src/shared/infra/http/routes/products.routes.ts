@@ -9,6 +9,7 @@ import {GetProductsByCategoryController} from "../../../../modules/products/cont
 import {GetFeaturedProductsController} from "../../../../modules/products/controllers/GetFeaturedProductsController";
 import {GetOfferProductsController} from "../../../../modules/products/controllers/GetOfferProductsController";
 import {CreateColorsProductController} from "../../../../modules/products/controllers/CreateColorsProductController";
+import {CreateMaterialsProductController} from "../../../../modules/products/controllers/CreateMaterialsProductController";
 
 const productsRoutes = Router();
 const createProductController = new CreateProductController();
@@ -19,6 +20,7 @@ const getProductsByCategoryController = new GetProductsByCategoryController();
 const getFeaturedProductsController = new GetFeaturedProductsController();
 const getOfferProductsController = new GetOfferProductsController();
 const createColorsProductController = new CreateColorsProductController();
+const createMaterialsProductController = new CreateMaterialsProductController();
 
 productsRoutes.post("/", ensureAuthenticated, ensureAdminOrSeller, createProductController.handle);
 productsRoutes.get("/", ensureAuthenticated, ensureAdminOrSeller, getAllProductsController.handle);
@@ -28,5 +30,6 @@ productsRoutes.get("/:category_id", getProductsByCategoryController.handle);
 productsRoutes.get("/featured", getFeaturedProductsController.handle);
 productsRoutes.get("/offer", getOfferProductsController.handle);
 productsRoutes.post("/colors/:id", ensureAuthenticated, ensureAdminOrSeller, createColorsProductController.handle);
+productsRoutes.post("/materials/:id", ensureAuthenticated, ensureAdminOrSeller, createMaterialsProductController.handle);
 
 export { productsRoutes };
