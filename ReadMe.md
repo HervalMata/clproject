@@ -436,29 +436,41 @@
 
 - [x] 6.1.51 - create route for update featured product
 
-6.1.52 - create implementation repository ProductRepositoryInMemory for tests
+- [x] 6.1.52 - create service UpdatePriceProductService
 
-6.1.53 - create service test CreateProductService spec
+6.1.53 - create controller UpdatePriceProductController
 
-6.1.54 - create service test GetAllProductsService spec
+6.1.54 - create route for update price product
 
-6.1.55 - create service test GetProductService spec
+6.1.55 - create service UpdateStockProductService
 
-6.1.56 - create service test GetAvailableProductsService spec
+6.1.56 - create controller UpdateStockProductController
 
-6.1.57 - create service test GetProductsByCategoryService spec
+6.1.57 - create route for update stock product
 
-6.1.58 - create service test UpdateProductService spec
+6.1.59 - create implementation repository ProductRepositoryInMemory for tests
 
-6.1.59 - create service test UpdateAvailableProductService spec
+6.1.60 - create service test CreateProductService spec
 
-6.1.60 - create service test UpdateOffersProductService spec
+6.1.61 - create service test GetAllProductsService spec
 
-6.1.61 - create service test UpdateFeaturedProductService spec
+6.1.62 - create service test GetProductService spec
 
-6.1.62 - create service test CreateColorsProductService spec
+6.1.63 - create service test GetAvailableProductsService spec
 
-6.1.63 - create service test CreateMaterialsProductService spec
+6.1.64 - create service test GetProductsByCategoryService spec
+
+6.1.65 - create service test UpdateProductService spec
+
+6.1.66 - create service test UpdateAvailableProductService spec
+
+6.1.67 - create service test UpdateOffersProductService spec
+
+6.1.68 - create service test UpdateFeaturedProductService spec
+
+6.1.69 - create service test CreateColorsProductService spec
+
+6.1.70 - create service test CreateMaterialsProductService spec
 
 ### 8 - Reviews
 
