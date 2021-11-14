@@ -3,6 +3,7 @@ import {IProductsRepository} from "../repositories/IProductsRepository";
 import {ColorsRepository} from "../../colors/repositories/implementations/ColorsRepository";
 import {Product} from "../entities/Product";
 import {ProductNotExistsError} from "../errors/ProductNotExistsError";
+import {ColorsRepositoryInMemory} from "../../colors/repositories/in-memory/ColorsRepositoryInMemory";
 
 interface IRequest {
     product_id: string;
@@ -16,7 +17,7 @@ class CreateColorsProductService {
         @inject("ProductsRepository")
         private productsRepository: IProductsRepository,
         @inject("ColorsRepository")
-        private colorsRepository: ColorsRepository
+        private colorsRepository: ColorsRepositoryInMemory
     ) {}
 
     async execute({ product_id, colors_id }: IRequest): Promise<Product> {
