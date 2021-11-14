@@ -414,7 +414,7 @@
 
 - [x] 6.1.40 - create service UpdateProductService
 
-6.1.41 - create controller UpdateProductController
+- [x] 6.1.41 - create controller UpdateProductController
 
 6.1.42 - create route for update product
 
