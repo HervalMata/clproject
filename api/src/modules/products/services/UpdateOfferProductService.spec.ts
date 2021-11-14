@@ -3,23 +3,24 @@ import {CreateCategoryService} from "../../categories/services/CreateCategorySer
 import {ProductsRepositoryInMemory} from "../repositories/in-memory/ProductsRepositoryInMemory";
 import {CreateProductService} from "./CreateProductService";
 import {UpdateAvailableProductService} from "./UpdateAvailableProductService";
+import {UpdateOfferProductService} from "./UpdateOfferProductService";
 
 let categoryRepositoryInMemory: CategoryRepositoryInMemory;
 let createCategoryService: CreateCategoryService;
 let productsRepositoryInMemory: ProductsRepositoryInMemory;
 let createProductService: CreateProductService;
-let updateAvailableProductsService: UpdateAvailableProductService;
+let updateOfferProductsService: UpdateOfferProductService;
 
-describe('Update Available Product', () => {
+describe('Update Offered Product', () => {
     beforeEach(() => {
         categoryRepositoryInMemory = new CategoryRepositoryInMemory();
         createCategoryService = new CreateCategoryService(categoryRepositoryInMemory);
         productsRepositoryInMemory = new ProductsRepositoryInMemory();
         createProductService = new CreateProductService(productsRepositoryInMemory);
-        updateAvailableProductsService = new UpdateAvailableProductService(productsRepositoryInMemory);
+        updateOfferProductsService = new UpdateOfferProductService(productsRepositoryInMemory);
     });
 
-    it('should be able to update an product', async () => {
+    it('should be able to update an product with offer', async () => {
         await createCategoryService.execute({
             name: "Category Test",
             description: "description category test"
@@ -35,6 +36,6 @@ describe('Update Available Product', () => {
         });
         const product = await productsRepositoryInMemory.findByName("Product Test");
         const product_id = product.id;
-        await expect(updateAvailableProductsService.execute({ product_id, available: true })).resolves.not.toThrow();
+        await expect(updateOfferProductsService.execute({ product_id, is_offer: true, offer_price: 20.00 })).resolves.not.toThrow();
     });
 });
