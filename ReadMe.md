@@ -422,7 +422,7 @@
 
 - [x] 6.1.44 - create controller UpdateAvailableProductController
 
-6.1.45 - create route for update available product
+- [x] 6.1.45 - create route for update available product
 
 6.1.46 - create service UpdateOffersProductService
 
