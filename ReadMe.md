@@ -482,7 +482,7 @@
 
 - [x] 6.1.74 - create service test UpdatePriceProductsService spec
 
-6.1.75 - create service test UpdateStockProductsService spec
+- [x] 6.1.75 - create service test UpdateStockProductsService spec
 
 6.1.76 - create service test CreateColorsProductService spec
 
