@@ -12,6 +12,7 @@ import {CreateColorsProductController} from "../../../../modules/products/contro
 import {CreateMaterialsProductController} from "../../../../modules/products/controllers/CreateMaterialsProductController";
 import {UpdateProductController} from "../../../../modules/products/controllers/UpdateProductController";
 import {UpdateAvailableProductController} from "../../../../modules/products/controllers/UpdateAvailableProductController";
+import {UpdateOfferProductController} from "../../../../modules/products/controllers/UpdateOfferProductController";
 
 const productsRoutes = Router();
 const createProductController = new CreateProductController();
@@ -25,6 +26,7 @@ const createColorsProductController = new CreateColorsProductController();
 const createMaterialsProductController = new CreateMaterialsProductController();
 const updateProductController = new UpdateProductController();
 const updateAvailableProductController = new UpdateAvailableProductController();
+const updateOfferProductController = new UpdateOfferProductController();
 
 productsRoutes.post("/", ensureAuthenticated, ensureAdminOrSeller, createProductController.handle);
 productsRoutes.get("/", ensureAuthenticated, ensureAdminOrSeller, getAllProductsController.handle);
@@ -37,5 +39,6 @@ productsRoutes.post("/colors/:id", ensureAuthenticated, ensureAdminOrSeller, cre
 productsRoutes.post("/materials/:id", ensureAuthenticated, ensureAdminOrSeller, createMaterialsProductController.handle);
 productsRoutes.put("/:id", ensureAuthenticated, ensureAdminOrSeller, updateProductController.handle);
 productsRoutes.patch("/:id/available", ensureAuthenticated, ensureAdminOrSeller, updateAvailableProductController.handle);
+productsRoutes.patch("/:id/offer", ensureAuthenticated, ensureAdminOrSeller, updateOfferProductController.handle);
 
 export { productsRoutes };
