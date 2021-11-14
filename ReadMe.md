@@ -420,7 +420,7 @@
 
 - [x] 6.1.43 - create service UpdateAvailableProductService
 
-6.1.44 - create controller UpdateAvailableProductController
+- [x] 6.1.44 - create controller UpdateAvailableProductController
 
 6.1.45 - create route for update available product
 
