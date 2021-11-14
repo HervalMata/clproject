@@ -24,11 +24,9 @@ class CreateColorsProductService {
         if (!productExists) {
             throw new ProductNotExistsError();
         }
-        const colors = await this.colorsRepository.findByIds(
+        productExists.colors = await this.colorsRepository.findByIds(
             colors_id
         );
-
-        productExists.colors = colors;
 
         await this.productsRepository.create(productExists);
 

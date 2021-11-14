@@ -24,11 +24,9 @@ class CreateMaterialsProductService {
         if (!productExists) {
             throw new ProductNotExistsError();
         }
-        const materials = await this.materialsRepository.findByIds(
+        productExists.materials = await this.materialsRepository.findByIds(
             materials_id
         );
-
-        productExists.materials = materials;
 
         await this.productsRepository.create(productExists);
 
