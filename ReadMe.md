@@ -468,7 +468,7 @@
 
 - [x] 6.1.67 - create service test GetProductsByCategoryService spec
 
-6.1.68 - create service test GetOfferProductsService spec
+- [x] 6.1.68 - create service test GetOfferProductsService spec
 
 6.1.69 - create service test GetFeaturedProductsService spec
 
