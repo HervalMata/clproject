@@ -480,7 +480,7 @@
 
 - [x] 6.1.73 - create service test UpdateFeaturedProductsService spec
 
-6.1.74 - create service test UpdatePriceProductsService spec
+- [x] 6.1.74 - create service test UpdatePriceProductsService spec
 
 6.1.75 - create service test UpdateStockProductsService spec
 

@@ -2,24 +2,24 @@ import {CategoryRepositoryInMemory} from "../../categories/repositories/in-memor
 import {CreateCategoryService} from "../../categories/services/CreateCategoryService";
 import {ProductsRepositoryInMemory} from "../repositories/in-memory/ProductsRepositoryInMemory";
 import {CreateProductService} from "./CreateProductService";
-import {UpdateOfferProductService} from "./UpdateOfferProductService";
+import {UpdatePriceProductService} from "./UpdatePriceProductService";
 
 let categoryRepositoryInMemory: CategoryRepositoryInMemory;
 let createCategoryService: CreateCategoryService;
 let productsRepositoryInMemory: ProductsRepositoryInMemory;
 let createProductService: CreateProductService;
-let updateOfferProductsService: UpdateOfferProductService;
+let updatePriceProductsService: UpdatePriceProductService;
 
-describe('Update Offered Product', () => {
+describe('Update Price Product', () => {
     beforeEach(() => {
         categoryRepositoryInMemory = new CategoryRepositoryInMemory();
         createCategoryService = new CreateCategoryService(categoryRepositoryInMemory);
         productsRepositoryInMemory = new ProductsRepositoryInMemory();
         createProductService = new CreateProductService(productsRepositoryInMemory);
-        updateOfferProductsService = new UpdateOfferProductService(productsRepositoryInMemory);
+        updatePriceProductsService = new UpdatePriceProductService(productsRepositoryInMemory);
     });
 
-    it('should be able to update an product with offer', async () => {
+    it('should be able to update price of the product', async () => {
         await createCategoryService.execute({
             name: "Category Test",
             description: "description category test"
@@ -35,6 +35,6 @@ describe('Update Offered Product', () => {
         });
         const product = await productsRepositoryInMemory.findByName("Product Test");
         const product_id = product.id;
-        await expect(updateOfferProductsService.execute({ product_id, is_offer: true, offer_price: 20.00 })).resolves.not.toThrow();
+        await expect(updatePriceProductsService.execute({ product_id, price: 20.00 })).resolves.not.toThrow();
     });
 });
