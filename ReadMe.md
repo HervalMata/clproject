@@ -448,29 +448,47 @@
 
 - [x] 6.1.57 - create route for update stock product
 
-6.1.59 - create implementation repository ProductRepositoryInMemory for tests
+- [x] 6.1.58 - create service CreateImagesProductService
 
-6.1.60 - create service test CreateProductService spec
+6.1.59 - create controller CreateImagesProductController
 
-6.1.61 - create service test GetAllProductsService spec
+6.1.60 - create route for add product images
 
-6.1.62 - create service test GetProductService spec
+6.1.61 - create implementation repository ProductRepositoryInMemory for tests
 
-6.1.63 - create service test GetAvailableProductsService spec
+6.1.62 - create implementation repository ProductImagesRepositoryInMemory for tests
 
-6.1.64 - create service test GetProductsByCategoryService spec
+6.1.63 - create service test CreateProductService spec
 
-6.1.65 - create service test UpdateProductService spec
+6.1.64 - create service test GetAllProductsService spec
 
-6.1.66 - create service test UpdateAvailableProductService spec
+6.1.65 - create service test GetProductService spec
 
-6.1.67 - create service test UpdateOffersProductService spec
+6.1.66 - create service test GetAvailableProductsService spec
 
-6.1.68 - create service test UpdateFeaturedProductService spec
+6.1.67 - create service test GetProductsByCategoryService spec
 
-6.1.69 - create service test CreateColorsProductService spec
+6.1.68 - create service test GetOfferProductsService spec
 
-6.1.70 - create service test CreateMaterialsProductService spec
+6.1.69 - create service test GetFeaturedProductsService spec
+
+6.1.70 - create service test UpdateProductService spec
+
+6.1.71 - create service test UpdateAvailableProductsService spec
+
+6.1.72 - create service test UpdateOfferProductsService spec
+
+6.1.73 - create service test UpdateFeaturedProductsService spec
+
+6.1.74 - create service test UpdatePriceProductsService spec
+
+6.1.75 - create service test UpdateStockProductsService spec
+
+6.1.76 - create service test CreateColorsProductService spec
+
+6.1.77 - create service test CreateMaterialsProductService spec
+
+6.1.78 - create service test CreateImagesProductService spec
 
 ### 8 - Reviews
 
