@@ -406,7 +406,7 @@
 
 - [x] 6.1.36 - create routes colors products
 
-6.1.37 - create service CreateMaterialsProductService
+- [x] 6.1.37 - create service CreateMaterialsProductService
 
 6.1.38 - create controller CreateMaterialsProductController
 

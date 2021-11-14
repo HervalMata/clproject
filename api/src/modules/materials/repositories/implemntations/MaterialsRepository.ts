@@ -28,6 +28,9 @@ class MaterialsRepository implements IMaterialsRepository {
         return await this.repository.find();
     }
 
+    async findByIds(ids: string[]) {
+        return await this.repository.findByIds(ids);
+    }
 }
 
 export { MaterialsRepository };

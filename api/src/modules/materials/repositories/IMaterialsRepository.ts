@@ -6,6 +6,7 @@ interface IMaterialsRepository {
     findByName(name: string): Promise<Material>;
     list(): Promise<Material[]>;
     findByID(id: string): Promise<Material>;
+    findByIds(ids: string[]): Promise<Material[]>;
 }
 
 export { IMaterialsRepository };

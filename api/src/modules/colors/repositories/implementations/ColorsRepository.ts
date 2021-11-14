@@ -29,8 +29,7 @@ class ColorsRepository implements IColorsRepository {
     }
 
     async findByIds(ids: string[]) {
-        const colors = await this.repository.findByIds(ids);
-        return colors;
+        return await this.repository.findByIds(ids);
     }
 }
 
