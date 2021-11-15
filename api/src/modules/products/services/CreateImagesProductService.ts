@@ -10,13 +10,13 @@ interface IRequest {
 class CreateImagesProductService {
 
     constructor(
-        @inject("ProductsImagesRepository")
-        private productsImagesRepository: IProductImagesRepository
+        @inject("ProductImagesRepository")
+        private productImagesRepository: IProductImagesRepository
     ) {}
 
     async execute({ product_id, images_name }: IRequest): Promise<void> {
         images_name.map(async (image) => {
-            await this.productsImagesRepository.create(product_id, image);
+            await this.productImagesRepository.create(product_id, image);
         });
     }
 }

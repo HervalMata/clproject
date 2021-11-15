@@ -7,7 +7,7 @@ class UpdateFeaturedProductController {
         const { id } = req.params;
         const { is_featured } = req.body;
         const updateFeaturedProductService = container.resolve(UpdateFeaturedProductService);
-        await updateFeaturedProductService.execute({product_id: id, is_featured});
+        await updateFeaturedProductService.execute({product_id: id, is_featured: is_featured});
         return res.status(204).send();
     }
 }

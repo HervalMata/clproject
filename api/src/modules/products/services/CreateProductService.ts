@@ -23,6 +23,7 @@ class CreateProductService {
         if (productAlreadyExists) {
             throw new ProductAlreadyExistsError();
         }
+
         return await this.productsRepository.create({
             name, description, stock, price, category_id
         });

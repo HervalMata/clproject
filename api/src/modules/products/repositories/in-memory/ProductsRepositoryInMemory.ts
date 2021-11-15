@@ -81,9 +81,9 @@ class ProductsRepositoryInMemory implements IProductsRepository {
         this.products[productIndex].available = available;
     }
 
-    async updateFeatured(product_id: string, featured: boolean): Promise<void> {
+    async updateFeatured(product_id: string, is_featured: boolean): Promise<void> {
         const productIndex = this.products.findIndex((product) => product.id === product_id);
-        this.products[productIndex].is_featured = featured;
+        this.products[productIndex].is_featured = is_featured;
     }
 
     async updateOffer(product_id: string, is_offer: boolean, offer_price: number): Promise<void> {

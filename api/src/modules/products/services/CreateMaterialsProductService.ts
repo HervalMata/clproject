@@ -21,6 +21,7 @@ class CreateMaterialsProductService {
     ) {}
 
     async execute({ product_id, materials_id }: IRequest): Promise<Product> {
+        console.log(product_id)
         const productExists = await this.productsRepository.findById(product_id);
         if (!productExists) {
             throw new ProductNotExistsError();

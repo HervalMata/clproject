@@ -16,6 +16,7 @@ class GetAvailableProductsService {
     ) {}
 
     async execute({ name, category_id }: IRequest): Promise<Product[]> {
+        console.log(name)
         return await this.productsRepository.findAvailable(name, category_id);
     }
 }

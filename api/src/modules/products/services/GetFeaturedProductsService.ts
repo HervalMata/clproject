@@ -2,10 +2,6 @@ import {inject, injectable} from "tsyringe";
 import {IProductsRepository} from "../repositories/IProductsRepository";
 import {Product} from "../entities/Product";
 
-interface IRequest {
-    is_featured: boolean;
-}
-
 @injectable()
 class GetFeaturedProductsService {
 
@@ -14,8 +10,8 @@ class GetFeaturedProductsService {
         private productsRepository: IProductsRepository
     ) {}
 
-    async execute({ is_featured }: IRequest): Promise<Product[]> {
-        return await this.productsRepository.findFeatured(is_featured, true);
+    async execute(): Promise<Product[]> {
+        return await this.productsRepository.findFeatured(true, true);
     }
 }
 

@@ -10,7 +10,7 @@ interface IProductsRepository {
     updateAvailability(product_id: string, available: boolean): Promise<void>;
     updateStock(product_id: string, stock: number): Promise<void>;
     updatePrice(product_id: string, price: number): Promise<void>;
-    updateFeatured(product_id: string, featured: boolean): Promise<void>;
+    updateFeatured(product_id: string, is_featured: boolean): Promise<void>;
     updateOffer(product_id: string, isOffer: boolean, offer_price: number): Promise<void>;
     update(id: string, name: string, description: string): Promise<void>;
     list(): Promise<Product[]>;

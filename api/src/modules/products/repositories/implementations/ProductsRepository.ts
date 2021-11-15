@@ -10,7 +10,8 @@ class ProductsRepository implements IProductsRepository {
         this.repository = getRepository(Product);
     }
 
-    async create({ id, name, description, stock, price, category_id, colors, materials }: ICreateProductDTO): Promise<void> {
+    async create(data : ICreateProductDTO): Promise<void> {
+        const { id, name, description, stock, price, category_id, colors, materials } = data;
         const product = this.repository.create({ id, name, description, stock, price, category_id, colors, materials });
         await this.repository.save(product);
     }
@@ -18,6 +19,8 @@ class ProductsRepository implements IProductsRepository {
     async findAvailable(name?: string, category_id?: string): Promise<Product[]> {
         const productsQuery = await this.repository
             .createQueryBuilder("p")
+            .leftJoinAndSelect("p.colors", "color")
+            .leftJoinAndSelect("p.materials", "material")
             .where("p.available = :available", { available: true });
 
         if (name) {
@@ -27,32 +30,39 @@ class ProductsRepository implements IProductsRepository {
         if (category_id) {
             productsQuery.andWhere("p.category_id = :category_id", { category_id });
         }
-
+        console.log(productsQuery)
         return await productsQuery.getMany();
     }
 
     async findById(id: string): Promise<Product> {
-        return await this.repository.findOne(id);
+        return await this.repository.findOne({
+            where: { id: id },
+            relations: ['colors', 'materials'],
+        });
     }
 
     async findByIdAndAvailability(id: string, available: boolean): Promise<Product> {
         return await this.repository.findOne({
-            where: [{ id: id }, {available: true}]
+            where: [{ id: id }, {available: true}],
+            relations: ['colors', 'materials'],
         });
     }
 
     async findByName(name: string): Promise<Product> {
-        return await this.repository.findOne(name);
+        return await this.repository.findOne({name});
     }
 
     async findProductByCategory(category_id: string, available: boolean): Promise<Product[]> {
         return await this.repository.find({
-            where: { category_id, available: true }
+            where: { category_id, available: true },
+            relations: ['colors', 'materials'],
         });
     }
 
     async list(): Promise<Product[]> {
-        return await this.repository.find();
+        return await this.repository.find({
+            relations: ['colors', 'materials']
+        });
     }
 
     async update(id, name, description): Promise<void> {
@@ -95,20 +105,28 @@ class ProductsRepository implements IProductsRepository {
             .setParameters({ product_id }).execute();
     }
 
-    async updateFeatured(product_id: string, featured: boolean): Promise<void> {
+    async updateFeatured(product_id: string, is_featured: boolean): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
-            .set({ is_featured:featured, })
+            .set({ is_featured: is_featured, })
             .where("id = :product_id")
             .setParameters({ product_id }).execute();
     }
 
     async findFeatured(is_featured: boolean, available: boolean): Promise<Product[]> {
-        return await this.repository.find({is_featured, available: true});
+        console.log(is_featured, available)
+        return await this.repository.find(
+            {
+                where: {is_featured: true, available: true},
+                relations: ['colors', 'materials'],
+            });
     }
 
     async findOffer(is_offer: boolean, available: boolean): Promise<Product[]> {
-        return await this.repository.find({ is_offer, available: true });
+        return await this.repository.find({
+        where: { is_offer: true, available: true },
+            relations: ['colors', 'materials'],
+        });
     }
 
 }

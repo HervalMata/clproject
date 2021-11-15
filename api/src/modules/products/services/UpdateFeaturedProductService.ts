@@ -15,7 +15,7 @@ class UpdateFeaturedProductService {
     ) {}
 
     async execute({ product_id, is_featured }: IRequest): Promise<void> {
-        return await this.productsRepository.updateAvailability(product_id, is_featured);
+        return await this.productsRepository.updateFeatured(product_id, is_featured);
     }
 }
 
