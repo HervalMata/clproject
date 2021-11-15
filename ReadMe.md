@@ -494,7 +494,7 @@
 
 - [x] 7.1.1 - Create migration CreateReviews
 
-7.1.2 - Create entity reviews
+- [x] 7.1.2 - Create entity reviews
 
 7.1.3 - create dto ICreateReviewDTO
 
