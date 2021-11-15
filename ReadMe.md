@@ -492,7 +492,7 @@
 
 ### 7 - Reviews
 
-7.1.1 - Create migration CreateReviews
+- [x] 7.1.1 - Create migration CreateReviews
 
 7.1.2 - Create entity reviews
 
