@@ -5,7 +5,7 @@ interface IProductsRepository {
     create(data: ICreateProductDTO): Promise<void>;
     findByName(name: string): Promise<Product>;
     findById(id: string): Promise<Product>;
-    findProductByCategory(category_id: string): Promise<Product[]>;
+    findProductByCategory(category_id: string, available: boolean): Promise<Product[]>;
     findAvailable(name?: string, category_id?: string): Promise<Product[]>;
     updateAvailability(product_id: string, available: boolean): Promise<void>;
     updateStock(product_id: string, stock: number): Promise<void>;
@@ -15,8 +15,8 @@ interface IProductsRepository {
     update(id: string, name: string, description: string): Promise<void>;
     list(): Promise<Product[]>;
     findByIdAndAvailability(id: string, available: boolean): Promise<Product>;
-    findFeatured(is_featured: boolean): Promise<Product[]>;
-    findOffer(is_offer: boolean): Promise<Product[]>;
+    findFeatured(is_featured: boolean, available: boolean): Promise<Product[]>;
+    findOffer(is_offer: boolean, available: boolean): Promise<Product[]>;
 }
 
 export { IProductsRepository };

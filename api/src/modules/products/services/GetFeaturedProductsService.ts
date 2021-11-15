@@ -15,7 +15,7 @@ class GetFeaturedProductsService {
     ) {}
 
     async execute({ is_featured }: IRequest): Promise<Product[]> {
-        return await this.productsRepository.findFeatured(is_featured);
+        return await this.productsRepository.findFeatured(is_featured, true);
     }
 }
 

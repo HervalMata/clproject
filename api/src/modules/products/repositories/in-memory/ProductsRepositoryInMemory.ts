@@ -39,17 +39,27 @@ class ProductsRepositoryInMemory implements IProductsRepository {
         return this.products.find((product) => product.name === name);
     }
 
-    async findFeatured(is_featured: boolean): Promise<Product[]> {
-        return this.products.filter((product) => product.is_featured === true);
-    }
-
-    async findOffer(is_offer: boolean): Promise<Product[]> {
-        return this.products.filter((product) => product.is_offer === true);
-    }
-
-    async findProductByCategory(category_id: string): Promise<Product[]> {
+    async findFeatured(is_featured: boolean, available: boolean): Promise<Product[]> {
         return this.products.filter((products) => {
-            if (products.category_id === category_id) {
+            if (products.is_featured === true && products.available === true) {
+                return products;
+            }
+            return null;
+        });
+    }
+
+    async findOffer(is_offer: boolean, available: boolean): Promise<Product[]> {
+        return this.products.filter((products) => {
+            if (products.is_offer === true && products.available === true) {
+                return products;
+            }
+            return null;
+        });
+    }
+
+    async findProductByCategory(category_id: string, available: boolean): Promise<Product[]> {
+        return this.products.filter((products) => {
+            if (products.category_id === category_id && products.available === true) {
                 return products;
             }
             return null;

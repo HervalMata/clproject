@@ -15,7 +15,7 @@ class GetOfferProductsService {
     ) {}
 
     async execute({ is_offer }: IRequest): Promise<Product[]> {
-        return await this.productsRepository.findOffer(is_offer);
+        return await this.productsRepository.findOffer(is_offer,  true);
     }
 }
 

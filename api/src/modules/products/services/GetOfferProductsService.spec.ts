@@ -44,12 +44,14 @@ describe('Get Available Products', () => {
         const id1 = product1.id;
 
         await productsRepositoryInMemory.updateOffer(id1, true, 20.00);
+        await productsRepositoryInMemory.updateAvailability(id1, true);
 
         const product2 = await productsRepositoryInMemory.findByName("Product Test1");
 
         const id2 = product2.id;
 
         await productsRepositoryInMemory.updateOffer(id2, true, 18.00);
+        await productsRepositoryInMemory.updateAvailability(id2, true);
 
         await expect(await getOfferProductsService.execute({ is_offer: true })).toHaveLength(2);
     });

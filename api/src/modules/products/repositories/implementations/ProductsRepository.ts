@@ -45,9 +45,9 @@ class ProductsRepository implements IProductsRepository {
         return await this.repository.findOne(name);
     }
 
-    async findProductByCategory(category_id: string): Promise<Product[]> {
+    async findProductByCategory(category_id: string, available: boolean): Promise<Product[]> {
         return await this.repository.find({
-            where: { category_id }
+            where: { category_id, available: true }
         });
     }
 
@@ -103,12 +103,12 @@ class ProductsRepository implements IProductsRepository {
             .setParameters({ product_id }).execute();
     }
 
-    async findFeatured(is_featured: boolean): Promise<Product[]> {
-        return await this.repository.find({is_featured});
+    async findFeatured(is_featured: boolean, available: boolean): Promise<Product[]> {
+        return await this.repository.find({is_featured, available: true});
     }
 
-    async findOffer(is_offer: boolean): Promise<Product[]> {
-        return await this.repository.find({ is_offer });
+    async findOffer(is_offer: boolean, available: boolean): Promise<Product[]> {
+        return await this.repository.find({ is_offer, available: true });
     }
 
 }

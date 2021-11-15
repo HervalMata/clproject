@@ -15,7 +15,7 @@ class GetProductsByCategoryService {
     ) {}
 
     async execute({ category_id }: IRequest): Promise<Product[]> {
-        return await this.productsRepository.findProductByCategory(category_id);
+        return await this.productsRepository.findProductByCategory(category_id, true);
     }
 }
 

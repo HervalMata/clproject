@@ -40,6 +40,14 @@ describe('Get Products By Category', () => {
             price: 25.00,
             category_id: category_id,
         });
+        const product1 = await productsRepositoryInMemory.findByName("Product Test");
+        const product_id1 = product1.id;
+        const product2 = await productsRepositoryInMemory.findByName("Product Test1");
+        console.log(product2.available)
+        const product_id2 = product2.id;
+        await productsRepositoryInMemory.updateAvailability(product_id1, true);
+        await productsRepositoryInMemory.updateAvailability(product_id2, true);
+        console.log(product2.available)
         await expect(await getProductsByCategoryService.execute({category_id})).toHaveLength(2);
     });
 

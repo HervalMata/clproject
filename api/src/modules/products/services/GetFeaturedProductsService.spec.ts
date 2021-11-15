@@ -44,12 +44,14 @@ describe('Get Featured Products', () => {
         const id1 = product1.id;
 
         await productsRepositoryInMemory.updateFeatured(id1, true);
+        await productsRepositoryInMemory.updateAvailability(id1, true);
 
         const product2 = await productsRepositoryInMemory.findByName("Product Test1");
 
         const id2 = product2.id;
 
         await productsRepositoryInMemory.updateFeatured(id2, true);
+        await productsRepositoryInMemory.updateAvailability(id2, true);
 
         await expect(await getFeaturedProductsService.execute({is_featured: true})).toHaveLength(2);
     });
