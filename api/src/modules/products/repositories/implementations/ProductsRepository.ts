@@ -129,6 +129,10 @@ class ProductsRepository implements IProductsRepository {
         });
     }
 
+    async findByIds(ids: string[]): Promise<Product[]> {
+        return await this.repository.findByIds(ids);
+    }
+
 }
 
 export { ProductsRepository };

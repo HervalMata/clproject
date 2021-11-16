@@ -17,6 +17,7 @@ interface IProductsRepository {
     findByIdAndAvailability(id: string, available: boolean): Promise<Product>;
     findFeatured(is_featured: boolean, available: boolean): Promise<Product[]>;
     findOffer(is_offer: boolean, available: boolean): Promise<Product[]>;
+    findByIds(ids: string[]): Promise<Product[]>;
 }
 
 export { IProductsRepository };

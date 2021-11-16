@@ -102,6 +102,12 @@ class ProductsRepositoryInMemory implements IProductsRepository {
         this.products[productIndex].stock = stock;
     }
 
+    async findByIds(ids: string[]): Promise<Product[]> {
+        return this.products.filter((product) =>
+            ids.includes(product.id)
+        );
+    }
+
 }
 
 export { ProductsRepositoryInMemory };

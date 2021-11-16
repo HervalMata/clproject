@@ -10,6 +10,10 @@ class WishlistsRepository implements IWishlistsRepository {
         this.repository = getRepository(Wishlist);
     }
 
+    async findById(id: string): Promise<Wishlist> {
+        return await this.repository.findOne(id);
+    }
+
     async create(data: ICreateWishlistDTO): Promise<void> {
         const { id, user_id, products } = data;
         const wishlist = this.repository.create({id, user_id, products});
