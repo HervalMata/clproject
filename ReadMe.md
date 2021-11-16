@@ -566,7 +566,7 @@
 
 - [x] 8.1.13 - create controller GetWishlistsByUserController
 
-8.1.14 - create route for get wishlists by user
+- [x] 8.1.14 - create route for get wishlists by user
 
 8.1.15 - create implementation repository WishlistsRepositoryInMemory for tests
 
