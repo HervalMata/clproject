@@ -530,7 +530,7 @@
 
 - [x] 7.1.19 - create implementation repository ReviewsRepositoryInMemory for tests
 
-7.1.20 - create service test CreateReviewService spec
+- [x] 7.1.20 - create service test CreateReviewService spec
 
 7.1.21 - create service test CreateReviewsByUserService spec
 
