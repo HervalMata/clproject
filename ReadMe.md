@@ -546,7 +546,7 @@
 
 - [x] 8.1.3 - Create entity wishlists
 
-8.1.4 - Create entity products wishlists
+- [x] 8.1.4 - Create entity relation products wishlists
 
 8.1.5 - create dto ICreateWishlistDTO
 
