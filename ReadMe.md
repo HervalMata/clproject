@@ -582,7 +582,7 @@
 
 - [x] 9.1.3 - create dto ICreateCouponDTO
 
-9.1.4 - create interface repository ICouponRepository
+- [x] 9.1.4 - create interface repository ICouponRepository
 
 9.1.5 - create implementation repository CouponRepository
 
