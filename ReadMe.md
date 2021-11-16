@@ -598,7 +598,7 @@
 
 - [x] 9.1.11 - create controller GetAllCouponsController
 
-9.1.12 - create route for get all coupons
+- [x] 9.1.12 - create route for get all coupons
 
 9.1.13 - create service GetCouponService
 
