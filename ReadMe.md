@@ -612,7 +612,7 @@
 
 - [x] 9.1.18 - create route for update a coupon
 
-9.1.19 - create implementation repository CouponsRepositoryInMemory for tests
+- [x] 9.1.19 - create implementation repository CouponsRepositoryInMemory for tests
 
 9.1.20 - create service test CreateCouponService spec
 
