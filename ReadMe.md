@@ -608,7 +608,7 @@
 
 - [x] 9.1.16 - create service UpdateCouponService
 
-9.1.17 - create controller UpdateCouponController
+- [x] 9.1.17 - create controller UpdateCouponController
 
 9.1.18 - create route for update a coupon
 
