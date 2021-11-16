@@ -576,7 +576,7 @@
 
 ### 9 - Coupons
 
-9.1.1 - Create migration CreateCoupons
+- [x] 9.1.1 - Create migration CreateCoupons
 
 9.1.2 - Create entity coupons
 
