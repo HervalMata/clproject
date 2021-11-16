@@ -564,7 +564,7 @@
 
 - [x] 8.1.12 - create service GetWishlistsByUserService
 
-8.1.13 - create controller GetWishlistsByUserController
+- [x] 8.1.13 - create controller GetWishlistsByUserController
 
 8.1.14 - create route for get wishlists by user
 
