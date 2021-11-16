@@ -504,7 +504,7 @@
 
 - [x] 7.1.6 - register container typeorm
 
-7.1.7 - create service CreateReviewService
+- [x] 7.1.7 - create service CreateReviewService
 
 7.1.8 - create controller CreateReviewController
 
