@@ -524,7 +524,7 @@
 
 - [x] 7.1.16 - create service UpdateReviewService
 
-7.1.17 - create controller UpdateReviewController
+- [x] 7.1.17 - create controller UpdateReviewController
 
 7.1.18 - create route for update review
 
