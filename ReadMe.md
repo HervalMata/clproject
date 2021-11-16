@@ -508,7 +508,7 @@
 
 - [x] 7.1.8 - create controller CreateReviewController
 
-7.1.9 - create routes reviews routes
+- [x] 7.1.9 - create routes reviews routes
 
 7.1.10 - create service GetReviewsByUserService
 

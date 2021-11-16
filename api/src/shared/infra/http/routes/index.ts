@@ -7,6 +7,7 @@ import {categoriesRoutes} from "./categories.routes";
 import {colorsRoutes} from "./colors.routes";
 import {materialsRoutes} from "./materials.routes";
 import {productsRoutes} from "./products.routes";
+import {reviewsRoutes} from "./reviews.routes";
 
 const router = Router();
 
@@ -18,5 +19,6 @@ router.use("/categories", categoriesRoutes);
 router.use("/colors", colorsRoutes);
 router.use("/materials", materialsRoutes);
 router.use("/products", productsRoutes);
+router.use("/reviews", reviewsRoutes);
 
 export { router };
