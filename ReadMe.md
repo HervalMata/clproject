@@ -510,7 +510,7 @@
 
 - [x] 7.1.9 - create routes reviews routes
 
-7.1.10 - create service GetReviewsByUserService
+- [x] 7.1.10 - create service GetReviewsByUserService
 
 7.1.11 - create controller GetReviewsByUserController
 
