@@ -22,6 +22,8 @@ import {IProductsRepository} from "../../modules/products/repositories/IProducts
 import {ProductsRepository} from "../../modules/products/repositories/implementations/ProductsRepository";
 import {IProductImagesRepository} from "../../modules/products/repositories/IProductImagesRepository";
 import {ProductImagesRepository} from "../../modules/products/repositories/implementations/ProductImagesRepository";
+import {IReviewsRepository} from "../../modules/reviews/repositories/IReviewsRepository";
+import {ReviewsRepository} from "../../modules/reviews/repositories/implementations/ReviewsRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -76,4 +78,9 @@ container.registerSingleton<IProductsRepository>(
 container.registerSingleton<IProductImagesRepository>(
     "ProductImagesRepository",
     ProductImagesRepository
+);
+
+container.registerSingleton<IReviewsRepository>(
+    "ReviewsRepository",
+    ReviewsRepository
 );

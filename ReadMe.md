@@ -502,7 +502,7 @@
 
 - [x] 7.1.5 - create implementation repository ReviewRepository
 
-7.1.6 - register container typeorm
+- [x] 7.1.6 - register container typeorm
 
 7.1.7 - create service CreateReviewService
 
