@@ -496,7 +496,7 @@
 
 - [x] 7.1.2 - Create entity reviews
 
-7.1.3 - create dto ICreateReviewDTO
+- [x] 7.1.3 - create dto ICreateReviewDTO
 
 7.1.4 - create interface repository IReviewRepository
 
