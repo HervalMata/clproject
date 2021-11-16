@@ -540,35 +540,39 @@
 
 ### 8 - Wishlists
 
-8.1.1 - Create migration CreateWishlists
+- [x] 8.1.1 - Create migration CreateWishlists
 
-8.1.2 - Create entity wishlists
+8.1.2 - Create migration CreateProductsWishlists
 
-8.1.3 - create dto ICreateWishlistDTO
+8.1.3 - Create entity wishlists
 
-8.1.4 - create interface repository IWishlistRepository
+8.1.4 - Create entity products wishlists
 
-8.1.5 - create implementation repository WishlistRepository
+8.1.5 - create dto ICreateWishlistDTO
 
-8.1.6 - register container typeorm
+8.1.6 - create interface repository IWishlistRepository
 
-8.1.7 - create service CreateWishlistService
+8.1.7 - create implementation repository WishlistRepository
 
-8.1.8 - create controller CreateWishlistController
+8.1.8 - register container typeorm
 
-8.1.9 - create routes wishlists routes
+8.1.9 - create service CreateWishlistService
 
-8.1.10 - create service GetWishlistsByUserService
+8.1.10 - create controller CreateWishlistController
 
-8.1.11 - create controller GetWishlistsByUserController
+8.1.11 - create routes wishlists routes
 
-8.1.12 - create route for get wishlists by user
+8.1.12 - create service GetWishlistsByUserService
 
-8.1.13 - create implementation repository WishlistsRepositoryInMemory for tests
+8.1.13 - create controller GetWishlistsByUserController
 
-8.1.14 - create service test CreateWishlistService spec
+8.1.14 - create route for get wishlists by user
 
-8.1.15 - create service test GetWishlistsByUserService spec
+8.1.15 - create implementation repository WishlistsRepositoryInMemory for tests
+
+8.1.16 - create service test CreateWishlistService spec
+
+8.1.17 - create service test GetWishlistsByUserService spec
 
 ### 9 - Coupons
 
