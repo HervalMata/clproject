@@ -522,7 +522,7 @@
 
 - [x] 7.1.15 - create route for get reviews by product
 
-7.1.16 - create service UpdateReviewService
+- [x] 7.1.16 - create service UpdateReviewService
 
 7.1.17 - create controller UpdateReviewController
 

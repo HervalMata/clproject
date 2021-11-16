@@ -7,6 +7,7 @@ interface IReviewsRepository {
     findByProduct(product_id: string): Promise<Review[]>;
     findByUser(user_id: string): Promise<Review[]>;
     findById(id: string): Promise<Review>;
+    updateReview(id: string, description: string, rating: number): Promise<void>;
 }
 
 export { IReviewsRepository };

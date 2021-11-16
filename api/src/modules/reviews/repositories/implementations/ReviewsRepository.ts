@@ -45,6 +45,14 @@ class ReviewsRepository implements IReviewsRepository {
         });
     }
 
+    async updateReview(id: string, description: string, rating: number): Promise<void> {
+        await this.repository
+            .createQueryBuilder().update()
+            .set({ description: description, rating: rating })
+            .where("id = :id")
+            .setParameters({ id }).execute();
+    }
+
 }
 
 export { ReviewsRepository };
