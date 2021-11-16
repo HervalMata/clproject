@@ -570,7 +570,7 @@
 
 - [x] 8.1.15 - create implementation repository WishlistsRepositoryInMemory for tests
 
-8.1.16 - create service test CreateWishlistService spec
+- [x] 8.1.16 - create service test CreateWishlistService spec
 
 8.1.17 - create service test GetWishlistsByUserService spec
 
