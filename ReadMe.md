@@ -528,7 +528,7 @@
 
 - [x] 7.1.18 - create route for update review
 
-7.1.19 - create implementation repository ReviewsRepositoryInMemory for tests
+- [x] 7.1.19 - create implementation repository ReviewsRepositoryInMemory for tests
 
 7.1.20 - create service test CreateReviewService spec
 
