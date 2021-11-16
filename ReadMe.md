@@ -500,7 +500,7 @@
 
 - [x] 7.1.4 - create interface repository IReviewRepository
 
-7.1.5 - create implementation repository ReviewRepository
+- [x] 7.1.5 - create implementation repository ReviewRepository
 
 7.1.6 - register container typeorm
 
