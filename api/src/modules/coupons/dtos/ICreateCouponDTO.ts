@@ -1,3 +1,5 @@
+import {Type} from "../entities/Coupon";
+
 interface ICreateCouponDTO {
     id?: string;
     code: string;

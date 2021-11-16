@@ -590,7 +590,7 @@
 
 - [x] 9.1.7 - create service CreateCouponService
 
-9.1.8 - create controller CreateCouponController
+- [x] 9.1.8 - create controller CreateCouponController
 
 9.1.9 - create routes coupons routes
 

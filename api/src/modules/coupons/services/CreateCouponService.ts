@@ -1,7 +1,13 @@
 import {inject, injectable} from "tsyringe";
 import {ICouponsRepository} from "../repositories/ICouponsRepository";
-import {ICreateCouponDTO} from "../dtos/ICreateCouponDTO";
 import {CouponAlreadyExistsError} from "../errors/CouponAlreadyExistsError";
+import {Type} from "../entities/Coupon";
+
+interface IRequest {
+    type: Type;
+    value: number;
+    expire_date: Date;
+}
 
 @injectable()
 class CreateCouponService {
@@ -11,13 +17,13 @@ class CreateCouponService {
         private couponsRepository: ICouponsRepository
     ) {}
 
-    async execute({ id, type, value, expire_date }: ICreateCouponDTO): Promise<void> {
+    async execute({ type, value, expire_date }: IRequest): Promise<void> {
         const code = "CODE - " + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes();
         const couponAlreadyExists = await this.couponsRepository.findByCode(code);
         if (couponAlreadyExists) {
             throw new CouponAlreadyExistsError();
         }
-        await this.couponsRepository.create({ id, code, type, value, expire_date });
+        await this.couponsRepository.create({ code, type, value, expire_date });
     }
 }
 
