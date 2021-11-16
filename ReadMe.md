@@ -536,7 +536,7 @@
 
 - [x] 7.1.22 - create service test GetReviewsByProductService spec
 
-7.1.23 - create service test UpdateReviewService spec
+- [x] 7.1.23 - create service test UpdateReviewService spec
 
 ### 8 - Wishlists
 
