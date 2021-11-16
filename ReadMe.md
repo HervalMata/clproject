@@ -518,7 +518,7 @@
 
 - [x] 7.1.13 - create service GetReviewsByProductService
 
-7.1.14 - create controller GetReviewsByProductController
+- [x] 7.1.14 - create controller GetReviewsByProductController
 
 7.1.15 - create route for get reviews by product
 
