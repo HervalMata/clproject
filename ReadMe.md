@@ -578,7 +578,7 @@
 
 - [x] 9.1.1 - Create migration CreateCoupons
 
-9.1.2 - Create entity coupons
+- [x] 9.1.2 - Create entity coupons
 
 9.1.3 - create dto ICreateCouponDTO
 
