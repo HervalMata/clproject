@@ -584,7 +584,7 @@
 
 - [x] 9.1.4 - create interface repository ICouponRepository
 
-9.1.5 - create implementation repository CouponRepository
+- [x] 9.1.5 - create implementation repository CouponRepository
 
 9.1.6 - register container typeorm
 
