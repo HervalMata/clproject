@@ -550,7 +550,7 @@
 
 - [x] 8.1.5 - create dto ICreateWishlistDTO
 
-8.1.6 - create interface repository IWishlistRepository
+- [x] 8.1.6 - create interface repository IWishlistRepository
 
 8.1.7 - create implementation repository WishlistRepository
 
