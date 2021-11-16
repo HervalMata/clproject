@@ -21,27 +21,27 @@ class ReviewsRepository implements IReviewsRepository {
     async findById(id: string): Promise<Review> {
         return await this.repository.findOne({
             where: { id },
-            relations: ['users', 'products']
+            relations: ['user', 'product']
         });
     }
 
     async findByProduct(product_id: string): Promise<Review[]> {
         return await this.repository.find({
             where: {product_id},
-            relations: ['users', 'products']
+            relations: ['user', 'product']
         });
     }
 
     async findByUser(user_id: string): Promise<Review[]> {
         return await this.repository.find({
             where: {user_id},
-            relations: ['users', 'products']
+            relations: ['user', 'product']
         });
     }
 
     async list(): Promise<Review[]> {
         return await this.repository.find({
-            relations: ['users', 'products']
+            relations: ['user', 'product']
         });
     }
 
@@ -51,6 +51,16 @@ class ReviewsRepository implements IReviewsRepository {
             .set({ description: description, rating: rating })
             .where("id = :id")
             .setParameters({ id }).execute();
+    }
+
+    async findByUserAndProduct(user_id: string, product_id: string): Promise<Review> {
+        return await this.repository.findOne({
+            where: { user_id: user_id, product_id: product_id }
+        });
+    }
+
+    async delete(id: string): Promise<any> {
+        return await this.repository.delete(id);
     }
 
 }

@@ -53,10 +53,19 @@ describe('Get Users Reviews',  () => {
         });
         const product = await productsRepositoryInMemory.findByName("Product Test");
         const product_id = product.id;
+        await createProductService.execute({
+            name: "Product Test1",
+            description: "Description product test",
+            stock: 1,
+            price: 25.00,
+            category_id: category_id,
+        });
+        const product1 = await productsRepositoryInMemory.findByName("Product Test1");
+        const product1_id = product1.id;
         const description = "Some description";
         const rating = 5;
         await createReviewService.execute({ user_id, product_id, description, rating});
-        await createReviewService.execute({ user_id, product_id, description, rating});
+        await createReviewService.execute({ user_id, product_id: product1_id, description, rating});
         const user_reviews = await getReviewsByUserService.execute({user_id});
         expect(user_reviews).toHaveLength(2);
     });

@@ -11,6 +11,10 @@ class CreateReviewService {
     ) {}
 
     async execute({ user_id, product_id, description, rating }: ICreateReviewsDTO): Promise<void> {
+        const reviewAlreadyExists = await this.reviewsRepository.findByUserAndProduct(user_id, product_id);
+        if (reviewAlreadyExists) {
+            await this.reviewsRepository.delete(reviewAlreadyExists.id);
+        }
         await this.reviewsRepository.create({ user_id, product_id, description, rating });
     }
 }

@@ -35,6 +35,18 @@ class ReviewsRepositoryInMemory implements IReviewsRepository {
         this.reviews[reviewIndex].rating = rating;
     }
 
+    async delete(id: string): Promise<any> {
+        const review_existent = this.reviews.findIndex((review) => review.id === id);
+        return this.reviews.splice(review_existent, 1);
+    }
+
+    async findByUserAndProduct(user_id: string, product_id: string): Promise<Review> {
+        return this.reviews.find((review) =>
+            review.user_id === user_id &&
+            review.product_id === product_id
+        );
+    }
+
 }
 
 export { ReviewsRepositoryInMemory };

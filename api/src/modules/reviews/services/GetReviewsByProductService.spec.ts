@@ -38,6 +38,12 @@ describe('Get Products Reviews',  () => {
             password: "1234"
         });
         const user_id = user.id;
+        const user1 = await createUserService.execute({
+            name: "User Test1",
+            email: "user1@test.com",
+            password: "1234"
+        });
+        const user1_id = user1.id;
         await createCategoryService.execute({
             name: "Category Test",
             description: "description category test"
@@ -56,7 +62,7 @@ describe('Get Products Reviews',  () => {
         const description = "Some description";
         const rating = 5;
         await createReviewService.execute({ user_id, product_id, description, rating});
-        await createReviewService.execute({ user_id, product_id, description, rating});
+        await createReviewService.execute({ user_id: user1_id, product_id, description, rating});
         const product_reviews = await getReviewsByProductService.execute({product_id});
         expect(product_reviews).toHaveLength(2);
     });
