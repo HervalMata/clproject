@@ -8,6 +8,7 @@ import {colorsRoutes} from "./colors.routes";
 import {materialsRoutes} from "./materials.routes";
 import {productsRoutes} from "./products.routes";
 import {reviewsRoutes} from "./reviews.routes";
+import {wishlistsRoutes} from "./wishlists.routes";
 
 const router = Router();
 
@@ -20,5 +21,6 @@ router.use("/colors", colorsRoutes);
 router.use("/materials", materialsRoutes);
 router.use("/products", productsRoutes);
 router.use("/reviews", reviewsRoutes);
+router.use("/wishlists", wishlistsRoutes);
 
 export { router };

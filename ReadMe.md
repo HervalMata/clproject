@@ -560,7 +560,7 @@
 
 - [x] 8.1.10 - create controller CreateWishlistController
 
-8.1.11 - create routes wishlists routes
+- [x] 8.1.11 - create routes wishlists routes
 
 8.1.12 - create service GetWishlistsByUserService
 
