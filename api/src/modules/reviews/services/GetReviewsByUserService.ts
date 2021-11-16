@@ -15,7 +15,7 @@ class GetReviewsByUserService {
     ) {}
 
     async execute({ user_id }: IRequest): Promise<Review[]> {
-        return await this.reviewsRepository.findByProduct(user_id);
+        return await this.reviewsRepository.findByUser(user_id);
     }
 }
 
