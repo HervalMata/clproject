@@ -498,7 +498,7 @@
 
 - [x] 7.1.3 - create dto ICreateReviewDTO
 
-7.1.4 - create interface repository IReviewRepository
+- [x] 7.1.4 - create interface repository IReviewRepository
 
 7.1.5 - create implementation repository ReviewRepository
 
