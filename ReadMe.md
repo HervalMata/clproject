@@ -544,7 +544,7 @@
 
 - [x] 8.1.2 - Create migration CreateProductsWishlists
 
-8.1.3 - Create entity wishlists
+- [x] 8.1.3 - Create entity wishlists
 
 8.1.4 - Create entity products wishlists
 
