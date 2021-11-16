@@ -542,7 +542,7 @@
 
 - [x] 8.1.1 - Create migration CreateWishlists
 
-8.1.2 - Create migration CreateProductsWishlists
+- [x] 8.1.2 - Create migration CreateProductsWishlists
 
 8.1.3 - Create entity wishlists
 
