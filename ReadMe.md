@@ -568,7 +568,7 @@
 
 - [x] 8.1.14 - create route for get wishlists by user
 
-8.1.15 - create implementation repository WishlistsRepositoryInMemory for tests
+- [x] 8.1.15 - create implementation repository WishlistsRepositoryInMemory for tests
 
 8.1.16 - create service test CreateWishlistService spec
 
