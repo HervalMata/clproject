@@ -572,7 +572,7 @@
 
 - [x] 8.1.16 - create service test CreateWishlistService spec
 
-8.1.17 - create service test GetWishlistsByUserService spec
+- [x] 8.1.17 - create service test GetWishlistsByUserService spec
 
 ### 9 - Coupons
 
