@@ -3,7 +3,7 @@ import {IReviewsRepository} from "../repositories/IReviewsRepository";
 import {Review} from "../entities/Review";
 
 interface IRequest {
-    product_id: string;
+    user_id: string;
 }
 
 @injectable()
@@ -14,8 +14,8 @@ class GetReviewsByUserService {
         private reviewsRepository: IReviewsRepository
     ) {}
 
-    async execute({ product_id }: IRequest): Promise<Review[]> {
-        return await this.reviewsRepository.findByProduct(product_id);
+    async execute({ user_id }: IRequest): Promise<Review[]> {
+        return await this.reviewsRepository.findByProduct(user_id);
     }
 }
 
