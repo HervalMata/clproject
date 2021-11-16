@@ -580,7 +580,7 @@
 
 - [x] 9.1.2 - Create entity coupons
 
-9.1.3 - create dto ICreateCouponDTO
+- [x] 9.1.3 - create dto ICreateCouponDTO
 
 9.1.4 - create interface repository ICouponRepository
 
