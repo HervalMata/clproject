@@ -552,7 +552,7 @@
 
 - [x] 8.1.6 - create interface repository IWishlistRepository
 
-8.1.7 - create implementation repository WishlistRepository
+- [x] 8.1.7 - create implementation repository WishlistRepository
 
 8.1.8 - register container typeorm
 
