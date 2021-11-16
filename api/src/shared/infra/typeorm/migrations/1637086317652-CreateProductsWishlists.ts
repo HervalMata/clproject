@@ -5,7 +5,7 @@ export class CreateProductsWishlists1637086317652 implements MigrationInterface 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: "wishlist_products",
+                name: "products_wishlists",
                 columns: [
                     {
                         name: "product_id",

@@ -26,7 +26,8 @@ class WishlistsRepository implements IWishlistsRepository {
 
     async findWishlistByUser(user_id: string): Promise<Wishlist> {
         return await this.repository.findOne({
-            user_id: user_id
+            where: {user_id: user_id},
+            relations: ['products']
         });
     }
 
