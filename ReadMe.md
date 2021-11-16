@@ -586,7 +586,7 @@
 
 - [x] 9.1.5 - create implementation repository CouponRepository
 
-9.1.6 - register container typeorm
+- [x] 9.1.6 - register container typeorm
 
 9.1.7 - create service CreateCouponService
 
