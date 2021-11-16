@@ -526,7 +526,7 @@
 
 - [x] 7.1.17 - create controller UpdateReviewController
 
-7.1.18 - create route for update review
+- [x] 7.1.18 - create route for update review
 
 7.1.19 - create implementation repository ReviewsRepositoryInMemory for tests
 
