@@ -534,7 +534,7 @@
 
 - [x] 7.1.21 - create service test GetReviewsByUserService spec
 
-7.1.22 - create service test GetReviewsByProductService spec
+- [x] 7.1.22 - create service test GetReviewsByProductService spec
 
 7.1.23 - create service test UpdateReviewService spec
 
