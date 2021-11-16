@@ -558,7 +558,7 @@
 
 - [x] 8.1.9 - create service CreateWishlistService
 
-8.1.10 - create controller CreateWishlistController
+- [x] 8.1.10 - create controller CreateWishlistController
 
 8.1.11 - create routes wishlists routes
 
