@@ -31,10 +31,10 @@ class CouponsRepository implements ICouponsRepository {
         return await this.repository.find();
     }
 
-    async update({ id, code, type, expire_date, value }: ICreateCouponDTO): Promise<void> {
+    async update(id, expire_date ): Promise<void> {
         await this.repository.createQueryBuilder()
             .update()
-            .set({ type: type, value: value, expire_date: expire_date })
+            .set({ expire_date: expire_date })
             .where("id = :id")
             .setParameters({ id })
             .execute();

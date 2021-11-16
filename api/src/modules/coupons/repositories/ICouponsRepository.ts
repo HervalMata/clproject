@@ -7,7 +7,7 @@ interface ICouponsRepository {
     findById(id: string): Promise<Coupon>;
     findByType(type: Type): Promise<Coupon[]>;
     findByExpireDate(expire_date: Date): Promise<Coupon>;
-    update(data: ICreateCouponDTO): Promise<void>;
+    update(id: string, expire_date: Date): Promise<void>;
     findByCode(code: string): Promise<Coupon>;
 }
 
