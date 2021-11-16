@@ -610,7 +610,7 @@
 
 - [x] 9.1.17 - create controller UpdateCouponController
 
-9.1.18 - create route for update a coupon
+- [x] 9.1.18 - create route for update a coupon
 
 9.1.19 - create implementation repository CouponsRepositoryInMemory for tests
 
