@@ -680,7 +680,7 @@
 
 ### 11 - Payments
 
-11.1.1 - Create migration CreatePayments
+- [x] 11.1.1 - Create migration CreatePayments
 
 11.1.2 - Create entity payments
 
