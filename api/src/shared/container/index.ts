@@ -30,6 +30,8 @@ import {ICouponsRepository} from "../../modules/coupons/repositories/ICouponsRep
 import {CouponsRepository} from "../../modules/coupons/repositories/implementations/CouponsRepository";
 import {IDeliveriesRepository} from "../../modules/deliveries/repositories/IDeliveriesRepository";
 import {DeliveriesRepository} from "../../modules/deliveries/repositories/implementations/DeliveriesRepository";
+import {IPaymentsRepository} from "../../modules/payments/repositories/IPaymentsRepository";
+import {PaymentsRepository} from "../../modules/payments/repositories/implementations/PaymentsRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -104,4 +106,9 @@ container.registerSingleton<ICouponsRepository>(
 container.registerSingleton<IDeliveriesRepository>(
     "DeliveriesRepository",
     DeliveriesRepository
+);
+
+container.registerSingleton<IPaymentsRepository>(
+    "PaymentsRepository",
+    PaymentsRepository
 );
