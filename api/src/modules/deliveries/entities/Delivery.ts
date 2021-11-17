@@ -1,5 +1,4 @@
-import {Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn, UpdateDateColumn} from "typeorm";
-import {Address} from "../../address/entities/Address";
+import {Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn} from "typeorm";
 import {v4 as uuidV4} from "uuid";
 
 export enum Type {
