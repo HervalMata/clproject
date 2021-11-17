@@ -626,7 +626,7 @@
 
 - [x] 10.1.1 - Create migration CreateOrders and CreateProductsOrders
 
-10.1.2 - Create entity orders
+- [x] 10.1.2 - Create entity orders
 
 10.1.3 - create dto ICreateOrderDTO
 
