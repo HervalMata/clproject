@@ -742,7 +742,7 @@
 
 - [x] 12.1.3 - create dto ICreateDeliveryDTO
 
-12.1.4 - create interface repository IDeliveryRepository
+- [x] 12.1.4 - create interface repository IDeliveryRepository
 
 12.1.5 - create implementation repository DeliveryRepository
 
