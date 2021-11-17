@@ -736,7 +736,7 @@
 
 ### 12 - Deliveries
 
-12.1.1 - Create migration CreateDeliveries
+- [x] 12.1.1 - Create migration CreateDeliveries
 
 12.1.2 - Create entity deliveries
 
