@@ -28,6 +28,8 @@ import {IWishlistsRepository} from "../../modules/wishlists/repositories/IWishli
 import {WishlistsRepository} from "../../modules/wishlists/repositories/implementations/WishlistsRepository";
 import {ICouponsRepository} from "../../modules/coupons/repositories/ICouponsRepository";
 import {CouponsRepository} from "../../modules/coupons/repositories/implementations/CouponsRepository";
+import {IDeliveriesRepository} from "../../modules/deliveries/repositories/IDeliveriesRepository";
+import {DeliveriesRepository} from "../../modules/deliveries/repositories/implementations/DeliveriesRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -97,4 +99,9 @@ container.registerSingleton<IWishlistsRepository>(
 container.registerSingleton<ICouponsRepository>(
     "CouponsRepository",
     CouponsRepository
+);
+
+container.registerSingleton<IDeliveriesRepository>(
+    "DeliveriesRepository",
+    DeliveriesRepository
 );

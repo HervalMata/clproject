@@ -746,7 +746,7 @@
 
 - [x] 12.1.5 - create implementation repository DeliveryRepository
 
-12.1.6 - register container typeorm
+- [x] 12.1.6 - register container typeorm
 
 12.1.7 - create service CreateDeliveryService
 
