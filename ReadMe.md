@@ -634,7 +634,7 @@
 
 - [x] 10.1.5 - create implementation repository OrderRepository
 
-10.1.6 - register container typeorm
+- [x] 10.1.6 - register container typeorm
 
 10.1.7 - create service CreateOrderService
 

@@ -32,6 +32,8 @@ import {IDeliveriesRepository} from "../../modules/deliveries/repositories/IDeli
 import {DeliveriesRepository} from "../../modules/deliveries/repositories/implementations/DeliveriesRepository";
 import {IPaymentsRepository} from "../../modules/payments/repositories/IPaymentsRepository";
 import {PaymentsRepository} from "../../modules/payments/repositories/implementations/PaymentsRepository";
+import {IOrdersRepository} from "../../modules/orders/repositories/IOrdersRepository";
+import {OrdersRepository} from "../../modules/orders/repositories/implementations/OrdersRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -111,4 +113,9 @@ container.registerSingleton<IDeliveriesRepository>(
 container.registerSingleton<IPaymentsRepository>(
     "PaymentsRepository",
     PaymentsRepository
+);
+
+container.registerSingleton<IOrdersRepository>(
+    "OrdersRepository",
+    OrdersRepository
 );
