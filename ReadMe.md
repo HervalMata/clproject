@@ -620,7 +620,7 @@
 
 - [x] 9.1.22 - create service test GetCouponService spec
 
-9.1.23 - create service test UpdateCouponService spec
+- [x] 9.1.23 - create service test UpdateCouponService spec
 
 ### 10 - Orders
 
