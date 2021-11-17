@@ -16,7 +16,7 @@ class CouponsRepository implements ICouponsRepository {
     }
 
     async findByExpireDate(expire_date: Date): Promise<Coupon> {
-        return await this.repository.findOne(expire_date);
+        return await this.repository.findOne({expire_date});
     }
 
     async findById(id: string): Promise<Coupon> {
@@ -41,7 +41,7 @@ class CouponsRepository implements ICouponsRepository {
     }
 
     async findByCode(code: string): Promise<Coupon> {
-        return await this.repository.findOne(code);
+        return await this.repository.findOne({ code });
     }
 
 }
