@@ -616,7 +616,7 @@
 
 - [x] 9.1.20 - create service test CreateCouponService spec
 
-9.1.21 - create service test GetAllCouponsService spec
+- [x] 9.1.21 - create service test GetAllCouponsService spec
 
 9.1.22 - create service test GetCouponService spec
 

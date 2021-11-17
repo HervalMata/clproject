@@ -18,7 +18,7 @@ class CreateCouponService {
     ) {}
 
     async execute({ type, value, expire_date }: IRequest): Promise<void> {
-        const code = "CODE - " + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes();
+        const code = "CODE - " + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes() + new Date().getSeconds();
         const couponAlreadyExists = await this.couponsRepository.findByCode(code);
         if (couponAlreadyExists) {
             throw new CouponAlreadyExistsError();
