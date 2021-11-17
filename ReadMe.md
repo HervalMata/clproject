@@ -688,7 +688,7 @@
 
 - [x] 11.1.4 - create interface repository IPaymentRepository
 
-11.1.5 - create implementation repository PaymentRepository
+- [x] 11.1.5 - create implementation repository PaymentRepository
 
 11.1.6 - register container typeorm
 
