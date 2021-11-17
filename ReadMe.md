@@ -628,7 +628,7 @@
 
 - [x] 10.1.2 - Create entity orders
 
-10.1.3 - create dto ICreateOrderDTO
+- [x] 10.1.3 - create dto ICreateOrderDTO
 
 10.1.4 - create interface repository IOrderRepository
 
