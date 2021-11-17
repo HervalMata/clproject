@@ -4,7 +4,7 @@ import {
     Entity,
     JoinColumn, JoinTable,
     ManyToMany,
-    ManyToOne,
+    ManyToOne, OneToOne,
     PrimaryColumn,
     UpdateDateColumn
 } from "typeorm";
@@ -37,14 +37,14 @@ class Order {
     @Column()
     payment_id: string;
 
-    @ManyToOne(() => Payment)
+    @OneToOne(() => Payment)
     @JoinColumn({ name: "payment_id" })
     payment: Payment;
 
     @Column()
     delivery_id: string;
 
-    @ManyToOne(() => Delivery)
+    @OneToOne(() => Delivery)
     @JoinColumn({ name: "delivery_id" })
     delivery: Delivery;
 

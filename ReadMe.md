@@ -632,7 +632,7 @@
 
 - [x] 10.1.4 - create interface repository IOrderRepository
 
-10.1.5 - create implementation repository OrderRepository
+- [x] 10.1.5 - create implementation repository OrderRepository
 
 10.1.6 - register container typeorm
 

@@ -6,10 +6,10 @@ interface IOrdersRepository {
     list(): Promise<Order[]>;
     findById(id: string): Promise<Order>;
     findByUser(user_id: string): Promise<Order[]>;
-    findByPayment(payment_id: string): Promise<Order>;
-    findByDelivery(delivery_id: string): Promise<Order>;
-    findByStatus(status: Status): Promise<Status[]>;
-    applyCoupon(coupon_code: string): Promise<void>;
+    findOrderByPayment(payment_id: string): Promise<Order>;
+    findOrderByDelivery(delivery_id: string): Promise<Order>;
+    findByStatus(status: Status): Promise<Order[]>;
+    applyCoupon(id: string, coupon_code: string): Promise<void>;
     updateStatus(id: string, status: Status): Promise<void>;
 }
 
