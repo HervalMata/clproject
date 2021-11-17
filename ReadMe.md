@@ -630,7 +630,7 @@
 
 - [x] 10.1.3 - create dto ICreateOrderDTO
 
-10.1.4 - create interface repository IOrderRepository
+- [x] 10.1.4 - create interface repository IOrderRepository
 
 10.1.5 - create implementation repository OrderRepository
 
