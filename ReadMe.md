@@ -684,7 +684,7 @@
 
 - [x] 11.1.2 - Create entity payments
 
-11.1.3 - create dto ICreatePaymentDTO
+- [x] 11.1.3 - create dto ICreatePaymentDTO
 
 11.1.4 - create interface repository IPaymentRepository
 
