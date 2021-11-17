@@ -686,7 +686,7 @@
 
 - [x] 11.1.3 - create dto ICreatePaymentDTO
 
-11.1.4 - create interface repository IPaymentRepository
+- [x] 11.1.4 - create interface repository IPaymentRepository
 
 11.1.5 - create implementation repository PaymentRepository
 
