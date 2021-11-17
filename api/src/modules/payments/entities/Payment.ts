@@ -25,6 +25,9 @@ class Payment {
     @PrimaryColumn()
     id: string;
 
+    @Column()
+    code: string;
+
     @Column( { type: "enum", enum: Method })
     method: Method;
 

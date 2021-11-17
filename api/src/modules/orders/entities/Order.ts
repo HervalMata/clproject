@@ -28,6 +28,9 @@ class Order {
     id: string;
 
     @Column()
+    code: string;
+
+    @Column()
     user_id: string;
 
     @ManyToOne(() => User)

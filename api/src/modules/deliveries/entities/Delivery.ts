@@ -20,6 +20,9 @@ class Delivery {
     @PrimaryColumn()
     id: string;
 
+    @Column()
+    code: string;
+
     @Column({ type: "enum", enum: Type })
     type: Type;
 
