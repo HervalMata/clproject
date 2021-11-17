@@ -740,7 +740,7 @@
 
 - [x] 12.1.2 - Create entity deliveries
 
-12.1.3 - create dto ICreateDeliveryDTO
+- [x] 12.1.3 - create dto ICreateDeliveryDTO
 
 12.1.4 - create interface repository IDeliveryRepository
 

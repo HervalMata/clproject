@@ -27,6 +27,9 @@ class Delivery {
     @Column({ type: "enum", enum: Status })
     status: Status;
 
+    @Column()
+    is_free_cost: boolean;
+
     @Column("decimal")
     cost: number;
 
