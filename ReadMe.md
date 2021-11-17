@@ -624,7 +624,7 @@
 
 ### 10 - Orders
 
-10.1.1 - Create migration CreateOrders
+- [x] 10.1.1 - Create migration CreateOrders and CreateProductsOrders
 
 10.1.2 - Create entity orders
 

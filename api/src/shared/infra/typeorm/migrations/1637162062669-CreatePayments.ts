@@ -63,27 +63,27 @@ export class CreatePayments1637162062669 implements MigrationInterface {
                         default: "now()",
                     },
                     {
-                        name: "payed",
+                        name: "payed_date",
                         type: "timestamp",
                         default: "now()",
                     },
                     {
-                        name: "available",
+                        name: "available_date",
                         type: "timestamp",
                         default: "now()",
                     },
                     {
-                        name: "in_dispute",
+                        name: "in_dispute_date",
                         type: "timestamp",
                         default: "now()",
                     },
                     {
-                        name: "returned",
+                        name: "returned_date",
                         type: "timestamp",
                         default: "now()",
                     },
                     {
-                        name: "cancelled",
+                        name: "cancelled_date",
                         type: "timestamp",
                         default: "now()",
                     },
