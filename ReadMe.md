@@ -650,7 +650,7 @@
 
 - [x] 10.1.13 - create service GetOrderService
 
-10.1.14 - create controller GetOrderController
+- [x] 10.1.14 - create controller GetOrderController
 
 10.1.15 - create route for get an order
 
