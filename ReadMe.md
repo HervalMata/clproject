@@ -640,7 +640,7 @@
 
 - [x] 10.1.8 - create controller CreateOrderController
 
-10.1.9 - create routes orders routes
+- [x] 10.1.9 - create routes orders routes
 
 10.1.10 - create service GetAllOrdersService
 
