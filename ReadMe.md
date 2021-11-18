@@ -676,7 +676,7 @@
 
 - [x] 10.1.26 - create controller UpdateOrderController
 
-10.1.27 - create route for update a order
+- [x] 10.1.27 - create route for update a order
 
 10.1.25 - create implementation repository OrdersRepositoryInMemory for tests
 
