@@ -35,10 +35,18 @@ class DeliveriesRepository implements IDeliveriesRepository {
         return await this.repository.find();
     }
 
-    async update({id, type, cost, prize, postal_code}: ICreateDeliveriesDTO): Promise<void> {
+    async update(id: string, postal_code: string, type: Type, prize: number): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
-            .set({ postal_code: postal_code, type: type, cost: cost, prize: prize })
+            .set({ postal_code: postal_code, type: type, prize: prize })
+            .where("id = :id").setParameters({ id })
+            .execute();
+    }
+
+    async updateCost(id: string, is_free_cost: boolean, cost: number): Promise<void> {
+        await this.repository
+            .createQueryBuilder().update()
+            .set({ is_free_cost: is_free_cost, cost: cost })
             .where("id = :id").setParameters({ id })
             .execute();
     }

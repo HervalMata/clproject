@@ -794,7 +794,7 @@
 
 12.1.21 - create route for update a deliveries status
 
-12.1.22 - create implementation repository DeliveriesRepositoryInMemory for tests
+- [x] 12.1.22 - create implementation repository DeliveriesRepositoryInMemory for tests
 
 12.1.23 - create service test CreateDeliveryService spec
 

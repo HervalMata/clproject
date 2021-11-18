@@ -7,7 +7,8 @@ interface IDeliveriesRepository {
     findByType(type: Type): Promise<Delivery[]>;
     findByStatus(status: StatusDelivery): Promise<Delivery[]>;
     list(): Promise<Delivery[]>;
-    update(data: ICreateDeliveriesDTO): Promise<void>;
+    update(id: string, postal_code: string, type: Type, prize: number): Promise<void>;
+    updateCost(id: string, is_free_cost: boolean, cost: number): Promise<void>;
     updateStatus(id: string, status: StatusDelivery): Promise<void>;
     findByPostalCode(postal_code: string): Promise<Delivery>;
 }

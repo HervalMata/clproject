@@ -11,9 +11,9 @@ class OrdersRepositoryInMemory implements IOrdersRepository {
     }
 
     async create(data: ICreateOrdersDTO): Promise<void> {
-        const { id, code,  user_id, payment_id,  delivery_id, coupon_code, status, value, products } = data;
+        const { code, user_id, payment_id,  delivery_id, coupon_code, status, value, products } = data;
         const order = new Order();
-        Object.assign(order, { id, code,  user_id, payment_id,  delivery_id, coupon_code, status, value, products });
+        Object.assign(order, { code, user_id, payment_id,  delivery_id, coupon_code, status, value, products });
         this.orders.push(order);
     }
 
