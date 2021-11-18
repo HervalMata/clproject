@@ -638,7 +638,7 @@
 
 - [x] 10.1.7 - create service CreateOrderService
 
-10.1.8 - create controller CreateOrderController
+- [x] 10.1.8 - create controller CreateOrderController
 
 10.1.9 - create routes orders routes
 
