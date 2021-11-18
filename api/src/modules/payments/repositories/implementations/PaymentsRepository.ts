@@ -1,6 +1,6 @@
 import {IPaymentsRepository} from "../IPaymentsRepository";
 import {ICreatePaymentDTO} from "../../dtos/ICreatePaymentDTO";
-import {Method, Payment, Status} from "../../entities/Payment";
+import {Method, Payment, StatusPayment} from "../../entities/Payment";
 import {getRepository, Repository} from "typeorm";
 
 class PaymentsRepository implements IPaymentsRepository {
@@ -11,9 +11,9 @@ class PaymentsRepository implements IPaymentsRepository {
         this.repository = getRepository(Payment);
     }
 
-    async create(data: ICreatePaymentDTO): Promise<void> {
+    async create(data: ICreatePaymentDTO): Promise<Payment> {
         const payment = this.repository.create(data);
-        await this.repository.save(payment);
+        return await this.repository.save(payment);
     }
 
     async findById(id: string): Promise<Payment> {
@@ -24,7 +24,7 @@ class PaymentsRepository implements IPaymentsRepository {
         return await this.repository.find({ method });
     }
 
-    async findByStatus(status: Status): Promise<Payment[]> {
+    async findByStatus(status: StatusPayment): Promise<Payment[]> {
         return await this.repository.find({ status });
     }
 
@@ -32,7 +32,7 @@ class PaymentsRepository implements IPaymentsRepository {
         return await this.repository.find();
     }
 
-    async updateStatus(id: string, status: Status): Promise<void> {
+    async updateStatus(id: string, status: StatusPayment): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
             .set({ status: status })

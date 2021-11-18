@@ -1,9 +1,9 @@
-import {Status, Type } from "../entities/Delivery";
+import {StatusDelivery, Type } from "../entities/Delivery";
 
 interface ICreateDeliveriesDTO {
     id?: string;
     type: Type;
-    status: Status;
+    status: StatusDelivery;
     is_free_cost?: boolean;
     cost: number;
     prize: number;

@@ -7,7 +7,7 @@ export enum Type {
     pick_up_on_site
 }
 
-export enum Status {
+export enum StatusDelivery {
     packaging,
     deliver_the_carrier,
     on_way,
@@ -26,8 +26,8 @@ class Delivery {
     @Column({ type: "enum", enum: Type })
     type: Type;
 
-    @Column({ type: "enum", enum: Status })
-    status: Status;
+    @Column({ type: "enum", enum: StatusDelivery })
+    status: StatusDelivery;
 
     @Column()
     is_free_cost: boolean;

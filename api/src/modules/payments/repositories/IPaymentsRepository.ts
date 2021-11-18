@@ -1,12 +1,12 @@
 import {ICreatePaymentDTO} from "../dtos/ICreatePaymentDTO";
-import {Method, Payment, Status} from "../entities/Payment";
+import {Method, Payment, StatusPayment} from "../entities/Payment";
 
 interface IPaymentsRepository {
-    create(data: ICreatePaymentDTO): Promise<void>;
+    create(data: ICreatePaymentDTO): Promise<Payment>;
     list(): Promise<Payment[]>;
-    findByStatus(status: Status): Promise<Payment[]>;
+    findByStatus(status: StatusPayment): Promise<Payment[]>;
     findByMethod(method: Method): Promise<Payment[]>;
-    updateStatus(id: string, status: Status): Promise<void>;
+    updateStatus(id: string, status: StatusPayment): Promise<void>;
     findById(id: string): Promise<Payment>;
 }
 

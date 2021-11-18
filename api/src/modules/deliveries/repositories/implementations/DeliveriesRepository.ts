@@ -1,6 +1,6 @@
 import {IDeliveriesRepository} from "../IDeliveriesRepository";
 import {ICreateDeliveriesDTO} from "../../dtos/ICreateDeliveriesDTO";
-import {Delivery, Status, Type} from "../../entities/Delivery";
+import {Delivery, StatusDelivery, Type} from "../../entities/Delivery";
 import {getRepository, Repository} from "typeorm";
 
 class DeliveriesRepository implements IDeliveriesRepository {
@@ -10,9 +10,9 @@ class DeliveriesRepository implements IDeliveriesRepository {
         this.repository = getRepository(Delivery);
     }
 
-    async create({ id, type, status, cost, prize, street, number, complement, district, postal_code, city, state }: ICreateDeliveriesDTO): Promise<void> {
+    async create({ id, type, status, cost, prize, street, number, complement, district, postal_code, city, state }: ICreateDeliveriesDTO): Promise<Delivery> {
         const delivery = this.repository.create({ id, type, status, cost, prize, street, number, complement, district, postal_code, city, state });
-        await this.repository.save(delivery);
+        return await this.repository.save(delivery);
     }
 
     async findById(id: string): Promise<Delivery> {
@@ -23,7 +23,7 @@ class DeliveriesRepository implements IDeliveriesRepository {
         return await this.repository.findOne(postal_code);
     }
 
-    async findByStatus(status: Status): Promise<Delivery[]> {
+    async findByStatus(status: StatusDelivery): Promise<Delivery[]> {
         return await this.repository.find({ status });
     }
 
@@ -43,7 +43,7 @@ class DeliveriesRepository implements IDeliveriesRepository {
             .execute();
     }
 
-    async updateStatus(id: string, status: Status): Promise<void> {
+    async updateStatus(id: string, status: StatusDelivery): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
             .set({ status: status })

@@ -1,5 +1,5 @@
 import {ICreateOrdersDTO} from "../dtos/ICreateOrdersDTO";
-import {Order, Status} from "../entities/Order";
+import {Order, StatusOrder} from "../entities/Order";
 
 interface IOrdersRepository {
     create(data: ICreateOrdersDTO): Promise<void>;
@@ -8,9 +8,9 @@ interface IOrdersRepository {
     findByUser(user_id: string): Promise<Order[]>;
     findOrderByPayment(payment_id: string): Promise<Order>;
     findOrderByDelivery(delivery_id: string): Promise<Order>;
-    findByStatus(status: Status): Promise<Order[]>;
+    findByStatus(status: StatusOrder): Promise<Order[]>;
     applyCoupon(id: string, coupon_code: string): Promise<void>;
-    updateStatus(id: string, status: Status): Promise<void>;
+    updateStatus(id: string, status: StatusOrder): Promise<void>;
 }
 
 export { IOrdersRepository };

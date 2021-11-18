@@ -9,7 +9,7 @@ export enum Method {
     pix
 }
 
-export enum Status {
+export enum StatusPayment {
     pending,
     in_analysis,
     payed,
@@ -31,8 +31,8 @@ class Payment {
     @Column( { type: "enum", enum: Method })
     method: Method;
 
-    @Column( { type: "enum", enum: Status })
-    status: Status;
+    @Column( { type: "enum", enum: StatusPayment })
+    status: StatusPayment;
 
     @Column("decimal")
     value: number;

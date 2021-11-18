@@ -636,7 +636,7 @@
 
 - [x] 10.1.6 - register container typeorm
 
-10.1.7 - create service CreateOrderService
+- [x] 10.1.7 - create service CreateOrderService
 
 10.1.8 - create controller CreateOrderController
 

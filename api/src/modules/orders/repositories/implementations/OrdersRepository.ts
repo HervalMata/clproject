@@ -1,6 +1,6 @@
 import {IOrdersRepository} from "../IOrdersRepository";
 import {ICreateOrdersDTO} from "../../dtos/ICreateOrdersDTO";
-import {Order, Status} from "../../entities/Order";
+import {Order, StatusOrder} from "../../entities/Order";
 import {getRepository, Repository} from "typeorm";
 
 class OrdersRepository implements IOrdersRepository {
@@ -45,9 +45,9 @@ class OrdersRepository implements IOrdersRepository {
         });
     }
 
-    async findByStatus(status: Status): Promise<Order[]> {
+    async findByStatus(status: StatusOrder): Promise<Order[]> {
         return await this.repository.find({
-            where: { status: Status },
+            where: { status: StatusOrder },
             relations: [ 'deliveries', 'payments' ]
         });
     }
@@ -65,7 +65,7 @@ class OrdersRepository implements IOrdersRepository {
         });
     }
 
-    async updateStatus(id: string, status: Status): Promise<void> {
+    async updateStatus(id: string, status: StatusOrder): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
             .set({ status: status, })

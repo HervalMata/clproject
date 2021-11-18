@@ -14,7 +14,7 @@ import {Delivery} from "../../deliveries/entities/Delivery";
 import {Product} from "../../products/entities/Product";
 import {v4 as uuidV4} from "uuid";
 
-export enum Status {
+export enum StatusOrder {
     pending,
     payed,
     finished,
@@ -54,8 +54,8 @@ class Order {
     @Column()
     coupon_code: string;
 
-    @Column( { type: "enum", enum: Status })
-    status: Status;
+    @Column( { type: "enum", enum: StatusOrder })
+    status: StatusOrder;
 
     @Column('decimal')
     value: number;
