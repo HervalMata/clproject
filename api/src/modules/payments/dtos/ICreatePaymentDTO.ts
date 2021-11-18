@@ -4,7 +4,7 @@ interface ICreatePaymentDTO {
     id?: string;
     code: string;
     method: Method;
-    status: StatusPayment;
+    status?: StatusPayment;
     value: number;
     installments: number;
     taxes: number;

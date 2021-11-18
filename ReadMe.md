@@ -680,7 +680,7 @@
 
 - [x] 10.1.28 - create implementation repository OrdersRepositoryInMemory for tests
 
-10.1.29 - create service test CreateOrderService spec
+- [x] 10.1.29 - create service test CreateOrderService spec
 
 10.1.30 - create service test GetAllOrdersService spec
 

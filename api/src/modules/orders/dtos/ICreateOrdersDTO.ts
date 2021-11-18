@@ -8,7 +8,7 @@ interface ICreateOrdersDTO {
     payment_id: string;
     delivery_id: string;
     coupon_code?: string;
-    status: StatusOrder;
+    status?: StatusOrder;
     value: number;
     products?: Product[];
 }

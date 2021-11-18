@@ -4,7 +4,7 @@ interface ICreateDeliveriesDTO {
     id?: string;
     code: string;
     type: Type;
-    status: StatusDelivery;
+    status?: StatusDelivery;
     is_free_cost?: boolean;
     cost: number;
     prize: number;
