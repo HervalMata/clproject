@@ -658,7 +658,7 @@
 
 - [x] 10.1.17 - create controller GetOrdersByUserController
 
-10.1.18 - create route for get orders by user
+- [x] 10.1.18 - create route for get orders by user
 
 10.1.19 - create service UpdateOrderService
 
