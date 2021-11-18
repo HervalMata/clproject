@@ -642,7 +642,7 @@
 
 - [x] 10.1.9 - create routes orders routes
 
-10.1.10 - create service GetAllOrdersService
+- [x] 10.1.10 - create service GetAllOrdersService
 
 10.1.11 - create controller GetAllOrdersController
 
