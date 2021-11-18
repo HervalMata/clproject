@@ -11,6 +11,7 @@ interface IOrdersRepository {
     findByStatus(status: StatusOrder): Promise<Order[]>;
     applyCoupon(id: string, coupon_code: string): Promise<void>;
     updateStatus(id: string, status: StatusOrder): Promise<void>;
+    findByIdAndUser(id: string, user_id: string): Promise<Order>;
 }
 
 export { IOrdersRepository };

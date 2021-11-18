@@ -660,23 +660,29 @@
 
 - [x] 10.1.18 - create route for get orders by user
 
-10.1.19 - create service UpdateOrderService
+- [x] 10.1.19 - create service GetOrderByUserService
 
-10.1.20 - create controller UpdateOrderController
+10.1.20 - create controller GetOrderByUserController
 
-10.1.21 - create route for update a order
+10.1.21 - create route for get order by user
 
-10.1.22 - create implementation repository OrdersRepositoryInMemory for tests
+10.1.22 - create service UpdateOrderService
 
-10.1.23 - create service test CreateOrderService spec
+10.1.23 - create controller UpdateOrderController
 
-10.1.24 - create service test GetAllOrdersService spec
+10.1.24 - create route for update a order
 
-10.1.25 - create service test GetOrderService spec
+10.1.25 - create implementation repository OrdersRepositoryInMemory for tests
 
-10.1.26 - create service test GetOrdersByUserService spec
+10.1.26 - create service test CreateOrderService spec
 
-10.1.27 - create service test UpdateOrderService spec
+10.1.27 - create service test GetAllOrdersService spec
+
+10.1.28 - create service test GetOrderService spec
+
+10.1.29 - create service test GetOrdersByUserService spec
+
+10.1.30 - create service test UpdateOrderService spec
 
 ### 11 - Payments
 

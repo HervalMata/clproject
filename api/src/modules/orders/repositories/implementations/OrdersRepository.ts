@@ -73,6 +73,13 @@ class OrdersRepository implements IOrdersRepository {
             .setParameters({ id }).execute();
     }
 
+    async findByIdAndUser(id: string, user_id: string): Promise<Order> {
+        return await this.repository.findOne({
+            where: [id, user_id],
+            relations: [ 'deliveries', 'payments' ]
+        });
+    }
+
 }
 
 export { OrdersRepository };
