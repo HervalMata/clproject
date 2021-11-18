@@ -674,7 +674,7 @@
 
 - [x] 10.1.25 - create service UpdateOrderService
 
-10.1.26 - create controller UpdateOrderController
+- [x] 10.1.26 - create controller UpdateOrderController
 
 10.1.27 - create route for update a order
 
