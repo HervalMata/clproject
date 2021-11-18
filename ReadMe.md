@@ -668,7 +668,7 @@
 
 - [x] 10.1.22 - create service ApplyCouponService
 
-10.1.23 - create service ApplyCouponController
+- [x] 10.1.23 - create service ApplyCouponController
 
 10.1.24 - create route for apply coupon the order
 
