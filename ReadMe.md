@@ -738,7 +738,7 @@
 
 11.1.21 - create route for update a payment status
 
-11.1.22 - create implementation repository PaymentsRepositoryInMemory for tests
+- [x] 11.1.22 - create implementation repository PaymentsRepositoryInMemory for tests
 
 11.1.23 - create service test CreatePaymentService spec
 
