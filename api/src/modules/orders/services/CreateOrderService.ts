@@ -11,7 +11,7 @@ import {IProductsRepository} from "../../products/repositories/IProductsReposito
 interface IRequest {
     type: Type;
     is_free_cost?: boolean;
-    cost: number;
+    cost?: number;
     prize: number;
     street: string;
     number: number;
@@ -22,11 +22,11 @@ interface IRequest {
     state: string;
     country?: string;
     method: Method;
-    value: number;
+    value?: number;
     installments: number;
-    taxes: number;
+    taxes?: number;
     discount?: number;
-    total: number;
+    total?: number;
     user_id: string;
     value_order: number;
     products_id: string[];
@@ -51,11 +51,14 @@ class CreateOrderService {
         method, value, installments, discount, taxes, total,
         user_id, value_order, products_id
                   }: IRequest): Promise<void> {
-        const delivery = await this.deliveriesRepository.create({ type, status: StatusDelivery.packaging, street, number, complement, postal_code, district, state, city, cost, prize, country: "BRA" });
-        const payment = await this.paymentsRepository.create({ method, status: StatusPayment.pending, value, installments, discount, taxes, total });
+        const codeDelivery = "DELIVERY-" + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes() + new Date().getSeconds();
+        const delivery = await this.deliveriesRepository.create({ code: codeDelivery, type, status: StatusDelivery.packaging, street, number, complement, postal_code, district, state, city, cost: cost || 0, prize, country: "BRA" });
+        const codePayment = "PAYMENT-" + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes() + new Date().getSeconds();
+        const payment = await this.paymentsRepository.create({ code: codePayment, method, status: StatusPayment.pending, value: value || 0, installments, discount: discount || 0, taxes: taxes || 0, total: total || 0 });
         const delivery_id = delivery.id;
         const payment_id = payment.id;
-        await this.ordersRepository.create({ user_id, value: value_order, payment_id, delivery_id, status: StatusOrder.pending });
+        const codeOrder = "ORDER-" + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes() + new Date().getSeconds();
+        await this.ordersRepository.create({ code: codeOrder, user_id, value: value_order, payment_id, delivery_id, status: StatusOrder.pending });
         const order = await this.ordersRepository.findOrderByPayment(payment_id);
         order.products = await this.productsRepository.findByIds(products_id);
         await this.ordersRepository.create(order);

@@ -2,6 +2,7 @@ import {StatusDelivery, Type } from "../entities/Delivery";
 
 interface ICreateDeliveriesDTO {
     id?: string;
+    code: string;
     type: Type;
     status: StatusDelivery;
     is_free_cost?: boolean;

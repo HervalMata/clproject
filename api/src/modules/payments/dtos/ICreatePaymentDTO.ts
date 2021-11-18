@@ -2,6 +2,7 @@ import { Method, StatusPayment } from "../entities/Payment";
 
 interface ICreatePaymentDTO {
     id?: string;
+    code: string;
     method: Method;
     status: StatusPayment;
     value: number;

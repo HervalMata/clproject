@@ -672,7 +672,7 @@
 
 - [x] 10.1.24 - create route for apply coupon the order
 
-10.1.25 - create service UpdateOrderService
+- [x] 10.1.25 - create service UpdateOrderService
 
 10.1.26 - create controller UpdateOrderController
 
