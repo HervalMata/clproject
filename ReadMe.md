@@ -684,7 +684,7 @@
 
 - [x] 10.1.30 - create service test GetAllOrdersService spec
 
-10.1.31 - create service test GetOrderService spec
+- [x] 10.1.31 - create service test GetOrderService spec
 
 10.1.32 - create service test GetOrdersByUserService spec
 
