@@ -35,7 +35,7 @@ class CreateWishlistService {
             products_id
         );
 
-        await this.wishlistsRepository.create(wishlistExists);
+        //await this.wishlistsRepository.create(wishlistExists);
     }
 }
 

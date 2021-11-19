@@ -59,9 +59,9 @@ class CreateOrderService {
         const payment_id = payment.id;
         const codeOrder = "ORDER-" + new Date().getDay() + new Date().getMonth() + new Date().getFullYear() + new Date().getHours() + new Date().getMinutes() + new Date().getSeconds();
         await this.ordersRepository.create({ code: codeOrder, user_id, value: payment.value, payment_id, delivery_id, status: StatusOrder.pending });
-        const order = await this.ordersRepository.findOrderByPayment(payment_id);
-        order.products = await this.productsRepository.findByIds(products_id);
-        await this.ordersRepository.create(order);
+        const order_existent = await this.ordersRepository.findOrderByPayment(payment_id);
+        order_existent.products = await this.productsRepository.findByIds(products_id);
+        //await this.ordersRepository.create(order_existent);
     }
 }
 

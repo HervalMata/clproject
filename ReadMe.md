@@ -682,7 +682,7 @@
 
 - [x] 10.1.29 - create service test CreateOrderService spec
 
-10.1.30 - create service test GetAllOrdersService spec
+- [x] 10.1.30 - create service test GetAllOrdersService spec
 
 10.1.31 - create service test GetOrderService spec
 
