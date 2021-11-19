@@ -692,7 +692,7 @@
 
 - [x] 10.1.34 - create service test ApplyCouponService spec
 
-10.1.35 - create service test UpdateOrderService spec
+- [x] 10.1.35 - create service test UpdateOrderService spec
 
 ### 11 - Payments
 
