@@ -688,7 +688,7 @@
 
 - [x] 10.1.32 - create service test GetOrdersByUserService spec
 
-10.1.33 - create service test GetOrderByUserService spec
+- [x] 10.1.33 - create service test GetOrderByUserService spec
 
 10.1.34 - create service test ApplyCouponService spec
 

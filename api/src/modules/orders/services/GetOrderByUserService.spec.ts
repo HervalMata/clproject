@@ -8,7 +8,7 @@ import {DeliveriesRepositoryInMemory} from "../../deliveries/repositories/in-mem
 import {PaymentsRepositoryInMemory} from "../../payments/repositories/in-memory/PaymentsRepositoryInMemory";
 import {OrdersRepositoryInMemory} from "../repositories/in-memory/OrdersRepositoryInMemory";
 import {CreateOrderService} from "./CreateOrderService";
-import {GetOrderService} from "./GetOrderService";
+import {GetOrderByUserService} from "./GetOrderByUserService";
 import {Type} from "../../deliveries/entities/Delivery";
 import {Method} from "../../payments/entities/Payment";
 import {Order} from "../entities/Order";
@@ -24,9 +24,9 @@ let deliveriesRepositoryInMemory: DeliveriesRepositoryInMemory;
 let paymentsRepositoryInMemory: PaymentsRepositoryInMemory;
 let ordersRepositoryInMemory: OrdersRepositoryInMemory;
 let createOrderService: CreateOrderService;
-let getOrderService: GetOrderService;
+let getOrderByUserService: GetOrderByUserService;
 
-describe('Get An Order', () => {
+describe('Get An User Order', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         createUserService = new CreateUserService(usersRepositoryInMemory);
@@ -41,10 +41,10 @@ describe('Get An Order', () => {
             ordersRepositoryInMemory, deliveriesRepositoryInMemory,
             paymentsRepositoryInMemory, productsRepositoryInMemory,
         );
-        getOrderService = new GetOrderService(ordersRepositoryInMemory);
+        getOrderByUserService = new GetOrderByUserService(ordersRepositoryInMemory);
     });
 
-    it('should be able to get an order', async () => {
+    it('should be able to get an user order', async () => {
         const user = await createUserService.execute({
             name: "User Test",
             email: "user@test.com",
@@ -101,12 +101,18 @@ describe('Get An Order', () => {
         const order_unique = order[Object.keys(order)[0]];
         const order_id = order_unique.id;
 
-        const get_orders = await getOrderService.execute({ id: order_id });
+        const get_orders = await getOrderByUserService.execute({ id: order_id, user_id });
         await expect(get_orders).toBeInstanceOf(Order);
     });
-    it('should not be able to get an order non existent', async () => {
+    it('should not be able to get an user order non existent', async () => {
+        const user = await createUserService.execute({
+            name: "User Test",
+            email: "user@test.com",
+            password: "1234"
+        });
+        const user_id = user.id;
         const id = "jnjfnbjginbgjio";
-        const get_orders = await getOrderService.execute({ id });
+        const get_orders = await getOrderByUserService.execute({ id, user_id });
         await expect(get_orders).not.toBeInstanceOf(Order);
     });
 });
