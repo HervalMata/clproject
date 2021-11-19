@@ -690,7 +690,7 @@
 
 - [x] 10.1.33 - create service test GetOrderByUserService spec
 
-10.1.34 - create service test ApplyCouponService spec
+- [x] 10.1.34 - create service test ApplyCouponService spec
 
 10.1.35 - create service test UpdateOrderService spec
 

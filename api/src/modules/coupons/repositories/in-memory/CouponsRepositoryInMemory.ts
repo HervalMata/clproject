@@ -6,10 +6,10 @@ class CouponsRepositoryInMemory implements ICouponsRepository {
     coupons: Coupon[] = [];
 
     async create(data: ICreateCouponDTO): Promise<void> {
-        const { id, code, type, expire_date, value } = data;
+        const { code, type, expire_date, value } = data;
         const coupon = new Coupon();
         Object.assign(coupon, {
-            id, code, type, expire_date, value
+            code, type, expire_date, value
         });
         this.coupons.push(coupon);
     }
