@@ -708,47 +708,41 @@
 
 - [x] 11.1.6 - register container typeorm
 
-11.1.7 - create service CreatePaymentService
+- [x] 11.1.7 - create service GetAllPaymentsService
 
-11.1.8 - create controller CreatePaymentController
+11.1.8 - create controller GetAllPaymentsController
 
-11.1.9 - create routes payments routes
+11.1.9 - create route for get all payments
 
-11.1.10 - create service GetAllPaymentsService
+11.1.10 - create service GetPaymentService
 
-11.1.11 - create controller GetAllPaymentsController
+11.1.11 - create controller GetPaymentController
 
-11.1.12 - create route for get all payments
+11.1.12 - create route for get a payment
 
-11.1.13 - create service GetPaymentService
+11.1.13 - create service GetPaymentsByUserService
 
-11.1.14 - create controller GetPaymentController
+11.1.14 - create controller GetPaymentsByUserController
 
-11.1.15 - create route for get a payment
+11.1.15 - create route for get payments by user
 
-11.1.16 - create service GetPaymentsByUserService
+11.1.16 - create service UpdatePaymentStatusService
 
-11.1.17 - create controller GetPaymentsByUserController
+11.1.17 - create controller UpdatePaymentStatusController
 
-11.1.18 - create route for get payments by user
+11.1.18 - create route for update a payment status
 
-11.1.19 - create service UpdatePaymentStatusService
+- [x] 11.1.19 - create implementation repository PaymentsRepositoryInMemory for tests
 
-11.1.20 - create controller UpdatePaymentStatusController
+11.1.20 - create service test CreatePaymentService spec
 
-11.1.21 - create route for update a payment status
+11.1.21 - create service test GetAllPaymentsService spec
 
-- [x] 11.1.22 - create implementation repository PaymentsRepositoryInMemory for tests
+11.1.22 - create service test GetPaymentService spec
 
-11.1.23 - create service test CreatePaymentService spec
+11.1.23 - create service test GetPaymentsByUserService spec
 
-11.1.24 - create service test GetAllPaymentsService spec
-
-11.1.25 - create service test GetPaymentService spec
-
-11.1.26 - create service test GetPaymentsByUserService spec
-
-11.1.27 - create service test UpdatePaymentStatusService spec
+11.1.24 - create service test UpdatePaymentStatusService spec
 
 ### 12 - Deliveries
 
@@ -805,3 +799,40 @@
 12.1.26 - create service test GetDeliveriesByUserService spec
 
 12.1.27 - create service test UpdateDeliveryStatusService spec
+
+- [x] migrations types_delivery, status_delivery, methods_payment, status_payment, status_order
+
+- [x] models types_delivery, status_delivery, methods_payment, status_payment, status_order
+
+- [x] dtos ICreateTypesDelivery, ICreateStatusDelivery, ICreateMethodsPayment, ICreateStatusPayment, ICreateStatusOrder
+
+- [x] repositories ITypesDeliveryRepository, IStatusDeliveryRepository, IMethodsPaymentRepository,
+  IStatusPaymentRepository, IStatusOrder
+
+- [x] implement repositories TypesDeliveryRepository, StatusDeliveryRepository, MethodsPaymentRepository,
+  StatusPaymentRepository, StatusOrder
+
+services
+
+- [x] CreateTypesDeliveryService GetAllTypesDeliveryService GetTypesDeliveryService
+
+- [x] CreateStatusDeliveryService GetAllStatusDeliveryService GetStatusDeliveryService
+
+- [x] CreateMethodsPaymentService GetAllMethodsPaymentService GetMethodsPaymentService
+
+- [x] CreateStatusPaymentService GetAllStatusPaymentService GetStatusPaymentService
+
+- [x] CreateStatusOrderService GetAllStatusPaymentService GetStatusOrderService
+
+
+- [x] CreateTypesDeliveryController GetAllTypesDeliveryController GetStatusDelivery
+
+- [x] CreateStatusDeliveryController GetAllStatusDeliveryController GetStatusDeliveryController
+
+- [x] CreateMethodsPaymentController GetAllMethodsPaymentController GetMethodsPaymentController
+
+- [x] CreateStatusPaymentController GetAllStatusPaymentController GetStatusPaymentController
+
+- [x] CreateStatusOrderController GetAllStatusOrderController GetStatusOrderController
+
+create routes, register containers, refactor delivery, payment and order
