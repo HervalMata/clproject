@@ -710,7 +710,7 @@
 
 - [x] 11.1.7 - create service GetAllPaymentsService
 
-11.1.8 - create controller GetAllPaymentsController
+- [x] 11.1.8 - create controller GetAllPaymentsController
 
 11.1.9 - create route for get all payments
 
@@ -734,15 +734,13 @@
 
 - [x] 11.1.19 - create implementation repository PaymentsRepositoryInMemory for tests
 
-11.1.20 - create service test CreatePaymentService spec
+- [x] 11.1.20 - create service test GetAllPaymentsService spec
 
-11.1.21 - create service test GetAllPaymentsService spec
+11.1.21 - create service test GetPaymentService spec
 
-11.1.22 - create service test GetPaymentService spec
+11.1.22 - create service test GetPaymentsByUserService spec
 
-11.1.23 - create service test GetPaymentsByUserService spec
-
-11.1.24 - create service test UpdatePaymentStatusService spec
+11.1.23 - create service test UpdatePaymentStatusService spec
 
 ### 12 - Deliveries
 
