@@ -1,23 +1,7 @@
-import {Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn} from "typeorm";
+import {Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn, UpdateDateColumn} from "typeorm";
 import {v4 as uuidV4} from "uuid";
-
-export enum Method {
-    boleto,
-    creditCard,
-    debit,
-    cash_on_delivered,
-    pix
-}
-
-export enum StatusPayment {
-    pending,
-    in_analysis,
-    payed,
-    available,
-    in_dispute,
-    returned,
-    cancelled
-}
+import {MethodsPayment} from "./MethodsPayment";
+import {StatusPayment} from "./StatusPayment";
 
 @Entity("payments")
 class Payment {
@@ -28,11 +12,19 @@ class Payment {
     @Column()
     code: string;
 
-    @Column( { type: "enum", enum: Method })
-    method: Method;
+    @Column()
+    method_id: string;
 
-    @Column( { type: "enum", enum: StatusPayment })
-    status: StatusPayment;
+    @ManyToOne(() => MethodsPayment)
+    @JoinColumn({name: "method_id"})
+    methodsPayment: MethodsPayment;
+
+    @Column()
+    status_payment_id: string;
+
+    @ManyToOne(() => StatusPayment)
+    @JoinColumn({name: "status_payment_id"})
+    statusPayment: StatusPayment;
 
     @Column("decimal")
     value: number;

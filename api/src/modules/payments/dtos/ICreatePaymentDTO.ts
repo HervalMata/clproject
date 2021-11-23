@@ -1,10 +1,8 @@
-import { Method, StatusPayment } from "../entities/Payment";
-
 interface ICreatePaymentDTO {
     id?: string;
     code: string;
-    method: Method;
-    status?: StatusPayment;
+    method_id: string;
+    status_payment_id?: string;
     value: number;
     installments: number;
     taxes: number;
