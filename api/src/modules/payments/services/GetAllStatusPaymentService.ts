@@ -1,18 +1,18 @@
 import {inject, injectable} from "tsyringe";
-import {IStatusOrderRepository} from "../../orders/repositories/IStatusOrderRepository";
-import {StatusOrder} from "modules/orders/entities/StatusOrder";
+import {IStatusPaymentRepository} from "../repositories/IStatusPaymentRepository";
+import {StatusPayment} from "../entities/StatusPayment";
 
 @injectable()
 class GetAllStatusPaymentService {
 
     constructor(
-        @inject("StatusOrderRepository")
-        private statusOrderRepository: IStatusOrderRepository
+        @inject("StatusPaymentRepository")
+        private statusPaymentRepository: IStatusPaymentRepository
     ) {
     }
 
-    async execute(): Promise<StatusOrder[]> {
-        return await this.statusOrderRepository.list();
+    async execute(): Promise<StatusPayment[]> {
+        return await this.statusPaymentRepository.list();
     }
 }
 
