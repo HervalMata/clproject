@@ -6,14 +6,14 @@ let statusPaymentRepositoryInMemory: StatusPaymentRepositoryInMemory;
 let createStatusPaymentService: CreateStatusPaymentService;
 let getAllStatusPaymentService: GetAllStatusPaymentService;
 
-describe('Get All Status delivery', () => {
+describe('Get All Status payment', () => {
     beforeEach(() => {
         statusPaymentRepositoryInMemory = new StatusPaymentRepositoryInMemory();
         createStatusPaymentService = new CreateStatusPaymentService(statusPaymentRepositoryInMemory);
         getAllStatusPaymentService = new GetAllStatusPaymentService(statusPaymentRepositoryInMemory);
     });
 
-    it('should be able to get all status of delivery', async () => {
+    it('should be able to get all status of payment', async () => {
         const status_payment = "status test";
         const status_payment1 = "status test1";
         await createStatusPaymentService.execute({status_payment});
