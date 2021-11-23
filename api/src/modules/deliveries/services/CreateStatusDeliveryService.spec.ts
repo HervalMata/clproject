@@ -11,12 +11,12 @@ describe('Create Status of Delivery', () => {
         createStatusDeliveryService = new CreateStatusDeliveryService(statusDeliveryRepositoryInMemory);
     });
 
-    it('should be able to create an status order', async () => {
+    it('should be able to create an status of delivery', async () => {
         const status_delivery = "status test";
         await expect(createStatusDeliveryService.execute({status_delivery})).resolves.not.toThrow();
     });
 
-    it('should not be able to create an status order existent', async () => {
+    it('should not be able to create an status of delivery existent', async () => {
         const status_delivery = "status test";
         await createStatusDeliveryService.execute({status_delivery});
         await expect(createStatusDeliveryService.execute({status_delivery})).rejects.toBeInstanceOf(StatusDeliveryExistentError);
