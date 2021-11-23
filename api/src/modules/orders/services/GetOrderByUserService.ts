@@ -16,6 +16,7 @@ class GetOrderByUserService {
     ) {}
 
     async execute({ id, user_id }: IRequest): Promise<Order> {
+        console.log("2", user_id)
         return await this.ordersRepository.findByIdAndUser(id, user_id);
     }
 }

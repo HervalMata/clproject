@@ -2,9 +2,11 @@ import {
     Column,
     CreateDateColumn,
     Entity,
-    JoinColumn, JoinTable,
+    JoinColumn,
+    JoinTable,
     ManyToMany,
-    ManyToOne, OneToOne,
+    ManyToOne,
+    OneToOne,
     PrimaryColumn,
     UpdateDateColumn
 } from "typeorm";
@@ -13,13 +15,7 @@ import {Payment} from "../../payments/entities/Payment";
 import {Delivery} from "../../deliveries/entities/Delivery";
 import {Product} from "../../products/entities/Product";
 import {v4 as uuidV4} from "uuid";
-
-export enum StatusOrder {
-    pending,
-    payed,
-    finished,
-    cancelled
-}
+import {StatusOrder} from "./StatusOrder";
 
 @Entity("orders")
 class Order {
@@ -48,14 +44,18 @@ class Order {
     delivery_id: string;
 
     @OneToOne(() => Delivery)
-    @JoinColumn({ name: "delivery_id" })
+    @JoinColumn({name: "delivery_id"})
     delivery: Delivery;
 
     @Column()
     coupon_code: string;
 
-    @Column( { type: "enum", enum: StatusOrder })
-    status: StatusOrder;
+    @Column()
+    status_order_id: string;
+
+    @ManyToOne(() => StatusOrder)
+    @JoinColumn({name: "status_order_id"})
+    statusOrder: StatusOrder;
 
     @Column('decimal')
     value: number;
@@ -63,8 +63,8 @@ class Order {
     @ManyToMany(() => Product)
     @JoinTable({
         name: "products_orders",
-        joinColumns: [{ name: "order_id" }],
-        inverseJoinColumns: [{ name: "product_id" }],
+        joinColumns: [{name: "order_id"}],
+        inverseJoinColumns: [{name: "product_id"}],
     })
     products: Product[];
 

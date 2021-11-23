@@ -9,8 +9,6 @@ import {PaymentsRepositoryInMemory} from "../../payments/repositories/in-memory/
 import {OrdersRepositoryInMemory} from "../repositories/in-memory/OrdersRepositoryInMemory";
 import {CreateOrderService} from "./CreateOrderService";
 import {GetAllOrdersByUserService} from "./GetAllOrdersByUserService";
-import {Type} from "../../deliveries/entities/Delivery";
-import {Method} from "../../payments/entities/Payment";
 
 let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserService: CreateUserService;

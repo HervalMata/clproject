@@ -1,4 +1,4 @@
-import { Router } from "express";
+import {Router} from "express";
 import {usersRoutes} from "./users.routes";
 import {authenticateRoutes} from "./autenticates.routes";
 import {passwordRoutes} from "./password.routes";
@@ -11,6 +11,8 @@ import {reviewsRoutes} from "./reviews.routes";
 import {wishlistsRoutes} from "./wishlists.routes";
 import {couponsRoutes} from "./coupons.routes";
 import {ordersRoutes} from "./orders.routes";
+import {deliveriesRoutes} from "./deliveries.routes";
+import {paymentsRoutes} from "./payments.routes";
 
 const router = Router();
 
@@ -26,5 +28,7 @@ router.use("/reviews", reviewsRoutes);
 router.use("/wishlists", wishlistsRoutes);
 router.use("/coupons", couponsRoutes);
 router.use("/orders", ordersRoutes);
+router.use("/deliveries", deliveriesRoutes);
+router.use("/payments", paymentsRoutes);
 
-export { router };
+export {router};

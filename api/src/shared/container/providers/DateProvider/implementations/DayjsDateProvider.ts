@@ -26,6 +26,10 @@ class DayjsDateProvider implements IDateProvider {
         return date.subtract(years, "Year").toDate();
     }
 
+    checkIsAfter(start_date: Date, end_date: Date): Boolean {
+        return dayjs(start_date).isAfter(end_date);
+    }
+
 }
 
 export { DayjsDateProvider };

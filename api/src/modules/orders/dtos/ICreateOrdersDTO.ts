@@ -1,4 +1,3 @@
-import {StatusOrder} from "../entities/Order";
 import {Product} from "../../products/entities/Product";
 
 interface ICreateOrdersDTO {
@@ -8,7 +7,7 @@ interface ICreateOrdersDTO {
     payment_id: string;
     delivery_id: string;
     coupon_code?: string;
-    status?: StatusOrder;
+    status_order_id?: string;
     value: number;
     products?: Product[];
 }

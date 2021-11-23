@@ -1,6 +1,6 @@
 import {IOrdersRepository} from "../IOrdersRepository";
 import {ICreateOrdersDTO} from "../../dtos/ICreateOrdersDTO";
-import {Order, StatusOrder} from "../../entities/Order";
+import {Order} from "../../entities/Order";
 
 class OrdersRepositoryInMemory implements IOrdersRepository {
     orders: Order[] = [];
@@ -11,9 +11,9 @@ class OrdersRepositoryInMemory implements IOrdersRepository {
     }
 
     async create(data: ICreateOrdersDTO): Promise<void> {
-        const { code, user_id, payment_id,  delivery_id, coupon_code, status, value, products } = data;
+        const {code, user_id, payment_id, delivery_id, coupon_code, status_order_id, value, products} = data;
         const order = new Order();
-        Object.assign(order, { code, user_id, payment_id,  delivery_id, coupon_code, status, value, products });
+        Object.assign(order, {code, user_id, payment_id, delivery_id, coupon_code, status_order_id, value, products});
         this.orders.push(order);
     }
 
@@ -25,8 +25,8 @@ class OrdersRepositoryInMemory implements IOrdersRepository {
         return this.orders.find((order) => [order.id === id && order.user_id === user_id]);
     }
 
-    async findByStatus(status: StatusOrder): Promise<Order[]> {
-        return this.orders.filter((order) => order.status === status);
+    async findByStatus(status_order_id: string): Promise<Order[]> {
+        return this.orders.filter((order) => order.status_order_id === status_order_id);
     }
 
     async findByUser(user_id: string): Promise<Order[]> {
@@ -45,9 +45,9 @@ class OrdersRepositoryInMemory implements IOrdersRepository {
         return this.orders;
     }
 
-    async updateStatus(id: string, status: StatusOrder): Promise<void> {
+    async updateStatus(id: string, status_order_id: string): Promise<void> {
         const orderIndex = this.orders.findIndex((order) => order.id === id);
-        this.orders[orderIndex].status = status;
+        this.orders[orderIndex].status_order_id = status_order_id;
     }
 
 }

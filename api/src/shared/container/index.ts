@@ -34,6 +34,16 @@ import {IPaymentsRepository} from "../../modules/payments/repositories/IPayments
 import {PaymentsRepository} from "../../modules/payments/repositories/implementations/PaymentsRepository";
 import {IOrdersRepository} from "../../modules/orders/repositories/IOrdersRepository";
 import {OrdersRepository} from "../../modules/orders/repositories/implementations/OrdersRepository";
+import {ITypesDeliveryRepository} from "../../modules/deliveries/repositories/ITypesDeliveryRepository";
+import {TypesDeliveryRepository} from "../../modules/deliveries/repositories/implementations/TypesDeliveryRepository";
+import {IStatusDeliveryRepository} from "../../modules/deliveries/repositories/IStatusDeliveryRepository";
+import {StatusDeliveryRepository} from "../../modules/deliveries/repositories/implementations/StatusDeliveryRepository";
+import {IStatusPaymentRepository} from "../../modules/payments/repositories/IStatusPaymentRepository";
+import {StatusPaymentRepository} from "../../modules/payments/repositories/implementations/StatusPaymentRepository";
+import {IMethodsPaymentRepository} from "../../modules/payments/repositories/IMethodsPaymentRepository";
+import {MethodsPaymentRepository} from "../../modules/payments/repositories/implementations/MethodsPaymentRepository";
+import {IStatusOrderRepository} from "../../modules/orders/repositories/IStatusOrderRepository";
+import {StatusOrderRepository} from "../../modules/orders/repositories/implementations/StatusOrderRepository";
 
 container.registerSingleton<IUsersRepository>(
     "UsersRepository",
@@ -118,4 +128,29 @@ container.registerSingleton<IPaymentsRepository>(
 container.registerSingleton<IOrdersRepository>(
     "OrdersRepository",
     OrdersRepository
+);
+
+container.registerSingleton<ITypesDeliveryRepository>(
+    "TypesDeliveryRepository",
+    TypesDeliveryRepository
+);
+
+container.registerSingleton<IStatusDeliveryRepository>(
+    "StatusDeliveryRepository",
+    StatusDeliveryRepository
+);
+
+container.registerSingleton<IStatusPaymentRepository>(
+    "StatusPaymentRepository",
+    StatusPaymentRepository
+);
+
+container.registerSingleton<IMethodsPaymentRepository>(
+    "MethodsPaymentRepository",
+    MethodsPaymentRepository
+);
+
+container.registerSingleton<IStatusOrderRepository>(
+    "StatusOrderRepository",
+    StatusOrderRepository
 );
