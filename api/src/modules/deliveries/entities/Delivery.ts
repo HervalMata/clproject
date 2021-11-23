@@ -1,18 +1,7 @@
-import {Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn} from "typeorm";
+import {Column, CreateDateColumn, Entity, JoinColumn, ManyToOne, PrimaryColumn, UpdateDateColumn} from "typeorm";
 import {v4 as uuidV4} from "uuid";
-
-export enum Type {
-    post_offices,
-    shipping_company,
-    pick_up_on_site
-}
-
-export enum StatusDelivery {
-    packaging,
-    deliver_the_carrier,
-    on_way,
-    delivered
-}
+import {StatusDelivery} from "./StatusDelivery";
+import {TypesDelivery} from "./TypesDelivery";
 
 @Entity("deliveries")
 class Delivery {
@@ -23,11 +12,19 @@ class Delivery {
     @Column()
     code: string;
 
-    @Column({ type: "enum", enum: Type })
-    type: Type;
+    @Column()
+    type_delivery_id: string;
 
-    @Column({ type: "enum", enum: StatusDelivery })
-    status: StatusDelivery;
+    @ManyToOne(() => TypesDelivery)
+    @JoinColumn({name: "type_delivery_id"})
+    typesDelivery: TypesDelivery;
+
+    @Column()
+    status_delivery_id: string;
+
+    @ManyToOne(() => StatusDelivery)
+    @JoinColumn({name: "status_delivery_id"})
+    statusDelivery: StatusDelivery;
 
     @Column()
     is_free_cost: boolean;

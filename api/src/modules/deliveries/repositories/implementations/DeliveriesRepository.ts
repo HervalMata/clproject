@@ -1,6 +1,6 @@
 import {IDeliveriesRepository} from "../IDeliveriesRepository";
 import {ICreateDeliveriesDTO} from "../../dtos/ICreateDeliveriesDTO";
-import {Delivery, StatusDelivery, Type} from "../../entities/Delivery";
+import {Delivery} from "../../entities/Delivery";
 import {getRepository, Repository} from "typeorm";
 
 class DeliveriesRepository implements IDeliveriesRepository {
@@ -10,36 +10,83 @@ class DeliveriesRepository implements IDeliveriesRepository {
         this.repository = getRepository(Delivery);
     }
 
-    async create({ id, type, status, cost, prize, street, number, complement, district, postal_code, city, state }: ICreateDeliveriesDTO): Promise<Delivery> {
-        const delivery = this.repository.create({ id, type, status, cost, prize, street, number, complement, district, postal_code, city, state });
+    async create(data: ICreateDeliveriesDTO): Promise<Delivery> {
+        const {
+            id,
+            type_delivery_id,
+            status_delivery_id,
+            cost,
+            prize,
+            street,
+            number,
+            complement,
+            district,
+            postal_code,
+            city,
+            state,
+            code,
+            country
+        } = data;
+        const delivery = this.repository.create({
+            id,
+            type_delivery_id,
+            status_delivery_id,
+            cost,
+            prize,
+            street,
+            number,
+            complement,
+            district,
+            postal_code,
+            city,
+            state,
+            code,
+            country
+        });
+        console.log("1", delivery)
         return await this.repository.save(delivery);
+        console.log("2", delivery)
     }
 
     async findById(id: string): Promise<Delivery> {
-        return await this.repository.findOne(id);
+        return await this.repository.findOne({
+            where: {id},
+            relations: ['status_delivery', 'types_delivery']
+        });
     }
 
     async findByPostalCode(postal_code: string): Promise<Delivery> {
-        return await this.repository.findOne(postal_code);
+        return await this.repository.findOne({
+            where: {postal_code},
+            relations: ['status_delivery', 'types_delivery']
+        });
     }
 
-    async findByStatus(status: StatusDelivery): Promise<Delivery[]> {
-        return await this.repository.find({ status });
+    async findByStatus(status_delivery_id: string): Promise<Delivery[]> {
+        return await this.repository.find({
+            where: {status_delivery_id},
+            relations: ['status_delivery', 'types_delivery']
+        });
     }
 
-    async findByType(type: Type): Promise<Delivery[]> {
-        return await this.repository.find({ type });
+    async findByType(type_delivery_id: string): Promise<Delivery[]> {
+        return await this.repository.find({
+            where: {type_delivery_id},
+            relations: ['status_delivery', 'types_delivery']
+        });
     }
 
     async list(): Promise<Delivery[]> {
-        return await this.repository.find();
+        return await this.repository.find({
+            relations: ['status_delivery', 'types_delivery']
+        });
     }
 
-    async update(id: string, postal_code: string, type: Type, prize: number): Promise<void> {
+    async update(id: string, postal_code: string, type_delivery_id: string, prize: number): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
-            .set({ postal_code: postal_code, type: type, prize: prize })
-            .where("id = :id").setParameters({ id })
+            .set({postal_code: postal_code, type_delivery_id: type_delivery_id, prize: prize})
+            .where("id = :id").setParameters({id})
             .execute();
     }
 
@@ -51,11 +98,11 @@ class DeliveriesRepository implements IDeliveriesRepository {
             .execute();
     }
 
-    async updateStatus(id: string, status: StatusDelivery): Promise<void> {
+    async updateStatus(id: string, status_delivery_id: string): Promise<void> {
         await this.repository
             .createQueryBuilder().update()
-            .set({ status: status })
-            .where("id = :id").setParameters({ id })
+            .set({status_delivery_id: status_delivery_id})
+            .where("id = :id").setParameters({id})
             .execute();
     }
 
