@@ -7,6 +7,7 @@ import {CreateStatusPaymentController} from "../../../../modules/payments/contro
 import {GetMethodsPaymentController} from "../../../../modules/payments/controllers/GetMethodsPaymentController";
 import {GetAllStatusPaymentController} from "../../../../modules/payments/controllers/GetAllStatusPaymentController";
 import {GetStatusPaymentController} from "../../../../modules/payments/controllers/GetStatusPaymentController";
+import {GetAllPaymentsController} from "../../../../modules/payments/controllers/GetAllPaymentsController";
 
 const paymentsRoutes = Router();
 const createMethodsPaymentController = new CreateMethodsPaymentController();
@@ -15,6 +16,7 @@ const getMethodsPaymentController = new GetMethodsPaymentController();
 const createStatusPaymentController = new CreateStatusPaymentController();
 const getAllStatusPaymentController = new GetAllStatusPaymentController();
 const getStatusPaymentController = new GetStatusPaymentController();
+const getAllPaymentsController = new GetAllPaymentsController();
 
 paymentsRoutes.post("/methods", ensureAuthenticated, ensureAdmin, createMethodsPaymentController.handle);
 paymentsRoutes.post("/status", ensureAuthenticated, ensureAdmin, createStatusPaymentController.handle);
@@ -22,5 +24,6 @@ paymentsRoutes.get("/methods", getAllMethodsPaymentController.handle);
 paymentsRoutes.get("/status", getAllStatusPaymentController.handle);
 paymentsRoutes.get("/:id/methods", getMethodsPaymentController.handle);
 paymentsRoutes.get("/:id/status", getStatusPaymentController.handle);
+paymentsRoutes.get("/", ensureAuthenticated, ensureAdmin, getAllPaymentsController.handle);
 
 export {paymentsRoutes};
