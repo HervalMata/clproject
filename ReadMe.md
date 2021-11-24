@@ -722,7 +722,7 @@
 
 - [x] 11.1.13 - create service UpdatePaymentStatusService
 
-11.1.14 - create controller UpdatePaymentStatusController
+- [x] 11.1.14 - create controller UpdatePaymentStatusController
 
 11.1.15 - create route for update a payment status
 
