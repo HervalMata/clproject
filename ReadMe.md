@@ -762,7 +762,7 @@
 
 - [x] 12.1.13 - create service UpdateDeliveryStatusService
 
-12.1.14 - create controller UpdateDeliveryStatusController
+- [x] 12.1.14 - create controller UpdateDeliveryStatusController
 
 12.1.15 - create route for update a deliveries status
 
