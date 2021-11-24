@@ -756,7 +756,7 @@
 
 - [x] 12.1.10 - create service GetDeliveryService
 
-12.1.11 - create controller GetDeliveryController
+- [x] 12.1.11 - create controller GetDeliveryController
 
 12.1.12 - create route for get a delivery
 
