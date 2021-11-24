@@ -4,22 +4,22 @@ import {CategoryRepositoryInMemory} from "../../categories/repositories/in-memor
 import {CreateCategoryService} from "../../categories/services/CreateCategoryService";
 import {ProductsRepositoryInMemory} from "../../products/repositories/in-memory/ProductsRepositoryInMemory";
 import {CreateProductService} from "../../products/services/CreateProductService";
-import {DeliveriesRepositoryInMemory} from "../../deliveries/repositories/in-memory/DeliveriesRepositoryInMemory";
-import {PaymentsRepositoryInMemory} from "../repositories/in-memory/PaymentsRepositoryInMemory";
+import {DeliveriesRepositoryInMemory} from "../repositories/in-memory/DeliveriesRepositoryInMemory";
+import {PaymentsRepositoryInMemory} from "../../payments/repositories/in-memory/PaymentsRepositoryInMemory";
 import {OrdersRepositoryInMemory} from "../../orders/repositories/in-memory/OrdersRepositoryInMemory";
 import {CreateOrderService} from "../../orders/services/CreateOrderService";
-import {UpdateStatusPaymentService} from "./UpdateStatusPaymentService";
+import {UpdateStatusDeliveryService} from "./UpdateStatusDeliveryService";
 import {DayjsDateProvider} from "../../../shared/container/providers/DateProvider/implementations/DayjsDateProvider";
 import {StatusOrderRepositoryInMemory} from "../../orders/repositories/in-memory/StatusOrderRepositoryInMemory";
-import {TypesDeliveryRepositoryInMemory} from "../../deliveries/repositories/in-memory/TypesDeliveryRepositoryInMemory";
-import {MethodsPaymentRepositoryInMemory} from "../repositories/in-memory/MethodsPaymentRepositoryInMemory";
-import {StatusPaymentRepositoryInMemory} from "../repositories/in-memory/StatusPaymentRepositoryInMemory";
-import {StatusDeliveryRepositoryInMemory} from "../../deliveries/repositories/in-memory/StatusDeliveryRepositoryInMemory";
-import {CreateStatusDeliveryService} from "../../deliveries/services/CreateStatusDeliveryService";
-import {CreateStatusPaymentService} from "./CreateStatusPaymentService";
+import {TypesDeliveryRepositoryInMemory} from "../repositories/in-memory/TypesDeliveryRepositoryInMemory";
+import {MethodsPaymentRepositoryInMemory} from "../../payments/repositories/in-memory/MethodsPaymentRepositoryInMemory";
+import {StatusPaymentRepositoryInMemory} from "../../payments/repositories/in-memory/StatusPaymentRepositoryInMemory";
+import {StatusDeliveryRepositoryInMemory} from "../repositories/in-memory/StatusDeliveryRepositoryInMemory";
+import {CreateStatusDeliveryService} from "./CreateStatusDeliveryService";
+import {CreateStatusPaymentService} from "../../payments/services/CreateStatusPaymentService";
 import {CreateStatusOrderService} from "../../orders/services/CreateStatusOrderService";
-import {CreateMethodsPaymentService} from "./CreateMethodsPaymentService";
-import {CreateTypesDeliveryService} from "../../deliveries/services/CreateTypesDeliveryService";
+import {CreateMethodsPaymentService} from "../../payments/services/CreateMethodsPaymentService";
+import {CreateTypesDeliveryService} from "./CreateTypesDeliveryService";
 
 let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserService: CreateUserService;
@@ -42,9 +42,9 @@ let createTypesDeliveryService: CreateTypesDeliveryService;
 let ordersRepositoryInMemory: OrdersRepositoryInMemory;
 let dateProvider: DayjsDateProvider;
 let createOrderService: CreateOrderService;
-let updateStatusPaymentService: UpdateStatusPaymentService;
+let updateStatusDeliveryService: UpdateStatusDeliveryService;
 
-describe('Update Status Order', () => {
+describe('Update Status Delivery', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         createUserService = new CreateUserService(usersRepositoryInMemory);
@@ -72,10 +72,10 @@ describe('Update Status Order', () => {
             statusDeliveryRepositoryInMemory,
             statusPaymentRepositoryInMemory, statusOrderRepositoryInMemory
         );
-        updateStatusPaymentService = new UpdateStatusPaymentService(paymentsRepositoryInMemory, dateProvider, statusPaymentRepositoryInMemory);
+        updateStatusDeliveryService = new UpdateStatusDeliveryService(deliveriesRepositoryInMemory, dateProvider, statusDeliveryRepositoryInMemory);
     });
 
-    it('should be able to update an status payment', async () => {
+    it('should be able to update an status delivery', async () => {
         const user = await createUserService.execute({
             name: "User Test",
             email: "user@test.com",
@@ -150,10 +150,10 @@ describe('Update Status Order', () => {
         });
         const order = await ordersRepositoryInMemory.findByUser(user_id);
         const order_unique = order[Object.keys(order)[0]];
-        const payment_id = order_unique.payment_id;
-        await expect(updateStatusPaymentService.execute({
-            id: payment_id,
-            status_payment_id: status_payment_id
+        const delivery_id = order_unique.delivery_id;
+        await expect(updateStatusDeliveryService.execute({
+            id: delivery_id,
+            status_delivery_id: status_delivery_id
         })).resolves.not.toThrow();
     });
 });

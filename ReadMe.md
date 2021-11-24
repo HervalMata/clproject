@@ -770,9 +770,9 @@
 
 - [x] 12.1.17 - create service test GetAllDeliveriesService spec
 
-12.1.18 - create service test GetDeliveryService spec
+- [x] 12.1.18 - create service test GetDeliveryService spec
 
-12.1.19 - create service test UpdateDeliveryStatusService spec
+- [x] 12.1.19 - create service test UpdateDeliveryStatusService spec
 
 - [x] migrations types_delivery, status_delivery, methods_payment, status_payment, status_order
 
