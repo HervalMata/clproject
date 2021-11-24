@@ -4,21 +4,23 @@ import {CategoryRepositoryInMemory} from "../../categories/repositories/in-memor
 import {CreateCategoryService} from "../../categories/services/CreateCategoryService";
 import {ProductsRepositoryInMemory} from "../../products/repositories/in-memory/ProductsRepositoryInMemory";
 import {CreateProductService} from "../../products/services/CreateProductService";
-import {DeliveriesRepositoryInMemory} from "../../deliveries/repositories/in-memory/DeliveriesRepositoryInMemory";
-import {PaymentsRepositoryInMemory} from "../repositories/in-memory/PaymentsRepositoryInMemory";
+import {DeliveriesRepositoryInMemory} from "../repositories/in-memory/DeliveriesRepositoryInMemory";
+import {PaymentsRepositoryInMemory} from "../../payments/repositories/in-memory/PaymentsRepositoryInMemory";
 import {OrdersRepositoryInMemory} from "../../orders/repositories/in-memory/OrdersRepositoryInMemory";
 import {CreateOrderService} from "../../orders/services/CreateOrderService";
+import {GetDeliveryService} from "./GetDeliveryService";
 import {StatusOrderRepositoryInMemory} from "../../orders/repositories/in-memory/StatusOrderRepositoryInMemory";
-import {TypesDeliveryRepositoryInMemory} from "../../deliveries/repositories/in-memory/TypesDeliveryRepositoryInMemory";
-import {MethodsPaymentRepositoryInMemory} from "../repositories/in-memory/MethodsPaymentRepositoryInMemory";
-import {StatusPaymentRepositoryInMemory} from "../repositories/in-memory/StatusPaymentRepositoryInMemory";
-import {StatusDeliveryRepositoryInMemory} from "../../deliveries/repositories/in-memory/StatusDeliveryRepositoryInMemory";
-import {CreateStatusDeliveryService} from "../../deliveries/services/CreateStatusDeliveryService";
-import {CreateStatusPaymentService} from "./CreateStatusPaymentService";
+import {TypesDeliveryRepositoryInMemory} from "../repositories/in-memory/TypesDeliveryRepositoryInMemory";
+import {MethodsPaymentRepositoryInMemory} from "../../payments/repositories/in-memory/MethodsPaymentRepositoryInMemory";
+import {StatusPaymentRepositoryInMemory} from "../../payments/repositories/in-memory/StatusPaymentRepositoryInMemory";
+import {StatusDeliveryRepositoryInMemory} from "../repositories/in-memory/StatusDeliveryRepositoryInMemory";
+import {CreateStatusDeliveryService} from "./CreateStatusDeliveryService";
+import {CreateStatusPaymentService} from "../../payments/services/CreateStatusPaymentService";
 import {CreateStatusOrderService} from "../../orders/services/CreateStatusOrderService";
-import {CreateMethodsPaymentService} from "./CreateMethodsPaymentService";
-import {CreateTypesDeliveryService} from "../../deliveries/services/CreateTypesDeliveryService";
-import {GetAllPaymentsService} from "./GetAllPaymentsService";
+import {CreateMethodsPaymentService} from "../../payments/services/CreateMethodsPaymentService";
+import {CreateTypesDeliveryService} from "./CreateTypesDeliveryService";
+import {Delivery} from "../entities/Delivery";
+
 
 let usersRepositoryInMemory: UsersRepositoryInMemory;
 let createUserService: CreateUserService;
@@ -40,9 +42,9 @@ let createMethodsPaymentService: CreateMethodsPaymentService;
 let createTypesDeliveryService: CreateTypesDeliveryService;
 let ordersRepositoryInMemory: OrdersRepositoryInMemory;
 let createOrderService: CreateOrderService;
-let getAllPaymentsService: GetAllPaymentsService;
+let getDeliveryService: GetDeliveryService;
 
-describe('Get All Payments', () => {
+describe('Get An Delivery', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         createUserService = new CreateUserService(usersRepositoryInMemory);
@@ -69,10 +71,10 @@ describe('Get All Payments', () => {
             statusDeliveryRepositoryInMemory,
             statusPaymentRepositoryInMemory, statusOrderRepositoryInMemory
         );
-        getAllPaymentsService = new GetAllPaymentsService(paymentsRepositoryInMemory);
+        getDeliveryService = new GetDeliveryService(deliveriesRepositoryInMemory);
     });
 
-    it('should be able to get all payments', async () => {
+    it('should be able to get an delivery', async () => {
         const user = await createUserService.execute({
             name: "User Test",
             email: "user@test.com",
@@ -145,20 +147,16 @@ describe('Get All Payments', () => {
             value: value, installments: installments, taxes: taxes,
             total: total, user_id: user_id, products_id
         });
-        await new Promise(res => setTimeout(res, 4500));
-        await createOrderService.execute({
-            type_delivery_id: type_delivery_id,
-            cost: cost, prize: prize, street: street, number: number,
-            district: district, postal_code: postal_code, city: city, state: state, country: country,
-            method_id: method_id,
-            value: value, installments: installments, taxes: taxes,
-            total: total, user_id: user_id, products_id
-        });
-        const get_payments = await getAllPaymentsService.execute();
-        await expect(get_payments).toHaveLength(2);
+        const order = await ordersRepositoryInMemory.findByUser(user_id);
+        const order_unique = order[Object.keys(order)[0]];
+        const delivery_id = order_unique.delivery_id;
+
+        const get_deliveries = await getDeliveryService.execute({id: delivery_id});
+        await expect(get_deliveries).toBeInstanceOf(Delivery);
     });
-    it('should not be able to get all payments non existent', async () => {
-        const get_payments = await getAllPaymentsService.execute();
-        await expect(get_payments).toHaveLength(0);
+    it('should not be able to get an delivery non existent', async () => {
+        const id = "jnjfnbjginbgjio";
+        const get_deliveries = await getDeliveryService.execute({id});
+        await expect(get_deliveries).not.toBeInstanceOf(Delivery);
     });
 });

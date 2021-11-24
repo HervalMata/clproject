@@ -42,7 +42,7 @@ let ordersRepositoryInMemory: OrdersRepositoryInMemory;
 let createOrderService: CreateOrderService;
 let getAllDeliveriesService: GetAllDeliveriesService;
 
-describe('Get All Orders', () => {
+describe('Get All Deliveries', () => {
     beforeEach(() => {
         usersRepositoryInMemory = new UsersRepositoryInMemory();
         createUserService = new CreateUserService(usersRepositoryInMemory);
