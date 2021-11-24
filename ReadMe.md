@@ -732,9 +732,7 @@
 
 - [x] 11.1.18 - create service test GetPaymentService spec
 
-11.1.19- create service test GetPaymentsByUserService spec
-
-11.1.20 - create service test UpdatePaymentStatusService spec
+- [x] 11.1.19 - create service test UpdatePaymentStatusService spec
 
 ### 12 - Deliveries
 

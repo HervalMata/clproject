@@ -9,7 +9,7 @@ interface IRequest {
 }
 
 @injectable()
-class UpdateStatusOrderService {
+class UpdateStatusPaymentService {
 
     constructor(
         @inject("PaymentsRepository")
@@ -42,4 +42,4 @@ class UpdateStatusOrderService {
     }
 }
 
-export {UpdateStatusOrderService};
+export {UpdateStatusPaymentService};
