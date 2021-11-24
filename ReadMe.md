@@ -748,7 +748,7 @@
 
 - [x] 12.1.6 - register container typeorm
 
-12.1.7 - create service GetAllDeliveriesService
+- [x] 12.1.7 - create service GetAllDeliveriesService
 
 12.1.8 - create controller GetAllDeliveriesController
 
