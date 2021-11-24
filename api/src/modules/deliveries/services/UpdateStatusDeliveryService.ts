@@ -14,7 +14,7 @@ class UpdateStatusDeliveryService {
     constructor(
         @inject("DeliveriesRepository")
         private deliveriesRepository: IDeliveriesRepository,
-        @inject("DateProvider")
+        @inject("DayjsDateProvider")
         private dateProvider: DayjsDateProvider,
         @inject("StatusDeliveryRepository")
         private statusDeliveryRepository: IStatusDeliveryRepository

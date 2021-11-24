@@ -14,7 +14,7 @@ class UpdateStatusPaymentService {
     constructor(
         @inject("PaymentsRepository")
         private paymentsRepository: IPaymentsRepository,
-        @inject("DateProvider")
+        @inject("DayjsDateProvider")
         private dateProvider: DayjsDateProvider,
         @inject("StatusPaymentRepository")
         private statusPaymentRepository: IStatusPaymentRepository

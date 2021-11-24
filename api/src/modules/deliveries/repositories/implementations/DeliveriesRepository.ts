@@ -43,42 +43,41 @@ class DeliveriesRepository implements IDeliveriesRepository {
             code,
             country
         });
-        console.log("1", delivery)
+
         return await this.repository.save(delivery);
-        console.log("2", delivery)
     }
 
     async findById(id: string): Promise<Delivery> {
         return await this.repository.findOne({
             where: {id},
-            relations: ['status_delivery', 'types_delivery']
+            relations: ['statusDelivery', 'typesDelivery']
         });
     }
 
     async findByPostalCode(postal_code: string): Promise<Delivery> {
         return await this.repository.findOne({
             where: {postal_code},
-            relations: ['status_delivery', 'types_delivery']
+            relations: ['statusDelivery', 'typesDelivery']
         });
     }
 
     async findByStatus(status_delivery_id: string): Promise<Delivery[]> {
         return await this.repository.find({
             where: {status_delivery_id},
-            relations: ['status_delivery', 'types_delivery']
+            relations: ['statusDelivery', 'typesDelivery']
         });
     }
 
     async findByType(type_delivery_id: string): Promise<Delivery[]> {
         return await this.repository.find({
             where: {type_delivery_id},
-            relations: ['status_delivery', 'types_delivery']
+            relations: ['statusDelivery', 'typesDelivery']
         });
     }
 
     async list(): Promise<Delivery[]> {
         return await this.repository.find({
-            relations: ['status_delivery', 'types_delivery']
+            relations: ['statusDelivery', 'typesDelivery']
         });
     }
 
