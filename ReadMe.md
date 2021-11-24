@@ -724,7 +724,7 @@
 
 - [x] 11.1.14 - create controller UpdatePaymentStatusController
 
-11.1.15 - create route for update a payment status
+- [x] 11.1.15 - create route for update a payment status
 
 - [x] 11.1.16 - create implementation repository PaymentsRepositoryInMemory for tests
 
@@ -748,47 +748,31 @@
 
 - [x] 12.1.6 - register container typeorm
 
-12.1.7 - create service CreateDeliveryService
+12.1.7 - create service GetAllDeliveriesService
 
-12.1.8 - create controller CreateDeliveryController
+12.1.8 - create controller GetAllDeliveriesController
 
-12.1.9 - create routes deliveries routes
+12.1.9 - create route for get all deliveries
 
-12.1.10 - create service GetAllDeliveriesService
+12.1.10 - create service GetDeliveryService
 
-12.1.11 - create controller GetAllDeliveriesController
+12.1.11 - create controller GetDeliveryController
 
-12.1.12 - create route for get all deliveries
+12.1.12 - create route for get a delivery
 
-12.1.13 - create service GetDeliveryService
+12.1.13 - create service UpdateDeliveryStatusService
 
-12.1.14 - create controller GetDeliveryController
+12.1.14 - create controller UpdateDeliveryStatusController
 
-12.1.15 - create route for get a delivery
+12.1.15 - create route for update a deliveries status
 
-12.1.16 - create service GetDeliveriesByUserService
+- [x] 12.1.16 - create implementation repository DeliveriesRepositoryInMemory for tests
 
-12.1.17 - create controller GetDeliveriesByUserController
+12.1.17 - create service test GetAllDeliveriesService spec
 
-12.1.18 - create route for get deliveries by user
+12.1.18 - create service test GetDeliveryService spec
 
-12.1.19 - create service UpdateDeliveryStatusService
-
-12.1.20 - create controller UpdateDeliveryStatusController
-
-12.1.21 - create route for update a deliveries status
-
-- [x] 12.1.22 - create implementation repository DeliveriesRepositoryInMemory for tests
-
-12.1.23 - create service test CreateDeliveryService spec
-
-12.1.24 - create service test GetAllDeliveriesService spec
-
-12.1.25 - create service test GetDeliveryService spec
-
-12.1.26 - create service test GetDeliveriesByUserService spec
-
-12.1.27 - create service test UpdateDeliveryStatusService spec
+12.1.19 - create service test UpdateDeliveryStatusService spec
 
 - [x] migrations types_delivery, status_delivery, methods_payment, status_payment, status_order
 
@@ -825,4 +809,4 @@ services
 
 - [x] CreateStatusOrderController GetAllStatusOrderController GetStatusOrderController
 
-create routes, register containers, refactor delivery, payment and order
+- [x] create routes, register containers, refactor delivery, payment and order
