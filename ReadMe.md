@@ -768,7 +768,7 @@
 
 - [x] 12.1.16 - create implementation repository DeliveriesRepositoryInMemory for tests
 
-12.1.17 - create service test GetAllDeliveriesService spec
+- [x] 12.1.17 - create service test GetAllDeliveriesService spec
 
 12.1.18 - create service test GetDeliveryService spec
 
