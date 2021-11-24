@@ -720,27 +720,21 @@
 
 - [x] 11.1.12 - create route for get a payment
 
-11.1.13 - create service GetPaymentsByUserService
+- [x] 11.1.13 - create service UpdatePaymentStatusService
 
-11.1.14 - create controller GetPaymentsByUserController
+11.1.14 - create controller UpdatePaymentStatusController
 
-11.1.15 - create route for get payments by user
+11.1.15 - create route for update a payment status
 
-11.1.16 - create service UpdatePaymentStatusService
+- [x] 11.1.16 - create implementation repository PaymentsRepositoryInMemory for tests
 
-11.1.17 - create controller UpdatePaymentStatusController
+- [x] 11.1.17 - create service test GetAllPaymentsService spec
 
-11.1.18 - create route for update a payment status
+- [x] 11.1.18 - create service test GetPaymentService spec
 
-- [x] 11.1.19 - create implementation repository PaymentsRepositoryInMemory for tests
+11.1.19- create service test GetPaymentsByUserService spec
 
-- [x] 11.1.20 - create service test GetAllPaymentsService spec
-
-- [x] 11.1.21 - create service test GetPaymentService spec
-
-11.1.22 - create service test GetPaymentsByUserService spec
-
-11.1.23 - create service test UpdatePaymentStatusService spec
+11.1.20 - create service test UpdatePaymentStatusService spec
 
 ### 12 - Deliveries
 
