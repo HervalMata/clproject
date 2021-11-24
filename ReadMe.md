@@ -736,7 +736,7 @@
 
 - [x] 11.1.20 - create service test GetAllPaymentsService spec
 
-11.1.21 - create service test GetPaymentService spec
+- [x] 11.1.21 - create service test GetPaymentService spec
 
 11.1.22 - create service test GetPaymentsByUserService spec
 
