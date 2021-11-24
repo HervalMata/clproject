@@ -718,7 +718,7 @@
 
 - [x] 11.1.11 - create controller GetPaymentController
 
-11.1.12 - create route for get a payment
+- [x] 11.1.12 - create route for get a payment
 
 11.1.13 - create service GetPaymentsByUserService
 
