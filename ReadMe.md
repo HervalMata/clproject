@@ -764,7 +764,7 @@
 
 - [x] 12.1.14 - create controller UpdateDeliveryStatusController
 
-12.1.15 - create route for update a deliveries status
+- [x] 12.1.15 - create route for update a deliveries status
 
 - [x] 12.1.16 - create implementation repository DeliveriesRepositoryInMemory for tests
 
