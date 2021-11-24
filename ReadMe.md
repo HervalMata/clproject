@@ -752,7 +752,7 @@
 
 - [x] 12.1.8 - create controller GetAllDeliveriesController
 
-12.1.9 - create route for get all deliveries
+- [x] 12.1.9 - create route for get all deliveries
 
 12.1.10 - create service GetDeliveryService
 
