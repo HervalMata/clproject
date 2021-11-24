@@ -760,7 +760,7 @@
 
 - [x] 12.1.12 - create route for get a delivery
 
-12.1.13 - create service UpdateDeliveryStatusService
+- [x] 12.1.13 - create service UpdateDeliveryStatusService
 
 12.1.14 - create controller UpdateDeliveryStatusController
 

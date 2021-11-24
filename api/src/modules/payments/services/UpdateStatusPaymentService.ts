@@ -22,8 +22,8 @@ class UpdateStatusPaymentService {
     }
 
     async execute({id, status_payment_id}: IRequest): Promise<void> {
-        const statusOrder = await this.statusPaymentRepository.findById(status_payment_id);
-        const status_payment = statusOrder.status_payment;
+        const statusPayment = await this.statusPaymentRepository.findById(status_payment_id);
+        const status_payment = statusPayment.status_payment;
         const payment = await this.paymentsRepository.findById(id);
         if (status_payment === "in_analysis") {
             payment.in_analysis_date = this.dateProvider.dateNow();
