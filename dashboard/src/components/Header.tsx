@@ -1,4 +1,4 @@
-import {Flex, HStack, Icon, Input, Text} from "@chakra-ui/react";
+import {Avatar, Box, Flex, HStack, Icon, Input, Text} from "@chakra-ui/react";
 import {RiNotificationLine, RiSearchLine, RiUserAddLine} from "react-icons/all";
 
 export function Header() {
@@ -20,6 +20,15 @@ export function Header() {
                     <Icon as={RiNotificationLine} fontSize='20' h='10'/>
                     <Icon as={RiUserAddLine} fontSize='20' h='10'/>
                 </HStack>
+                <Flex align='center'>
+                    <Box mr='4' textAlign='right'>
+                        <Text>Herval Mata do Amparo</Text>
+                        <Text color='gray.300' fontSize='small'>
+                            hervalmataamparo@gmail.com
+                        </Text>
+                    </Box>
+                    <Avatar size='md' name='Herval Mata'/>
+                </Flex>
             </Flex>
         </Flex>
     )
