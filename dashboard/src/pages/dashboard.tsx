@@ -1,5 +1,12 @@
+import {Header} from '../components/Header';
+import {Flex} from "@chakra-ui/react";
+
 export default function Dashboard() {
+
     return (
-        <h1>Dashboard</h1>
+        <Flex flexDir="column">
+            <Header/>
+            <h1>Dashboard</h1>
+        </Flex>
     )
 }
